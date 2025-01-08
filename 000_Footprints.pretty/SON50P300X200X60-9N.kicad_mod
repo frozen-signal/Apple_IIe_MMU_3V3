@@ -1,0 +1,221 @@
+(footprint "SON50P300X200X60-9N"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.240175 -1.809295 0)
+		(layer "F.SilkS")
+		(uuid "4bc839db-e6b3-4b8e-a7a6-b862ed26c34a")
+		(effects
+			(font
+				(size 0.800575 0.800575)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SON50P300X200X60-9N"
+		(at 7.354825 1.792685 0)
+		(layer "F.Fab")
+		(uuid "781a74ac-2c87-493b-b862-0bfbfb8b3662")
+		(effects
+			(font
+				(size 0.800307 0.800307)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "edcbd832-f639-4353-83f9-8a6cce64d358")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af7907be-19a3-4fc6-b838-009c156cae13")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e59e5da1-db08-4401-883d-3a2889c9649f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center -2.3 -0.8)
+		(end -2.25 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "80c94084-b5d1-4d0c-8e95-e5d04a33bd06")
+	)
+	(fp_line
+		(start -2.25 -1.25)
+		(end 2.25 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e6256aa5-57e8-42b1-a2a7-c4215a517b37")
+	)
+	(fp_line
+		(start -2.25 1.25)
+		(end -2.25 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "87e3905a-6538-4699-be1e-eea4de0c9308")
+	)
+	(fp_line
+		(start 2.25 -1.25)
+		(end 2.25 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ef353d3d-ffd2-496b-8719-bcf465e5afc1")
+	)
+	(fp_line
+		(start 2.25 1.25)
+		(end -2.25 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8365bef8-81fc-4793-b2bc-e2fe8286ad6a")
+	)
+	(fp_line
+		(start -1.5 -1)
+		(end 1.5 -1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1848bb41-c476-482a-a372-db1b3651ade1")
+	)
+	(fp_line
+		(start -1.5 1)
+		(end -1.5 -1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "03b1c071-e302-41ad-8773-8b7bec9ee0bf")
+	)
+	(fp_line
+		(start 1.5 -1)
+		(end 1.5 1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c977665c-d688-49c8-b94d-df5042a9b99d")
+	)
+	(fp_line
+		(start 1.5 1)
+		(end -1.5 1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ae79322e-a963-4840-8950-35c623f11b24")
+	)
+	(pad "1" smd rect
+		(at -1.42 -0.75)
+		(size 0.89 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "dcd1a36e-5d50-41a1-9a8f-247351b533a2")
+	)
+	(pad "2" smd rect
+		(at -1.42 -0.25)
+		(size 0.89 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "510939dc-b52e-4f47-8cd0-81c239f9f18e")
+	)
+	(pad "3" smd rect
+		(at -1.42 0.25)
+		(size 0.89 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c4b124ce-1f3f-4370-b40e-0dadcfec5b31")
+	)
+	(pad "4" smd rect
+		(at -1.42 0.75)
+		(size 0.89 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "8517d608-01b8-47f0-8946-0e010ffea6a6")
+	)
+	(pad "5" smd rect
+		(at 1.42 0.75 180)
+		(size 0.89 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "397d52da-0aca-4860-b9b5-f6cda3af7de7")
+	)
+	(pad "6" smd rect
+		(at 1.42 0.25 180)
+		(size 0.89 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "fd55295a-2f15-47cf-ac98-dc698f9168bc")
+	)
+	(pad "7" smd rect
+		(at 1.42 -0.25 180)
+		(size 0.89 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "89045281-1419-484b-b502-b0a465babac2")
+	)
+	(pad "8" smd rect
+		(at 1.42 -0.75 180)
+		(size 0.89 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "eabfd03c-aa00-44b4-bd4e-4914e145ad90")
+	)
+	(pad "9" smd rect
+		(at 0 0)
+		(size 0.2 1.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "db51a61c-ba82-43e9-8687-c07d04884b06")
+	)
+	(model "C:/dev/KICAD_IOU_3V3/3D_Models/W25X20CLUXIG_TR.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
