@@ -1,0 +1,162 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\MMU_Project\\MMU_Implmnt\\synwork\\MMU_comp.srs|-autotop|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\bin64\\c_vhdl.exe":1731014824
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\location.map":1731014827
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\std.vhd":1731014827
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1731014827
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\std1164.vhd":1731014827
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\numeric.vhd":1731014827
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1731014827
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\arith.vhd":1731014827
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\unsigned.vhd":1731014827
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\hyperents.vhd":1731014827
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\TTL\\LATCH_9334.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\TTL\\LS138.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\DEV_DECODER.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_ADDR_DECODER.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_CASEN.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_CXXXOUT.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_EN80.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_INTERNALS.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_KBD.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_MD7.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_MPON.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_RA.vhdl":1736477783
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_ROMEN.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_RW245.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_SELMB.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\MMU\\MMU_SOFT_SWITCHES_C08X.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\COMMON\\COMMON_INTERNALS.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\COMMON\\RA_MUX.vhdl":1736477783
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\COMMON\\SOFT_SWITCHES_C00X.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\COMMON\\SOFT_SWITCHES_C05X.vhdl":1736395449
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\CUSTOM\\DELAY_OSCILLATOR\\VENDOR\\LATTICE_iCE40\\DELAY_OSCILLATOR.vhdl":1736477783
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\CUSTOM\\DRAM_HOLD_TIME\\VENDOR\\LATTICE_iCE40\\DRAM_HOLD_TIME.vhdl":1736477783
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\sources\\CUSTOM\\MMU_HOLD_TIME\\VENDOR\\LATTICE_iCE40\\MMU_HOLD_TIME.vhdl":1736477783
+#CUR:"C:\\dev\\Apple_IIe_MMU_3V3\\firmware\\CUSTOM\\MMU.vhdl":1736622686
+0 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\TTL\LATCH_9334.vhdl" vhdl
+1 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\TTL\LS138.vhdl" vhdl
+2 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\DEV_DECODER.vhdl" vhdl
+3 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_ADDR_DECODER.vhdl" vhdl
+4 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_CASEN.vhdl" vhdl
+5 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_CXXXOUT.vhdl" vhdl
+6 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_EN80.vhdl" vhdl
+7 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_INTERNALS.vhdl" vhdl
+8 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_KBD.vhdl" vhdl
+9 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_MD7.vhdl" vhdl
+10 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_MPON.vhdl" vhdl
+11 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_RA.vhdl" vhdl
+12 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_ROMEN.vhdl" vhdl
+13 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_RW245.vhdl" vhdl
+14 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_SELMB.vhdl" vhdl
+15 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\MMU\MMU_SOFT_SWITCHES_C08X.vhdl" vhdl
+16 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\COMMON\COMMON_INTERNALS.vhdl" vhdl
+17 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\COMMON\RA_MUX.vhdl" vhdl
+18 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\COMMON\SOFT_SWITCHES_C00X.vhdl" vhdl
+19 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\COMMON\SOFT_SWITCHES_C05X.vhdl" vhdl
+20 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\CUSTOM\DELAY_OSCILLATOR\VENDOR\LATTICE_iCE40\DELAY_OSCILLATOR.vhdl" vhdl
+21 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\CUSTOM\DRAM_HOLD_TIME\VENDOR\LATTICE_iCE40\DRAM_HOLD_TIME.vhdl" vhdl
+22 "C:\dev\Apple_IIe_MMU_3V3\firmware\sources\CUSTOM\MMU_HOLD_TIME\VENDOR\LATTICE_iCE40\MMU_HOLD_TIME.vhdl" vhdl
+23 "C:\dev\Apple_IIe_MMU_3V3\firmware\CUSTOM\MMU.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 1 
+3 1 
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 17 
+12 -1
+13 -1
+14 -1
+15 -1
+16 -1
+17 21 
+18 0 
+19 -1
+20 -1
+21 -1
+22 -1
+23 20 22 3 10 2 15 18 19 16 14 4 7 5 13 12 9 6 8 11 
+
+# Dependency Lists (Users Of)
+0 18 
+1 3 2 
+2 23 
+3 23 
+4 23 
+5 23 
+6 23 
+7 23 
+8 23 
+9 23 
+10 23 
+11 23 
+12 23 
+13 23 
+14 23 
+15 23 
+16 23 
+17 11 
+18 23 
+19 23 
+20 23 
+21 17 
+22 23 
+23 -1
+
+# Design Unit to File Association
+arch work latch_9334 rtl 0
+module work latch_9334 0
+arch work ls138 rtl 1
+module work ls138 1
+arch work dev_decoder rtl 2
+module work dev_decoder 2
+arch work mmu_addr_decoder rtl 3
+module work mmu_addr_decoder 3
+arch work mmu_casen rtl 4
+module work mmu_casen 4
+arch work mmu_cxxxout rtl 5
+module work mmu_cxxxout 5
+arch work mmu_en80 rtl 6
+module work mmu_en80 6
+arch work mmu_internals rtl 7
+module work mmu_internals 7
+arch work mmu_kbd rtl 8
+module work mmu_kbd 8
+arch work mmu_md7 rtl 9
+module work mmu_md7 9
+arch work mmu_mpon rtl 10
+module work mmu_mpon 10
+arch work mmu_ra rtl 11
+module work mmu_ra 11
+arch work mmu_romen rtl 12
+module work mmu_romen 12
+arch work mmu_rw245 rtl 13
+module work mmu_rw245 13
+arch work mmu_selmb rtl 14
+module work mmu_selmb 14
+arch work mmu_soft_switches_c08x rtl 15
+module work mmu_soft_switches_c08x 15
+arch work common_internals rtl 16
+module work common_internals 16
+arch work ra_mux rtl 17
+module work ra_mux 17
+arch work soft_switches_c00x rtl 18
+module work soft_switches_c00x 18
+arch work soft_switches_c05x rtl 19
+module work soft_switches_c05x 19
+arch work delay_oscillator rtl 20
+module work delay_oscillator 20
+arch work dram_hold_time rtl 21
+module work dram_hold_time 21
+arch work mmu_hold_time rtl 22
+module work mmu_hold_time 22
+arch work mmu rtl 23
+module work mmu 23

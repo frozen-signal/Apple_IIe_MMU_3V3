@@ -1,0 +1,13 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance ITEXT (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance MIX (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance AN0 (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance AN1 (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance AN2 (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance AN3 (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\common_internals.vhdl":53:8:53:9|Removing sequential instance P_PHI_0 (in view: work.COMMON_INTERNALS(rtl)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\common_internals.vhdl":53:8:53:9|Removing sequential instance P_PHI_1 (in view: work.COMMON_INTERNALS(rtl)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\ttl\latch_9334.vhdl":33:8:33:9|Removing sequential instance Q6 (in view: work.LATCH_9334(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\ttl\latch_9334.vhdl":33:8:33:9|Removing sequential instance Q7 (in view: work.LATCH_9334(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN225 |Writing default property annotation file C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU.sap.

@@ -6,11 +6,22 @@
 	(paper "A5")
 	(title_block
 		(title "Apple IIe IOU Replacement")
-		(date "2024-12-10")
-		(rev "0.90")
+		(date "2025-01-10")
+		(rev "0.95")
 		(company "Frozen Signal")
 	)
 	(lib_symbols)
+	(text "*** FIXME: Find a way to move what's in the MMU sheet\nhere without causing problems in the PCB design tool"
+		(exclude_from_sim no)
+		(at 69.596 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5e4fb8c1-1a37-4bbc-a330-136f1dfb72cf")
+	)
 	(sheet
 		(at 71.12 24.13)
 		(size 40.64 33.02)

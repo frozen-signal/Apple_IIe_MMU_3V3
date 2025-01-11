@@ -6,8 +6,8 @@
 	(paper "USLedger")
 	(title_block
 		(title "Apple IIe IOU Replacement")
-		(date "2024-12-10")
-		(rev "0.90")
+		(date "2025-01-10")
+		(rev "0.95")
 		(company "Frozen Signal")
 	)
 	(lib_symbols
@@ -9341,7 +9341,7 @@
 			)
 		)
 	)
-	(global_label "~{MD7}"
+	(global_label "MD7"
 		(shape input)
 		(at 373.38 193.04 180)
 		(fields_autoplaced yes)
@@ -9935,7 +9935,7 @@
 			)
 		)
 	)
-	(global_label "~{MD7}"
+	(global_label "MD7"
 		(shape input)
 		(at 101.6 76.2 90)
 		(fields_autoplaced yes)

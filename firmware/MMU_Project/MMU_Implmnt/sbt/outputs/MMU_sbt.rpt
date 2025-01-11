@@ -1,0 +1,148 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:31:51
+
+* File Generated:     Jan 11 2025 14:15:42
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 0 seconds
+
+Device Info:
+------------
+    Device Family: iCE5LP
+    Device:        iCE5LP1K
+    Package:       SG48
+
+Design statistics:
+------------------
+    FFs:                  37
+    LUTs:                 142
+    RAMs:                 0
+    IOBs:                 35
+    GBs:                  1
+    PLLs:                 0
+    Warm Boots:           0
+    SPIs:                 0
+    I2Cs:                 0
+    HFOSCs:               1
+    LFOSCs:               0
+    RGB_DRVs:             0
+    IR_DRVs:              0
+    LED_DRV_CURs:         0
+    LEDD_IPs:             0
+    DSPs:                 0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 142/1100
+        Combinational Logic Cells: 105      out of   1100      9.54545%
+        Sequential Logic Cells:    37       out of   1100      3.36364%
+        Logic Tiles:               66       out of   440       15%
+    Registers: 
+        Logic Registers:           37       out of   1100      3.36364%
+        IO Registers:              0        out of   480       0
+    Block RAMs:                    0        out of   16        0%
+    Warm Boots:                    0        out of   1         0%
+    SPIs:                          0        out of   1         0%
+    I2Cs:                          0        out of   1         0%
+    HFOSCs:                        1        out of   1         100%
+    LFOSCs:                        0        out of   1         0%
+    RGB_DRVs:                      0        out of   1         0%
+    IR_DRVs:                       0        out of   1         0%
+    LED_DRV_CURs:                  0        out of   1         0%
+    LEDD_IPs:                      0        out of   1         0%
+    DSPs:                          0        out of   2         0%
+    Pins:
+        Input Pins:                22       out of   39        56.4103%
+        Output Pins:               16       out of   39        41.0256%
+        InOut Pins:                0        out of   39        0%
+    Global Buffers:                1        out of   8         12.5%
+    PLLs:                          0        out of   1         0%
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 0        out of   0         0%
+    Bank 1: 0        out of   0         0%
+    Bank 0: 17       out of   17        100%
+    Bank 2: 21       out of   22        95.4545%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                   Signal Name
+    ----------  ---------  -----------  -------  -------  -----------                                   -----------
+    2           Input      SB_LVCMOS    No       2        Simple Input                                  A[13]      
+    3           Input      SB_LVCMOS    No       2        Simple Input                                  A[12]      
+    4           Input      SB_LVCMOS    No       2        Simple Input                                  A[11]      
+    6           Input      SB_LVCMOS    No       2        Simple Input                                  A[10]      
+    9           Input      SB_LVCMOS    No       2        Simple Input                                  A[9]       
+    10          Input      SB_LVCMOS    No       2        Simple Input                                  A[8]       
+    11          Input      SB_LVCMOS    No       2        Simple Input                                  A[7]       
+    12          Input      SB_LVCMOS    No       2        Simple Input                                  A[6]       
+    13          Input      SB_LVCMOS    No       2        Simple Input                                  A[5]       
+    14          Input      SB_LVCMOS    No       2        Simple Input                                  A[4]       
+    15          Input      SB_LVCMOS    No       2        Simple Input                                  A[3]       
+    17          Input      SB_LVCMOS    No       2        Simple Input                                  A[2]       
+    18          Input      SB_LVCMOS    No       2        Simple Input                                  A[1]       
+    19          Input      SB_LVCMOS    No       2        Simple Input                                  A[0]       
+    20          Input      SB_LVCMOS    No       2        Simple Input                                  PHI_0      
+    21          Input      SB_LVCMOS    No       2        Simple Input                                  Q3         
+    23          Input      SB_LVCMOS    No       0        Simple Input                                  PRAS_N     
+    44          Input      SB_LVCMOS    No       2        Simple Input                                  R_W_N      
+    45          Input      SB_LVCMOS    No       2        Simple Input                                  INH_N      
+    46          Input      SB_LVCMOS    No       2        Simple Input                                  DMA_N      
+    47          Input      SB_LVCMOS    No       2        Simple Input                                  A[15]      
+    48          Input      SB_LVCMOS    No       2        Simple Input                                  A[14]      
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                   Signal Name
+    ----------  ---------  -----------  -------  -------  -----------                                   -----------
+    25          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  ORA[0]     
+    26          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  ORA[1]     
+    27          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  ORA[2]     
+    28          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  ORA[3]     
+    31          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  ORA[4]     
+    32          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  ORA[5]     
+    34          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  ORA[6]     
+    35          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  ORA[7]     
+    36          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  EN80_N     
+    37          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  KBD_N      
+    38          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  ROMEN2_N   
+    39          Output     SB_LVCMOS    No       0        Output Tristatable by Enable (Open-drain IO)  ROMEN1_N   
+    40          Output     SB_LVCMOS    No       0        Output Tristatable by Enable (Open-drain IO)  MD7        
+    41          Output     SB_LVCMOS    No       0        Output Tristatable by Enable (Open-drain IO)  R_W_N_245  
+    42          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  CASEN_N    
+    43          Output     SB_LVCMOS    No       0        Output Tristatable by Enable                  CXXXOUT    
+
+Detailed Global Buffer Info:
+----------------------------
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name
+    -------------  -------  ---------  ------  -----------
+    0              2        IO         14      PHI_0_c  
+
+
+Router Summary:
+---------------
+    Status:  Successful
+    Runtime: 4 seconds
+
+Routing Resource Utilization:
+-----------------------------
+              Local line of tile     1032 out of  74681      1.38188%
+                          Span 4      284 out of  15808      1.79656%
+                         Span 12       79 out of   3184      2.48116%
+                  Global network        2 out of      8      25%
+      Vertical Inter-LUT Connect       21 out of   3080      0.681818%
+

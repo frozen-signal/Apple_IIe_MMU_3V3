@@ -1,0 +1,753 @@
+# Sat Jan 11 14:11:36 2025
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@W: FX1039 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\custom\dram_hold_time\vendor\lattice_ice40\dram_hold_time.vhdl":50:8:50:9|User-specified initial value defined for instance U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.Q3_SHIFT_REGISTER[1:0] is being ignored. 
+@W: FX1039 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\custom\dram_hold_time\vendor\lattice_ice40\dram_hold_time.vhdl":41:8:41:9|User-specified initial value defined for instance U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER[2:0] is being ignored. 
+@W: FX1039 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\custom\mmu_hold_time\vendor\lattice_ice40\mmu_hold_time.vhdl":37:8:37:9|User-specified initial value defined for instance U_MMU_HOLD_TIME.SHIFT_REGISTER[1:0] is being ignored. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
+
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\mmu\mmu_mpon.vhdl":62:8:62:9|Removing sequential instance U_MMU_MPON.DELTA_01XX_N (in view: work.MMU(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\mmu\mmu_mpon.vhdl":51:8:51:9|Removing sequential instance U_MMU_MPON.M5_7 (in view: work.MMU(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\mmu\mmu_mpon.vhdl":43:8:43:9|Removing sequential instance U_MMU_MPON.M5_2 (in view: work.MMU(rtl)) because it does not drive other instances.
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -0.04ns		  98 /        21
+   2		0h:00m:00s		    -0.04ns		  98 /        21
+
+   3		0h:00m:00s		    -0.04ns		 105 /        21
+
+
+   4		0h:00m:00s		    -0.04ns		 104 /        21
+@A: BN291 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\mmu\mmu_soft_switches_c08x.vhdl":58:8:58:9|Boundary register U_MMU_SOFT_SWITCHES_C08X.BANK1 (in view: work.MMU(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: FX1017 :"c:\dev\apple_iie_mmu_3v3\firmware\custom\mmu.vhdl":20:8:20:12|SB_GB inserted on the net PHI_0_c.
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+Warning: Found 9 combinational loops!
+@W: BN137 :|Found combinational loop during mapping at net PENIO_N
+1) instance U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q3_latch (in view: work.MMU(rtl)), output net PENIO_N (in view: work.MMU(rtl))
+    net        PENIO_N
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q3_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q3_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q3_latch/O
+    net        PENIO_N
+@W: BN137 :|Found combinational loop during mapping at net INTC300_N
+2) instance U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch (in view: work.MMU(rtl)), output net INTC300_N (in view: work.MMU(rtl))
+    net        INTC300_N
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch/O
+    net        INTC300_N
+@W: BN137 :|Found combinational loop during mapping at net UMMU_INTERNALS.INTC8EN_INT
+3) instance UMMU_INTERNALS.INTC8EN_INT_latch (in view: work.MMU(rtl)), output net UMMU_INTERNALS.INTC8EN_INT (in view: work.MMU(rtl))
+    net        UMMU_INTERNALS.INTC8EN_INT
+    input  pin UMMU_INTERNALS.INTC8EN_INT_latch/I1
+    instance   UMMU_INTERNALS.INTC8EN_INT_latch (cell SB_LUT4)
+    output pin UMMU_INTERNALS.INTC8EN_INT_latch/O
+    net        UMMU_INTERNALS.INTC8EN_INT
+@W: BN137 :|Found combinational loop during mapping at net ALTSTKZP
+4) instance U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q4_latch (in view: work.MMU(rtl)), output net ALTSTKZP (in view: work.MMU(rtl))
+    net        ALTSTKZP
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q4_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q4_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q4_latch/O
+    net        ALTSTKZP
+@W: BN137 :|Found combinational loop during mapping at net FLG2
+5) instance U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q2_latch (in view: work.MMU(rtl)), output net FLG2 (in view: work.MMU(rtl))
+    net        FLG2
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q2_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q2_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q2_latch/O
+    net        FLG2
+@W: BN137 :|Found combinational loop during mapping at net FLG1
+6) instance U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q1_latch (in view: work.MMU(rtl)), output net FLG1 (in view: work.MMU(rtl))
+    net        FLG1
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q1_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q1_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q1_latch/O
+    net        FLG1
+@W: BN137 :|Found combinational loop during mapping at net EN80VID
+7) instance U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q0_latch (in view: work.MMU(rtl)), output net EN80VID (in view: work.MMU(rtl))
+    net        EN80VID
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q0_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q0_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q0_latch/O
+    net        EN80VID
+@W: BN137 :|Found combinational loop during mapping at net HIRES
+8) instance U_SOFT_SWITCHES_C05X.HIRES_latch (in view: work.MMU(rtl)), output net HIRES (in view: work.MMU(rtl))
+    net        HIRES
+    input  pin U_SOFT_SWITCHES_C05X.HIRES_latch/I1
+    instance   U_SOFT_SWITCHES_C05X.HIRES_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C05X.HIRES_latch/O
+    net        HIRES
+@W: BN137 :|Found combinational loop during mapping at net PG2
+9) instance U_SOFT_SWITCHES_C05X.PG2_latch (in view: work.MMU(rtl)), output net PG2 (in view: work.MMU(rtl))
+    net        PG2
+    input  pin U_SOFT_SWITCHES_C05X.PG2_latch/I1
+    instance   U_SOFT_SWITCHES_C05X.PG2_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C05X.PG2_latch/O
+    net        PG2
+End of loops
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+@N: MT611 :|Automatically generated clock DRAM_HOLD_TIME|D_Q3_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 10 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 11 clock pin(s) of sequential element(s)
+7 instances converted, 11 sequential instances remain driven by gated/generated clocks
+
+=================================== Non-Gated/Non-Generated Clocks ====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                
+-------------------------------------------------------------------------------------------------------
+@K:CKID0002       PHI_0_ibuf          SB_IO                  10         U_MMU_SOFT_SWITCHES_C08X.WRPROT
+=======================================================================================================
+============================================================================================================ Gated/Generated Clocks ============================================================================================================
+Clock Tree ID     Driving Element                   Drive Element Type     Fanout     Sample Instance             Explanation                                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       U_DELAY_OSCILLATOR.U_SB_HFOSC     SB_HFOSC               11         U_MMU_HOLD_TIME.D_PHI_0     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 141MB)
+
+Writing Analyst data base C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU.edf
+L-2016.09L+ice40
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Warning: Found 9 combinational loops!
+@W: BN137 :|Found combinational loop during mapping at net UMMU_INTERNALS.INTC8EN_INT
+1) instance INTC8EN_INT_latch (in view: work.MMU_INTERNALS(netlist)), output net INTC8EN_INT (in view: work.MMU_INTERNALS(netlist))
+    net        UMMU_INTERNALS.G_37
+    input  pin UMMU_INTERNALS.INTC8EN_INT_latch/I1
+    instance   UMMU_INTERNALS.INTC8EN_INT_latch (cell SB_LUT4)
+    output pin UMMU_INTERNALS.INTC8EN_INT_latch/O
+    net        U_ADDR_DECODER.MMU_1_J5.G_37
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.INTC300_N
+2) instance Q5_latch (in view: work.LATCH_9334(netlist)), output net INTC300_N (in view: work.LATCH_9334(netlist))
+    net        U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.G_36
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch/O
+    net        U_ADDR_DECODER.MMU_1_J5.G_36
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.PENIO_N
+3) instance Q3_latch (in view: work.LATCH_9334(netlist)), output net PENIO_N (in view: work.LATCH_9334(netlist))
+    net        U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.G_35
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q3_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q3_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q3_latch/O
+    net        U_ADDR_DECODER.MMU_1_J5.G_35
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.EN80VID
+4) instance Q0_latch (in view: work.LATCH_9334(netlist)), output net EN80VID (in view: work.LATCH_9334(netlist))
+    net        U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.G_41
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q0_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q0_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q0_latch/O
+    net        U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.EN80VID
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C05X.HIRES
+5) instance HIRES_latch (in view: work.SOFT_SWITCHES_C05X(netlist)), output net HIRES (in view: work.SOFT_SWITCHES_C05X(netlist))
+    net        U_SOFT_SWITCHES_C05X.G_42
+    input  pin U_SOFT_SWITCHES_C05X.HIRES_latch/I1
+    instance   U_SOFT_SWITCHES_C05X.HIRES_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C05X.HIRES_latch/O
+    net        U_SOFT_SWITCHES_C05X.HIRES
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.ALTSTKZP
+6) instance Q4_latch (in view: work.LATCH_9334(netlist)), output net ALTSTKZP (in view: work.LATCH_9334(netlist))
+    net        U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.G_38
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q4_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q4_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q4_latch/O
+    net        U_ADDR_DECODER.MMU_1_J5.G_38
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.FLG2
+7) instance Q2_latch (in view: work.LATCH_9334(netlist)), output net FLG2 (in view: work.LATCH_9334(netlist))
+    net        U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.G_39
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q2_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q2_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q2_latch/O
+    net        U_ADDR_DECODER.MMU_1_J5.G_39
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.FLG1
+8) instance Q1_latch (in view: work.LATCH_9334(netlist)), output net FLG1 (in view: work.LATCH_9334(netlist))
+    net        U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.G_40
+    input  pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q1_latch/I1
+    instance   U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q1_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q1_latch/O
+    net        U_ADDR_DECODER.MMU_1_J5.G_40
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C05X.PG2
+9) instance PG2_latch (in view: work.SOFT_SWITCHES_C05X(netlist)), output net PG2 (in view: work.SOFT_SWITCHES_C05X(netlist))
+    net        U_SOFT_SWITCHES_C05X.G_43
+    input  pin U_SOFT_SWITCHES_C05X.PG2_latch/I1
+    instance   U_SOFT_SWITCHES_C05X.PG2_latch (cell SB_LUT4)
+    output pin U_SOFT_SWITCHES_C05X.PG2_latch/O
+    net        U_SOFT_SWITCHES_C05X.PG2
+End of loops
+@W: MT246 :"c:\dev\apple_iie_mmu_3v3\firmware\custom\mmu.vhdl":684:4:684:13|Blackbox SB_IO_OD is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock MMU|PHI_0 with period 5.65ns. Please declare a user-defined clock on object "p:PHI_0"
+@W: MT420 |Found inferred clock DELAY_OSCILLATOR|DELAY_CLK_inferred_clock with period 20.83ns. Please declare a user-defined clock on object "n:U_DELAY_OSCILLATOR.DELAY_CLK"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Jan 11 14:11:36 2025
+#
+
+
+Top view:               MMU
+Requested Frequency:    48.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -14.446
+
+                                              Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock                                Frequency     Frequency     Period        Period        Slack      Type         Group                
+---------------------------------------------------------------------------------------------------------------------------------------------------
+DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     48.0 MHz      215.2 MHz     20.830        4.646         16.184     inferred     Autoconstr_clkgroup_0
+MMU|PHI_0                                     177.0 MHz     150.4 MHz     5.650         6.648         -0.997     inferred     Autoconstr_clkgroup_1
+System                                        1.0 MHz       NA            1000.000      NA            NA         system       system_clkgroup      
+===================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                   Ending                                     |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DELAY_OSCILLATOR|DELAY_CLK_inferred_clock  System                                     |  20.830      14.433   |  No paths    -      |  No paths    -      |  No paths    -    
+DELAY_OSCILLATOR|DELAY_CLK_inferred_clock  DELAY_OSCILLATOR|DELAY_CLK_inferred_clock  |  20.830      16.184   |  No paths    -      |  No paths    -      |  No paths    -    
+MMU|PHI_0                                  System                                     |  5.650       -14.446  |  No paths    -      |  No paths    -      |  No paths    -    
+MMU|PHI_0                                  MMU|PHI_0                                  |  5.650       -0.997   |  No paths    -      |  No paths    -      |  No paths    -    
+==============================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: DELAY_OSCILLATOR|DELAY_CLK_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                  Starting                                                                                       Arrival           
+Instance                                                          Reference                                     Type        Pin     Net                          Time        Slack 
+                                                                  Clock                                                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+U_MMU_HOLD_TIME.D_PHI_0                                           DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF      Q       D_PHI_0                      0.796       14.433
+U_MMU_RA.MMU_RA_MUX.RA_ENABLE_N                                   DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFFR     Q       RA_ENABLE_N                  0.796       16.184
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.D_Q3                         DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF      Q       D_Q3                         0.796       16.215
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.Q3_SHIFT_REGISTER[1]         DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF      Q       D_Q3_0                       0.796       16.308
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER[0]     DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF      Q       PRAS_N_SHIFT_REGISTER[0]     0.796       17.311
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER[1]     DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF      Q       PRAS_N_SHIFT_REGISTER[1]     0.796       17.311
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER[2]     DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF      Q       PRAS_N_SHIFT_REGISTER[2]     0.796       17.311
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.Q3_SHIFT_REGISTER[0]         DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF      Q       Q3_SHIFT_REGISTER[0]         0.796       17.311
+U_MMU_HOLD_TIME.SHIFT_REGISTER[0]                                 DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF      Q       SHIFT_REGISTER[0]            0.796       17.311
+U_MMU_HOLD_TIME.SHIFT_REGISTER[1]                                 DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF      Q       SHIFT_REGISTER[1]            0.796       17.311
+===================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                  Starting                                                                                          Required           
+Instance                                                          Reference                                     Type         Pin       Net                          Time         Slack 
+                                                                  Clock                                                                                                                
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+U_ROMEN1_N                                                        DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_IO_OD     DOUT0     ROMEN1_N_INT_0_i             20.830       14.433
+U_MMU_HOLD_TIME.D_PHI_0                                           DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF       D         SHIFT_REGISTER[1]            20.675       17.311
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.D_Q3                         DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF       D         D_Q3_0                       20.675       17.311
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.D_RAS_N                      DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF       D         PRAS_N_SHIFT_REGISTER[2]     20.675       17.311
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER[1]     DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF       D         PRAS_N_SHIFT_REGISTER[0]     20.675       17.311
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER[2]     DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF       D         PRAS_N_SHIFT_REGISTER[1]     20.675       17.311
+U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.Q3_SHIFT_REGISTER[1]         DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF       D         Q3_SHIFT_REGISTER[0]         20.675       17.311
+U_MMU_HOLD_TIME.SHIFT_REGISTER[1]                                 DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     SB_DFF       D         SHIFT_REGISTER[0]            20.675       17.311
+=======================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      20.830
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         20.830
+
+    - Propagation time:                      6.396
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 14.433
+
+    Number of logic level(s):                1
+    Starting point:                          U_MMU_HOLD_TIME.D_PHI_0 / Q
+    Ending point:                            U_ROMEN1_N / DOUT0
+    The start point is clocked by            DELAY_OSCILLATOR|DELAY_CLK_inferred_clock [rising] on pin C
+    The end   point is clocked by            System [rising]
+
+Instance / Net                           Pin       Pin               Arrival     No. of    
+Name                        Type         Name      Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+U_MMU_HOLD_TIME.D_PHI_0     SB_DFF       Q         Out     0.796     0.796       -         
+D_PHI_0                     Net          -         -       1.599     -           2         
+U_MMU_ROMEN.g0_2            SB_LUT4      I0        In      -         2.395       -         
+U_MMU_ROMEN.g0_2            SB_LUT4      O         Out     0.661     3.056       -         
+ROMEN1_N_INT_0_i            Net          -         -       3.340     -           1         
+U_ROMEN1_N                  SB_IO_OD     DOUT0     In      -         6.396       -         
+===========================================================================================
+Total path delay (propagation time + setup) of 6.396 is 1.457(22.8%) logic and 4.939(77.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: MMU|PHI_0
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                         Starting                                           Arrival            
+Instance                                 Reference     Type        Pin     Net              Time        Slack  
+                                         Clock                                                                 
+---------------------------------------------------------------------------------------------------------------
+U_MMU_MPON.M5                            MMU|PHI_0     SB_DFF      Q       M5               0.796       -14.446
+U_MMU_MPON.DELTA_01XX_N_ret              MMU|PHI_0     SB_DFF      Q       MPON_N_0_9_0     0.796       -12.414
+U_MMU_SOFT_SWITCHES_C08X.BANK2           MMU|PHI_0     SB_DFFS     Q       BANK2            0.796       -4.532 
+U_MMU_SOFT_SWITCHES_C08X.RDRAM           MMU|PHI_0     SB_DFFR     Q       RDRAM            0.796       -2.572 
+U_MMU_SOFT_SWITCHES_C08X.RDROM           MMU|PHI_0     SB_DFFS     Q       RDROM            0.796       -2.572 
+U_MMU_SOFT_SWITCHES_C08X.OUT_FST_ACC     MMU|PHI_0     SB_DFFR     Q       OUT_FST_ACC      0.796       -0.997 
+U_MMU_SOFT_SWITCHES_C08X.OUT_WREN        MMU|PHI_0     SB_DFFS     Q       OUT_WREN         0.796       -0.925 
+U_MMU_SOFT_SWITCHES_C08X.WRPROT          MMU|PHI_0     SB_DFFR     Q       WRPROT           0.796       1.128  
+U_MMU_MPON.M5_0                          MMU|PHI_0     SB_DFF      Q       M5_0             0.796       2.132  
+===============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                         Starting                                                  Required            
+Instance                                 Reference     Type         Pin       Net                  Time         Slack  
+                                         Clock                                                                         
+-----------------------------------------------------------------------------------------------------------------------
+U_ROMEN1_N                               MMU|PHI_0     SB_IO_OD     DOUT0     ROMEN1_N_INT_0_i     5.650        -14.446
+U_MD7                                    MMU|PHI_0     SB_IO_OD     DOUT0     UNGATED_MD7          5.650        -12.217
+U_MMU_SOFT_SWITCHES_C08X.WRPROT          MMU|PHI_0     SB_DFFR      D         WRPROT_0             5.495        -0.997 
+U_MMU_SOFT_SWITCHES_C08X.OUT_WREN        MMU|PHI_0     SB_DFFS      D         OUT_WREN_0           5.495        -0.956 
+U_MMU_SOFT_SWITCHES_C08X.BANK2           MMU|PHI_0     SB_DFFS      D         BANK2_0              5.495        1.004  
+U_MMU_MPON.DELTA_01XX_N_ret              MMU|PHI_0     SB_DFF       D         MPON_N_0_9_reti      5.495        1.035  
+U_MMU_SOFT_SWITCHES_C08X.OUT_FST_ACC     MMU|PHI_0     SB_DFFR      D         OUT_FST_ACC_0        5.495        1.035  
+U_MMU_SOFT_SWITCHES_C08X.RDRAM           MMU|PHI_0     SB_DFFR      D         RDRAM_0              5.495        1.128  
+U_MMU_SOFT_SWITCHES_C08X.RDROM           MMU|PHI_0     SB_DFFS      D         RDROM_0              5.495        1.128  
+U_MMU_MPON.M5                            MMU|PHI_0     SB_DFF       D         M5_0                 5.495        2.132  
+=======================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.650
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.650
+
+    - Propagation time:                      20.097
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -14.446
+
+    Number of logic level(s):                8
+    Starting point:                          U_MMU_MPON.M5 / Q
+    Ending point:                            U_ROMEN1_N / DOUT0
+    The start point is clocked by            MMU|PHI_0 [rising] on pin C
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                        Pin       Pin               Arrival     No. of    
+Name                                     Type         Name      Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+U_MMU_MPON.M5                            SB_DFF       Q         Out     0.796     0.796       -         
+M5                                       Net          -         -       1.599     -           2         
+U_MMU_MPON.M5_RNI7D8U1                   SB_LUT4      I1        In      -         2.395       -         
+U_MMU_MPON.M5_RNI7D8U1                   SB_LUT4      O         Out     0.589     2.984       -         
+MPON_N_0_a2_4_4                          Net          -         -       1.371     -           1         
+U_MMU_MPON.M5_RNIA8VF2                   SB_LUT4      I2        In      -         4.355       -         
+U_MMU_MPON.M5_RNIA8VF2                   SB_LUT4      O         Out     0.558     4.913       -         
+MPON_N_0_a2_4_6                          Net          -         -       1.371     -           1         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614     SB_LUT4      I0        In      -         6.284       -         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614     SB_LUT4      O         Out     0.661     6.946       -         
+MPON_N_0                                 Net          -         -       1.371     -           18        
+UMMU_INTERNALS.RSTC8_N_i                 SB_LUT4      I1        In      -         8.317       -         
+UMMU_INTERNALS.RSTC8_N_i                 SB_LUT4      O         Out     0.589     8.906       -         
+N_61                                     Net          -         -       1.371     -           1         
+UMMU_INTERNALS.INTC8EN_INT_latch         SB_LUT4      I0        In      -         10.277      -         
+UMMU_INTERNALS.INTC8EN_INT_latch         SB_LUT4      O         Out     0.661     10.938      -         
+INTC8EN_INT                              Net          -         -       1.371     -           4         
+U_MMU_ROMEN.g0_i_o3_0                    SB_LUT4      I2        In      -         12.309      -         
+U_MMU_ROMEN.g0_i_o3_0                    SB_LUT4      O         Out     0.558     12.868      -         
+N_8                                      Net          -         -       1.371     -           1         
+U_MMU_ROMEN.g0_i_m3                      SB_LUT4      I1        In      -         14.239      -         
+U_MMU_ROMEN.g0_i_m3                      SB_LUT4      O         Out     0.589     14.828      -         
+N_9_0                                    Net          -         -       1.371     -           1         
+U_MMU_ROMEN.g0_2                         SB_LUT4      I1        In      -         16.199      -         
+U_MMU_ROMEN.g0_2                         SB_LUT4      O         Out     0.558     16.757      -         
+ROMEN1_N_INT_0_i                         Net          -         -       3.340     -           1         
+U_ROMEN1_N                               SB_IO_OD     DOUT0     In      -         20.097      -         
+========================================================================================================
+Total path delay (propagation time + setup) of 20.097 is 5.561(27.7%) logic and 14.536(72.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      5.650
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.650
+
+    - Propagation time:                      18.064
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -12.414
+
+    Number of logic level(s):                7
+    Starting point:                          U_MMU_MPON.DELTA_01XX_N_ret / Q
+    Ending point:                            U_ROMEN1_N / DOUT0
+    The start point is clocked by            MMU|PHI_0 [rising] on pin C
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                        Pin       Pin               Arrival     No. of    
+Name                                     Type         Name      Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+U_MMU_MPON.DELTA_01XX_N_ret              SB_DFF       Q         Out     0.796     0.796       -         
+MPON_N_0_9_0                             Net          -         -       1.599     -           1         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI2HQP      SB_LUT4      I2        In      -         2.395       -         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI2HQP      SB_LUT4      O         Out     0.558     2.953       -         
+MPON_N_0_a2_4_2                          Net          -         -       1.371     -           1         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614     SB_LUT4      I1        In      -         4.324       -         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614     SB_LUT4      O         Out     0.589     4.913       -         
+MPON_N_0                                 Net          -         -       1.371     -           18        
+UMMU_INTERNALS.RSTC8_N_i                 SB_LUT4      I1        In      -         6.284       -         
+UMMU_INTERNALS.RSTC8_N_i                 SB_LUT4      O         Out     0.589     6.873       -         
+N_61                                     Net          -         -       1.371     -           1         
+UMMU_INTERNALS.INTC8EN_INT_latch         SB_LUT4      I0        In      -         8.244       -         
+UMMU_INTERNALS.INTC8EN_INT_latch         SB_LUT4      O         Out     0.661     8.906       -         
+INTC8EN_INT                              Net          -         -       1.371     -           4         
+U_MMU_ROMEN.g0_i_o3_0                    SB_LUT4      I2        In      -         10.277      -         
+U_MMU_ROMEN.g0_i_o3_0                    SB_LUT4      O         Out     0.558     10.835      -         
+N_8                                      Net          -         -       1.371     -           1         
+U_MMU_ROMEN.g0_i_m3                      SB_LUT4      I1        In      -         12.206      -         
+U_MMU_ROMEN.g0_i_m3                      SB_LUT4      O         Out     0.589     12.795      -         
+N_9_0                                    Net          -         -       1.371     -           1         
+U_MMU_ROMEN.g0_2                         SB_LUT4      I1        In      -         14.166      -         
+U_MMU_ROMEN.g0_2                         SB_LUT4      O         Out     0.558     14.724      -         
+ROMEN1_N_INT_0_i                         Net          -         -       3.340     -           1         
+U_ROMEN1_N                               SB_IO_OD     DOUT0     In      -         18.064      -         
+========================================================================================================
+Total path delay (propagation time + setup) of 18.064 is 4.899(27.1%) logic and 13.165(72.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      5.650
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.650
+
+    - Propagation time:                      17.930
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -12.280
+
+    Number of logic level(s):                7
+    Starting point:                          U_MMU_MPON.M5 / Q
+    Ending point:                            U_ROMEN1_N / DOUT0
+    The start point is clocked by            MMU|PHI_0 [rising] on pin C
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                     Pin       Pin               Arrival     No. of    
+Name                                                  Type         Name      Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------
+U_MMU_MPON.M5                                         SB_DFF       Q         Out     0.796     0.796       -         
+M5                                                    Net          -         -       1.599     -           2         
+U_MMU_MPON.M5_RNI7D8U1                                SB_LUT4      I1        In      -         2.395       -         
+U_MMU_MPON.M5_RNI7D8U1                                SB_LUT4      O         Out     0.589     2.984       -         
+MPON_N_0_a2_4_4                                       Net          -         -       1.371     -           1         
+U_MMU_MPON.M5_RNIA8VF2                                SB_LUT4      I2        In      -         4.355       -         
+U_MMU_MPON.M5_RNIA8VF2                                SB_LUT4      O         Out     0.558     4.913       -         
+MPON_N_0_a2_4_6                                       Net          -         -       1.371     -           1         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614                  SB_LUT4      I0        In      -         6.284       -         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614                  SB_LUT4      O         Out     0.661     6.946       -         
+MPON_N_0                                              Net          -         -       1.371     -           18        
+U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch     SB_LUT4      I3        In      -         8.317       -         
+U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch     SB_LUT4      O         Out     0.424     8.741       -         
+INTC300_N                                             Net          -         -       1.371     -           6         
+U_MMU_ROMEN.g0_i_o3_0                                 SB_LUT4      I1        In      -         10.111      -         
+U_MMU_ROMEN.g0_i_o3_0                                 SB_LUT4      O         Out     0.589     10.701      -         
+N_8                                                   Net          -         -       1.371     -           1         
+U_MMU_ROMEN.g0_i_m3                                   SB_LUT4      I1        In      -         12.072      -         
+U_MMU_ROMEN.g0_i_m3                                   SB_LUT4      O         Out     0.589     12.661      -         
+N_9_0                                                 Net          -         -       1.371     -           1         
+U_MMU_ROMEN.g0_2                                      SB_LUT4      I1        In      -         14.032      -         
+U_MMU_ROMEN.g0_2                                      SB_LUT4      O         Out     0.558     14.590      -         
+ROMEN1_N_INT_0_i                                      Net          -         -       3.340     -           1         
+U_ROMEN1_N                                            SB_IO_OD     DOUT0     In      -         17.930      -         
+=====================================================================================================================
+Total path delay (propagation time + setup) of 17.930 is 4.765(26.6%) logic and 13.165(73.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      5.650
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.650
+
+    - Propagation time:                      17.868
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -12.217
+
+    Number of logic level(s):                7
+    Starting point:                          U_MMU_MPON.M5 / Q
+    Ending point:                            U_MD7 / DOUT0
+    The start point is clocked by            MMU|PHI_0 [rising] on pin C
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                     Pin       Pin               Arrival     No. of    
+Name                                                  Type         Name      Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------
+U_MMU_MPON.M5                                         SB_DFF       Q         Out     0.796     0.796       -         
+M5                                                    Net          -         -       1.599     -           2         
+U_MMU_MPON.M5_RNI7D8U1                                SB_LUT4      I1        In      -         2.395       -         
+U_MMU_MPON.M5_RNI7D8U1                                SB_LUT4      O         Out     0.589     2.984       -         
+MPON_N_0_a2_4_4                                       Net          -         -       1.371     -           1         
+U_MMU_MPON.M5_RNIA8VF2                                SB_LUT4      I2        In      -         4.355       -         
+U_MMU_MPON.M5_RNIA8VF2                                SB_LUT4      O         Out     0.558     4.913       -         
+MPON_N_0_a2_4_6                                       Net          -         -       1.371     -           1         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614                  SB_LUT4      I0        In      -         6.284       -         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614                  SB_LUT4      O         Out     0.661     6.946       -         
+MPON_N_0                                              Net          -         -       1.371     -           18        
+U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch     SB_LUT4      I3        In      -         8.317       -         
+U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q5_latch     SB_LUT4      O         Out     0.424     8.741       -         
+INTC300_N                                             Net          -         -       1.371     -           6         
+U_ADDR_DECODER.MMU_1_J5.g0_11_m4                      SB_LUT4      I1        In      -         10.111      -         
+U_ADDR_DECODER.MMU_1_J5.g0_11_m4                      SB_LUT4      O         Out     0.558     10.670      -         
+N_4                                                   Net          -         -       1.371     -           1         
+U_ADDR_DECODER.MMU_1_J5.g0_11_a5                      SB_LUT4      I1        In      -         12.041      -         
+U_ADDR_DECODER.MMU_1_J5.g0_11_a5                      SB_LUT4      O         Out     0.558     12.599      -         
+N_8_0                                                 Net          -         -       1.371     -           1         
+U_ADDR_DECODER.MMU_1_J5.g0_11                         SB_LUT4      I1        In      -         13.970      -         
+U_ADDR_DECODER.MMU_1_J5.g0_11                         SB_LUT4      O         Out     0.558     14.528      -         
+UNGATED_MD7                                           Net          -         -       3.340     -           1         
+U_MD7                                                 SB_IO_OD     DOUT0     In      -         17.868      -         
+=====================================================================================================================
+Total path delay (propagation time + setup) of 17.868 is 4.703(26.3%) logic and 13.165(73.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.650
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.650
+
+    - Propagation time:                      17.826
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -12.176
+
+    Number of logic level(s):                7
+    Starting point:                          U_MMU_MPON.M5 / Q
+    Ending point:                            U_MD7 / DOUT0
+    The start point is clocked by            MMU|PHI_0 [rising] on pin C
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                     Pin       Pin               Arrival     No. of    
+Name                                                  Type         Name      Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------
+U_MMU_MPON.M5                                         SB_DFF       Q         Out     0.796     0.796       -         
+M5                                                    Net          -         -       1.599     -           2         
+U_MMU_MPON.M5_RNI7D8U1                                SB_LUT4      I1        In      -         2.395       -         
+U_MMU_MPON.M5_RNI7D8U1                                SB_LUT4      O         Out     0.589     2.984       -         
+MPON_N_0_a2_4_4                                       Net          -         -       1.371     -           1         
+U_MMU_MPON.M5_RNIA8VF2                                SB_LUT4      I2        In      -         4.355       -         
+U_MMU_MPON.M5_RNIA8VF2                                SB_LUT4      O         Out     0.558     4.913       -         
+MPON_N_0_a2_4_6                                       Net          -         -       1.371     -           1         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614                  SB_LUT4      I0        In      -         6.284       -         
+U_MMU_MPON.DELTA_01XX_N_ret_RNI7L614                  SB_LUT4      O         Out     0.661     6.946       -         
+MPON_N_0                                              Net          -         -       1.371     -           18        
+U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q1_latch     SB_LUT4      I3        In      -         8.317       -         
+U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.Q1_latch     SB_LUT4      O         Out     0.424     8.741       -         
+FLG1                                                  Net          -         -       1.371     -           3         
+U_ADDR_DECODER.MMU_1_J5.g0_11_m4_1                    SB_LUT4      I2        In      -         10.111      -         
+U_ADDR_DECODER.MMU_1_J5.g0_11_m4_1                    SB_LUT4      O         Out     0.558     10.670      -         
+N_6                                                   Net          -         -       1.371     -           1         
+U_ADDR_DECODER.MMU_1_J5.g0_11_a5                      SB_LUT4      I2        In      -         12.041      -         
+U_ADDR_DECODER.MMU_1_J5.g0_11_a5                      SB_LUT4      O         Out     0.517     12.557      -         
+N_8_0                                                 Net          -         -       1.371     -           1         
+U_ADDR_DECODER.MMU_1_J5.g0_11                         SB_LUT4      I1        In      -         13.928      -         
+U_ADDR_DECODER.MMU_1_J5.g0_11                         SB_LUT4      O         Out     0.558     14.486      -         
+UNGATED_MD7                                           Net          -         -       3.340     -           1         
+U_MD7                                                 SB_IO_OD     DOUT0     In      -         17.826      -         
+=====================================================================================================================
+Total path delay (propagation time + setup) of 17.826 is 4.662(26.1%) logic and 13.165(73.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+---------------------------------------
+Resource Usage Report for MMU 
+
+Mapping to part: ice5lp1ksg48
+Cell usage:
+GND             19 uses
+SB_DFF          13 uses
+SB_DFFER        1 use
+SB_DFFR         4 uses
+SB_DFFS         3 uses
+SB_GB           1 use
+SB_HFOSC        1 use
+SB_IO_OD        3 uses
+VCC             19 uses
+SB_LUT4         119 uses
+
+I/O ports: 38
+I/O primitives: 38
+SB_IO          38 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   21 (2%)
+Total load per clock:
+   DELAY_OSCILLATOR|DELAY_CLK_inferred_clock: 11
+   MMU|PHI_0: 1
+
+@S |Mapping Summary:
+Total  LUTs: 119 (11%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 119 = 119 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jan 11 14:11:36 2025
+
+###########################################################]

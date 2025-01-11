@@ -1,0 +1,13 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt   -part iCE5LP1K  -package SG48    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synlog\report\MMU_premap.xml  -oedif  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU.edf  -conchk_prepass  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU_cck.rpt   -autoconstraint  -freq 1.000   C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_prem.srd  -qsap  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU.sap  -devicelib  C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v  -ologparam  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\syntmp\MMU.plg  -osyn  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_prem.srd  -prjdir  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\  -prjname  MMU_syn  -log  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synlog\MMU_premap.srr 
+rc:1 success:1 runtime:1
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU.edf|io:o|time:0|size:0|exec:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU_cck.rpt|io:o|time:1736622695|size:3615|exec:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_mult.srs|io:i|time:1736622695|size:10863|exec:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_prem.srd|io:o|time:1736622695|size:46910|exec:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU.sap|io:o|time:1736622695|size:3636|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v|io:i|time:1731014826|size:224837|exec:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\syntmp\MMU.plg|io:o|time:1736622695|size:0|exec:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_prem.srd|io:o|time:1736622695|size:46910|exec:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synlog\MMU_premap.srr|io:o|time:1736622695|size:7229|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\m_generic.exe|io:i|time:1731014824|size:17853440|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe|io:i|time:1731014824|size:32355840|exec:1
