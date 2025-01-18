@@ -1,0 +1,21 @@
+####---- CreateClock list ----5
+create_clock  -period 1000.00 -waveform {0.00 500.00} -name {MMU|PHI_0} [get_ports {PHI_0}] 
+create_clock  -period 1000.00 -waveform {0.00 500.00} -name {MMU|DELAY_CLK} [get_nets {DELAY_CLK}] 
+create_clock  -period 1000.00 -waveform {0.00 500.00} -name {MMU|DEV0_N} [get_nets {DEV0_N}] 
+create_clock  -period 1000.00 -waveform {0.00 500.00} -name {MMU|\U_MMU_RA/MMU_RA_MUX/D_Q3} [get_nets {U_MMU_RA.MMU_RA_MUX.D_Q3}] 
+create_clock  -period 20.83 -name {DELAY_CLK} [get_nets {DELAY_CLK}] 
+
+####---- SetFalsePath list ----12
+set_false_path  -from [get_clocks {MMU|DEV0_N}]  -to [get_clocks {MMU|DELAY_CLK}]
+set_false_path  -from [get_clocks {MMU|PHI_0}]  -to [get_clocks {MMU|DEV0_N}]
+set_false_path  -from [get_clocks {MMU|DELAY_CLK}]  -to [get_clocks {MMU|DEV0_N}]
+set_false_path  -from [get_clocks {MMU|\U_MMU_RA/MMU_RA_MUX/D_Q3}]  -to [get_clocks {MMU|DEV0_N}]
+set_false_path  -from [get_clocks {MMU|DELAY_CLK}]  -to [get_clocks {MMU|\U_MMU_RA/MMU_RA_MUX/D_Q3}]
+set_false_path  -from [get_clocks {MMU|DEV0_N}]  -to [get_clocks {MMU|PHI_0}]
+set_false_path  -from [get_clocks {MMU|PHI_0}]  -to [get_clocks {MMU|DELAY_CLK}]
+set_false_path  -from [get_clocks {MMU|PHI_0}]  -to [get_clocks {MMU|\U_MMU_RA/MMU_RA_MUX/D_Q3}]
+set_false_path  -from [get_clocks {MMU|DELAY_CLK}]  -to [get_clocks {MMU|PHI_0}]
+set_false_path  -from [get_clocks {MMU|\U_MMU_RA/MMU_RA_MUX/D_Q3}]  -to [get_clocks {MMU|PHI_0}]
+set_false_path  -from [get_clocks {MMU|DEV0_N}]  -to [get_clocks {MMU|\U_MMU_RA/MMU_RA_MUX/D_Q3}]
+set_false_path  -from [get_clocks {MMU|\U_MMU_RA/MMU_RA_MUX/D_Q3}]  -to [get_clocks {MMU|DELAY_CLK}]
+

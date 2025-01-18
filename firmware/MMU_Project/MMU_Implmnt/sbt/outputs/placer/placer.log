@@ -1,0 +1,212 @@
+* ******************************************************************************
+
+* iCEcube Placer
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:55:50
+
+* File Generated:     Jan 11 2025 14:15:30
+
+* Purpose:            
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt\sbt\netlist\oadb-MMU --outdir C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt\sbt\outputs\placer --device-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40T04.dev --package SG48 --deviceMarketName iCE5LP1K --sdc-file C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40TH4K.lib --effort_level std --out-sdc-file C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt\sbt\outputs\placer\MMU_pl.sdc
+I2004: Option and Settings Summary
+=============================================================
+Device file          - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40T04.dev
+Package              - SG48
+Design database      - C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt\sbt\netlist\oadb-MMU
+SDC file             - C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt\sbt\outputs\placer
+Timing library       - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40TH4K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt\sbt\netlist\oadb-MMU/BFPGA_DESIGN_ep
+I2065: Reading device file : C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40T04.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	103
+    Number of DFFs      	:	21
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	0
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	34
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+    Number of I2Cs      	:	0
+    Number of SPIs      	:	0
+    Number of DSPs     	:	0
+    Number of SBIOODs     	:	3
+    Number of LEDDRVs     	:	0
+    Number of RGBDRVs     	:	0
+    Number of LEDDIPs     	:	0
+    Number of IRDRVs     	:	0
+    Number of LFOSCs     	:	0
+    Number of HFOSCs     	:	1
+    LUT utilization    	:	103/1100
+
+
+Phase 1
+I2077: Start design legalization
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	13
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
+    Number of feedthru LUTs inserted to legalize global signals    	:	0
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	7
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	18
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	38
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.0 (sec)
+
+Phase 3
+Info-1409: Inferred clock at U_DELAY_OSCILLATOR.U_SB_HFOSC/CLKHF
+SDC-Info-1101: Duty cycle not specified for clock. Assuming 50 percent dutycycle.
+Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "U_MMU_MD7.n2707_bdd_4_lut_LC_48", in the clock network. Converting the timing arc to positive-unate
+Warning-1034: Found non-unate timing arc, from pin "in2" to pin "lcout" of instance "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i629_4_lut_LC_91", in the clock network. Converting the timing arc to positive-unate
+Warning-1034: Found non-unate timing arc, from pin "in2" to pin "lcout" of instance "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i633_4_lut_LC_93", in the clock network. Converting the timing arc to positive-unate
+Warning-1035: Removing timing arc from pin "UMMU_INTERNALS.i1_4_lut_LC_6/in0" to pin "UMMU_INTERNALS.i1_4_lut_LC_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i614_4_lut_LC_89/in0" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i614_4_lut_LC_89/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i626_4_lut_LC_90/in1" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i626_4_lut_LC_90/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i629_4_lut_LC_91/in0" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i629_4_lut_LC_91/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i631_4_lut_LC_92/in0" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i631_4_lut_LC_92/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i633_4_lut_LC_93/in0" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i633_4_lut_LC_93/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i636_4_lut_LC_94/in1" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i636_4_lut_LC_94/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C05X.i616_4_lut_LC_98/in0" to pin "U_SOFT_SWITCHES_C05X.i616_4_lut_LC_98/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C05X.i619_4_lut_LC_99/in1" to pin "U_SOFT_SWITCHES_C05X.i619_4_lut_LC_99/lcout" to break the combinatorial loop
+
+Design Statistics after Packing
+    Number of LUTs      	:	142
+    Number of DFFs      	:	37
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	0
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	37
+        LUT, DFF and CARRY	:	0
+    Combinational LogicCells
+        Only LUT         	:	105
+        CARRY Only       	:	0
+        LUT with CARRY   	:	0
+    LogicCells                  :	142
+    PLBs                        :	41/440
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	35/35
+    PLLs                        :	0/1
+    I2Cs                        :	0/1
+    SPIs                        :	0/1
+    DSPs                        :	0/2
+    SBIOODs                     :	3/4
+    LEDDRVs                     :	0/1
+    RGBDRVs                     :	0/1
+    IRDRVs                      :	0/1
+    LEDDIPs                     :	0/1
+    LFOSCs                      :	0/1
+    HFOSCs                      :	1/1
+
+
+I2088: Phase 3, elapsed time : 0.4 (sec)
+
+Phase 4
+I2088: Phase 4, elapsed time : 0.1 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 0.0 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 5.9 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	142
+    Number of DFFs      	:	37
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	0
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	34
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+    Number of I2Cs      	:	0
+    Number of SPIs      	:	0
+    Number of DSPs     	:	0
+    Number of SBIOODs     	:	3
+    Number of LEDDRVs     	:	0
+    Number of RGBDRVs     	:	0
+    Number of LEDDIPs     	:	0
+    Number of IRDRVs     	:	0
+    Number of LFOSCs     	:	0
+    Number of HFOSCs     	:	1
+
+Device Utilization Summary
+    LogicCells                  :	142
+    PLBs                        :	66/440
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	35/35
+    PLLs                        :	0/1
+    I2Cs                        :	0/1
+    SPIs                        :	0/1
+    DSPs                        :	0/2
+    SBIOODs                     :	3/4
+    LEDDRVs                     :	0/1
+    RGBDRVs                     :	0/1
+    IRDRVs                      :	0/1
+    LEDDIPs                     :	0/1
+    LFOSCs                      :	0/1
+    HFOSCs                      :	1/1
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 6
+Clock: DELAY_CLK | Frequency: N/A | Target: 48.01 MHz
+Clock: MMU|DELAY_CLK | Frequency: N/A | Target: 1.00 MHz
+Clock: MMU|DEV0_N | Frequency: 312.03 MHz | Target: 1.00 MHz
+Clock: MMU|PHI_0 | Frequency: 338.62 MHz | Target: 1.00 MHz
+Clock: MMU|\U_MMU_RA/MMU_RA_MUX/D_Q3 | Frequency: 289.32 MHz | Target: 1.00 MHz
+Clock: U_DELAY_OSCILLATOR.U_SB_HFOSC/CLKHF | Frequency: 338.62 MHz | Target: 48.00 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 6.7 sec.
+

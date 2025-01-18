@@ -1,0 +1,91 @@
+#--  Synopsys, Inc.
+#--  Version L-2016.09L+ice40
+#--  Project file C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\scratchproject.prs
+
+#project files
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/TTL/LATCH_9334.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/TTL/LS138.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/DEV_DECODER.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_ADDR_DECODER.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_CASEN.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_CXXXOUT.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_EN80.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_INTERNALS.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_KBD.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_MD7.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_MPON.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_RA.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_ROMEN.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_RW245.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_SELMB.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_SOFT_SWITCHES_C08X.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/COMMON/COMMON_INTERNALS.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/COMMON/RA_MUX.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C00X.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C05X.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/CUSTOM/DELAY_OSCILLATOR/VENDOR/LATTICE_iCE40/DELAY_OSCILLATOR.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/CUSTOM/DRAM_HOLD_TIME/VENDOR/LATTICE_iCE40/DRAM_HOLD_TIME.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/sources/CUSTOM/MMU_HOLD_TIME/VENDOR/LATTICE_iCE40/MMU_HOLD_TIME.vhdl"
+add_file -vhdl -lib work "C:/dev/Apple_IIe_MMU_3V3/firmware/CUSTOM/MMU.vhdl"
+
+
+
+#implementation: "MMU_Implmnt"
+impl -add C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+set_option -include_path {C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/}
+
+#device options
+set_option -technology SBTiCE5LP
+set_option -part iCE5LP1K
+set_option -package SG48
+set_option -speed_grade ""
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+
+# mapper_without_write_options
+set_option -frequency auto
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Lattice iCE5LP
+set_option -maxfan 10000
+set_option -rw_check_on_ram 0
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fix_gated_and_generated_clocks 1
+set_option -run_prop_extract 1
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt/MMU.edf"
+impl -active "MMU_Implmnt"

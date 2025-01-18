@@ -1,0 +1,29 @@
+---------------------------------------
+Resource Usage Report for MMU 
+
+Mapping to part: ice5lp1ksg48
+Cell usage:
+GND             19 uses
+SB_DFF          13 uses
+SB_DFFER        1 use
+SB_DFFR         4 uses
+SB_DFFS         3 uses
+SB_GB           1 use
+SB_HFOSC        1 use
+SB_IO_OD        3 uses
+VCC             19 uses
+SB_LUT4         119 uses
+
+I/O ports: 38
+I/O primitives: 38
+SB_IO          38 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   21 (2%)
+
+@S |Mapping Summary:
+Total  LUTs: 119 (11%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 119 = 119 
+

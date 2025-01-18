@@ -1,0 +1,24 @@
+@W: FX1039 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\custom\dram_hold_time\vendor\lattice_ice40\dram_hold_time.vhdl":50:8:50:9|User-specified initial value defined for instance U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.Q3_SHIFT_REGISTER[1:0] is being ignored. 
+@W: FX1039 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\custom\dram_hold_time\vendor\lattice_ice40\dram_hold_time.vhdl":41:8:41:9|User-specified initial value defined for instance U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER[2:0] is being ignored. 
+@W: FX1039 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\custom\mmu_hold_time\vendor\lattice_ice40\mmu_hold_time.vhdl":37:8:37:9|User-specified initial value defined for instance U_MMU_HOLD_TIME.SHIFT_REGISTER[1:0] is being ignored. 
+@W: BN137 :|Found combinational loop during mapping at net PENIO_N
+@W: BN137 :|Found combinational loop during mapping at net INTC300_N
+@W: BN137 :|Found combinational loop during mapping at net UMMU_INTERNALS.INTC8EN_INT
+@W: BN137 :|Found combinational loop during mapping at net ALTSTKZP
+@W: BN137 :|Found combinational loop during mapping at net FLG2
+@W: BN137 :|Found combinational loop during mapping at net FLG1
+@W: BN137 :|Found combinational loop during mapping at net EN80VID
+@W: BN137 :|Found combinational loop during mapping at net HIRES
+@W: BN137 :|Found combinational loop during mapping at net PG2
+@W: BN137 :|Found combinational loop during mapping at net UMMU_INTERNALS.INTC8EN_INT
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.INTC300_N
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.PENIO_N
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.EN80VID
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C05X.HIRES
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.ALTSTKZP
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.FLG2
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.FLG1
+@W: BN137 :|Found combinational loop during mapping at net U_SOFT_SWITCHES_C05X.PG2
+@W: MT246 :"c:\dev\apple_iie_mmu_3v3\firmware\custom\mmu.vhdl":684:4:684:13|Blackbox SB_IO_OD is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock MMU|PHI_0 with period 5.65ns. Please declare a user-defined clock on object "p:PHI_0"
+@W: MT420 |Found inferred clock DELAY_OSCILLATOR|DELAY_CLK_inferred_clock with period 20.83ns. Please declare a user-defined clock on object "n:U_DELAY_OSCILLATOR.DELAY_CLK"

@@ -1,0 +1,77 @@
+# Sat Jan 11 14:11:35 2025
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU_scck.rpt 
+Printing clock  summary report in "C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance ITEXT (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance MIX (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance AN0 (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance AN1 (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance AN2 (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\soft_switches_c05x.vhdl":49:8:49:9|Removing sequential instance AN3 (in view: work.SOFT_SWITCHES_C05X(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\common_internals.vhdl":53:8:53:9|Removing sequential instance P_PHI_0 (in view: work.COMMON_INTERNALS(rtl)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\common\common_internals.vhdl":53:8:53:9|Removing sequential instance P_PHI_1 (in view: work.COMMON_INTERNALS(rtl)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\ttl\latch_9334.vhdl":33:8:33:9|Removing sequential instance Q6 (in view: work.LATCH_9334(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\ttl\latch_9334.vhdl":33:8:33:9|Removing sequential instance Q7 (in view: work.LATCH_9334(rtl)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist MMU
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                         Requested     Requested     Clock                                                        Clock                     Clock
+Clock                                         Frequency     Period        Type                                                         Group                     Load 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DELAY_OSCILLATOR|DELAY_CLK_inferred_clock     48.0 MHz      20.830        inferred                                                     Autoconstr_clkgroup_0     10   
+DRAM_HOLD_TIME|D_Q3_derived_clock             48.0 MHz      20.830        derived (from DELAY_OSCILLATOR|DELAY_CLK_inferred_clock)     Autoconstr_clkgroup_0     1    
+MMU|PHI_0                                     284.8 MHz     3.511         inferred                                                     Autoconstr_clkgroup_1     22   
+System                                        1.0 MHz       1000.000      system                                                       system_clkgroup           0    
+======================================================================================================================================================================
+
+@W: MT529 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\custom\mmu_hold_time\vendor\lattice_ice40\mmu_hold_time.vhdl":37:8:37:9|Found inferred clock DELAY_OSCILLATOR|DELAY_CLK_inferred_clock which controls 10 sequential elements including U_MMU_HOLD_TIME.D_PHI_0. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\dev\apple_iie_mmu_3v3\firmware\sources\custom\mmu_hold_time\vendor\lattice_ice40\mmu_hold_time.vhdl":37:8:37:9|Found inferred clock MMU|PHI_0 which controls 22 sequential elements including U_MMU_HOLD_TIME.SHIFT_REGISTER[1:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\MMU.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jan 11 14:11:35 2025
+
+###########################################################]

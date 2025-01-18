@@ -1,0 +1,7 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_comp.srs  -osyn  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_mult.srs  -log  C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synlog\MMU_multi_srs_gen.srr 
+rc:0 success:1 runtime:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_comp.srs|io:i|time:1736622694|size:34506|exec:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synwork\MMU_mult.srs|io:o|time:1736622695|size:10863|exec:0
+file:C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\synlog\MMU_multi_srs_gen.srr|io:o|time:1736622695|size:774|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\syn_nfilter.exe|io:i|time:1731014824|size:3128320|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1731014825|size:3947520|exec:1

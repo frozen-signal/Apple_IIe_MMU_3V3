@@ -1,0 +1,44 @@
+* ******************************************************************************
+
+* iCEcube Router
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:45:10
+
+* File Generated:     Jan 11 2025 14:15:42
+
+* Purpose:            Router runtime info
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40T04.dev C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\sbt\netlist\oadb-MMU C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40TH4K.lib C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\sbt\outputs\packer\MMU_pk.sdc --outdir C:\dev\Apple_IIe_MMU_3V3\firmware\MMU_Project\MMU_Implmnt\sbt\outputs\router --sdf_file C:/dev/Apple_IIe_MMU_3V3/firmware/MMU_Project/MMU_Implmnt\sbt\outputs\simulation_netlist\MMU_sbt.sdf --pin_permutation 
+I1203: Reading Design MMU
+I1202: Reading Architecture of device iCE5LP1K
+Info-1409: Inferred clock at U_DELAY_OSCILLATOR.U_SB_HFOSC/CLKHF
+SDC-Info-1101: Duty cycle not specified for clock. Assuming 50 percent dutycycle.
+Warning-1034: Found non-unate timing arc, from pin "in3" to pin "lcout" of instance "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i626_4_lut_LC_17_6_7", in the clock network. Converting the timing arc to positive-unate
+Warning-1034: Found non-unate timing arc, from pin "in3" to pin "lcout" of instance "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i633_4_lut_LC_13_6_4", in the clock network. Converting the timing arc to positive-unate
+Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "U_MMU_MD7.n2707_bdd_4_lut_LC_11_5_6", in the clock network. Converting the timing arc to positive-unate
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i626_4_lut_LC_17_6_7/in1" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i626_4_lut_LC_17_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i636_4_lut_LC_13_7_2/in1" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i636_4_lut_LC_13_7_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i633_4_lut_LC_13_6_4/in0" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i633_4_lut_LC_13_6_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i629_4_lut_LC_12_6_5/in0" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i629_4_lut_LC_12_6_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i614_4_lut_LC_12_5_6/in0" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i614_4_lut_LC_12_5_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "UMMU_INTERNALS.i1_4_lut_LC_10_8_5/in0" to pin "UMMU_INTERNALS.i1_4_lut_LC_10_8_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i631_4_lut_LC_11_8_0/in0" to pin "U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i631_4_lut_LC_11_8_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C05X.i619_4_lut_LC_10_6_2/in1" to pin "U_SOFT_SWITCHES_C05X.i619_4_lut_LC_10_6_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "U_SOFT_SWITCHES_C05X.i616_4_lut_LC_10_4_4/in0" to pin "U_SOFT_SWITCHES_C05X.i616_4_lut_LC_10_4_4/lcout" to break the combinatorial loop
+I1209: Started routing
+I1223: Total Nets : 178 
+I1212: Iteration  1 :    59 unrouted : 0 seconds
+I1212: Iteration  2 :     6 unrouted : 0 seconds
+I1212: Iteration  3 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+I1206: Completed routing
+I1204: Writing Design MMU
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 4 seconds

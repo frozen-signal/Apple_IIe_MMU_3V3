@@ -1,0 +1,3 @@
+@E: CD725 :"C:\dev\Apple_IIe_MMU_3V3\firmware\CUSTOM\MMU.vhdl":651:27:651:29|Can't associate actual.  Formal 'neg_trigger' is unknown.
+@E: Parse errors encountered - exiting
+

@@ -1,0 +1,218 @@
+set_location CONSTANT_ONE_LUT4 1 20 1 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.BANK1_25_THRU_LUT4_0 11 7 3 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.Q3_SHIFT_REGISTER_i1_THRU_LUT4_0 11 9 3 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.Q3_SHIFT_REGISTER_i0_THRU_LUT4_0 11 9 0 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER_i2_THRU_LUT4_0 13 12 6 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER_i1_THRU_LUT4_0 13 13 6 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER_i0_THRU_LUT4_0 12 13 7 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.D_RAS_N_14_THRU_LUT4_0 14 12 4 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.D_Q3_16_THRU_LUT4_0 11 8 4 #SB_LUT4
+set_location U_MMU_MPON.M5_7_24_THRU_LUT4_0 16 8 0 #SB_LUT4
+set_location U_MMU_MPON.DELTA_01XX_N_25_THRU_LUT4_0 16 8 5 #SB_LUT4
+set_location U_MMU_HOLD_TIME.SHIFT_REGISTER_i1_THRU_LUT4_0 10 9 1 #SB_LUT4
+set_location U_MMU_HOLD_TIME.SHIFT_REGISTER_i0_THRU_LUT4_0 10 9 3 #SB_LUT4
+set_location U_MMU_HOLD_TIME.D_PHI_0_9_THRU_LUT4_0 10 8 2 #SB_LUT4
+set_location U_R_W_N_245LegalizeSB_DFF 3 20 0 #SB_DFF
+set_location U_R_W_N_245ConstOneLUT4 3 20 0 #SB_LUT4
+set_location U_ROMEN1_NLegalizeSB_DFF 5 20 2 #SB_DFF
+set_location U_ROMEN1_NConstOneLUT4 5 20 2 #SB_LUT4
+set_location U_MD7LegalizeSB_DFF 5 20 1 #SB_DFF
+set_location U_MD7ConstOneLUT4 5 20 1 #SB_LUT4
+set_location U_MD7AndLUT4 5 20 0 #SB_LUT4
+set_location ROMEN2_N_padLegalizeSB_DFF 8 20 3 #SB_DFF
+set_location ROMEN2_N_padConstOneLUT4 8 20 3 #SB_LUT4
+set_location ORA_pad_7LegalizeSB_DFF 12 20 4 #SB_DFF
+set_location ORA_pad_7ConstOneLUT4 12 20 4 #SB_LUT4
+set_location ORA_pad_7AndLUT4 12 20 1 #SB_LUT4
+set_location ORA_pad_6LegalizeSB_DFF 12 20 3 #SB_DFF
+set_location ORA_pad_6ConstOneLUT4 12 20 3 #SB_LUT4
+set_location ORA_pad_6AndLUT4 12 20 0 #SB_LUT4
+set_location ORA_pad_5LegalizeSB_DFF 16 20 5 #SB_DFF
+set_location ORA_pad_5ConstOneLUT4 16 20 5 #SB_LUT4
+set_location ORA_pad_5AndLUT4 16 20 2 #SB_LUT4
+set_location ORA_pad_4LegalizeSB_DFF 16 20 4 #SB_DFF
+set_location ORA_pad_4ConstOneLUT4 16 20 4 #SB_LUT4
+set_location ORA_pad_4AndLUT4 16 20 1 #SB_LUT4
+set_location ORA_pad_3LegalizeSB_DFF 16 20 3 #SB_DFF
+set_location ORA_pad_3ConstOneLUT4 16 20 3 #SB_LUT4
+set_location ORA_pad_3AndLUT4 16 20 0 #SB_LUT4
+set_location ORA_pad_2LegalizeSB_DFF 18 20 5 #SB_DFF
+set_location ORA_pad_2ConstOneLUT4 18 20 5 #SB_LUT4
+set_location ORA_pad_2AndLUT4 18 20 2 #SB_LUT4
+set_location ORA_pad_1LegalizeSB_DFF 18 20 4 #SB_DFF
+set_location ORA_pad_1ConstOneLUT4 18 20 4 #SB_LUT4
+set_location ORA_pad_1AndLUT4 18 20 1 #SB_LUT4
+set_location ORA_pad_0LegalizeSB_DFF 18 20 3 #SB_DFF
+set_location ORA_pad_0ConstOneLUT4 18 20 3 #SB_LUT4
+set_location ORA_pad_0AndLUT4 18 20 0 #SB_LUT4
+set_location KBD_N_padLegalizeSB_DFF 12 20 2 #SB_DFF
+set_location KBD_N_padConstOneLUT4 12 20 2 #SB_LUT4
+set_location EN80_N_padLegalizeSB_DFF 8 20 2 #SB_DFF
+set_location EN80_N_padConstOneLUT4 8 20 2 #SB_LUT4
+set_location CXXXOUT_padLegalizeSB_DFF 8 20 1 #SB_DFF
+set_location CXXXOUT_padConstOneLUT4 8 20 1 #SB_LUT4
+set_location CASEN_N_padLegalizeSB_DFF 8 20 0 #SB_DFF
+set_location CASEN_N_padConstOneLUT4 8 20 0 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i1_2_lut_4_lut_4_lut 12 6 1 #SB_LUT4
+set_location U_ADDR_DECODER.i1193_2_lut_3_lut 9 7 6 #SB_LUT4
+set_location U_ADDR_DECODER.i3_4_lut_adj_53 16 8 2 #SB_LUT4
+set_location UMMU_CASEN.i1_4_lut 9 7 7 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i1_2_lut 17 3 6 #SB_LUT4
+set_location U_MMU_MPON.i2122_4_lut 14 4 5 #SB_LUT4
+set_location U_MMU_MD7.A_c_1_bdd_4_lut 11 6 4 #SB_LUT4
+set_location U_MMU_MD7.i2171_2_lut 11 5 5 #SB_LUT4
+set_location U_MMU_ROMEN.i2207_4_lut 9 9 0 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.i2_3_lut 16 13 5 #SB_LUT4
+set_location U_MMU_MD7.i137_1_lut 11 6 6 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i1_2_lut_4_lut_adj_50 12 7 6 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i2090_2_lut_4_lut 13 7 1 #SB_LUT4
+set_location U_MMU_SELMB.i2092_2_lut 10 4 1 #SB_LUT4
+set_location U_MMU_SELMB.SELMB_N_I_24_4_lut 12 7 2 #SB_LUT4
+set_location U_ADDR_DECODER.CXXX_FXXX_I_0_79_2_lut_3_lut 9 6 6 #SB_LUT4
+set_location U_ADDR_DECODER.i1_4_lut 5 9 2 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.RDRAM_26 10 5 7 #SB_DFFNR
+set_location UMMU_CASEN.i1_2_lut_adj_48 9 11 1 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.Q3_SHIFT_REGISTER_i0 11 9 0 #SB_DFF
+set_location U_MMU_MD7.i2_3_lut 16 8 6 #SB_LUT4
+set_location U_ADDR_DECODER.i2_3_lut 13 9 6 #SB_LUT4
+set_location U_ADDR_DECODER.i2204_2_lut 16 8 4 #SB_LUT4
+set_location U_SOFT_SWITCHES_C05X.i2_4_lut 9 8 7 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i614_4_lut 12 5 6 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.RDROM_N_81_I_0_1_lut_2_lut 10 5 7 #SB_LUT4
+set_location U_MMU_SELMB.i2_4_lut 10 4 5 #SB_LUT4
+set_location U_MMU_MD7.A_3__I_0_26_i5_3_lut 12 6 6 #SB_LUT4
+set_location U_MMU_MD7.A_3__I_0_26_i2_3_lut 11 5 3 #SB_LUT4
+set_location U_ADDR_DECODER.CXXX_FXXX_I_0_2_lut_3_lut 9 6 5 #SB_LUT4
+set_location U_SOFT_SWITCHES_C05X.i619_4_lut 10 6 2 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.COL_RA7_I_0_3_lut_4_lut 13 11 7 #SB_LUT4
+set_location U_SOFT_SWITCHES_C05X.i2199_4_lut 17 4 7 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.i2_3_lut_4_lut 15 6 2 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i1_2_lut_adj_49 13 6 2 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER_i1 13 13 6 #SB_DFF
+set_location U_SOFT_SWITCHES_C05X.i616_4_lut 10 4 4 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.COL_RA6_I_0_3_lut_4_lut 13 9 2 #SB_LUT4
+set_location U_MMU_MPON.i6_4_lut 17 4 6 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i2116_2_lut_3_lut_4_lut 11 4 0 #SB_LUT4
+set_location U_DEV_DECODER.MMU_1_P3.i2_3_lut 15 5 5 #SB_LUT4
+set_location GND -1 -1 -1 #GND
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i631_4_lut 11 8 0 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.OUT_WREN_32 10 5 2 #SB_DFFNS
+set_location U_MMU_SOFT_SWITCHES_C08X.A0_I_0_2_lut 10 5 0 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.D_RAS_N_14 14 12 4 #SB_DFF
+set_location U_MMU_MD7.A_3__I_0_26_i4_3_lut 13 6 5 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.OUT_FST_ACC_27 10 5 0 #SB_DFFNR
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.Q3_SHIFT_REGISTER_i1 11 9 3 #SB_DFF
+set_location UMMU_INTERNALS.i1172_2_lut 10 8 4 #SB_LUT4
+set_location U_MMU_MPON.i4_2_lut 16 8 3 #SB_LUT4
+set_location U_MMU_MPON.M5_7_24 16 8 0 #SB_DFF
+set_location U_MMU_MD7.n2707_bdd_4_lut 11 5 6 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.i297_4_lut_4_lut 10 5 2 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.RDROM_31 11 7 0 #SB_DFFNS
+set_location U_MMU_MD7.i1_2_lut_adj_52 14 7 0 #SB_LUT4
+set_location U_MMU_CXXXOUT.i1_4_lut 9 8 5 #SB_LUT4
+set_location i4_4_lut 14 6 3 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER_i0 12 13 7 #SB_DFF
+set_location U_ADDR_DECODER.i3_4_lut 14 4 3 #SB_LUT4
+set_location U_ADDR_DECODER.i293_3_lut_4_lut 15 5 2 #SB_LUT4
+set_location U_ADDR_DECODER.i1_3_lut 16 8 7 #SB_LUT4
+set_location U_ADDR_DECODER.i1_2_lut 14 6 2 #SB_LUT4
+set_location U_MMU_MD7.A_3__I_0_26_i15_4_lut 11 6 0 #SB_LUT4
+set_location U_MMU_HOLD_TIME.SHIFT_REGISTER_i1 10 9 1 #SB_DFF
+set_location U_MMU_RA.MMU_RA_MUX.RA_ENABLE_N_22 16 15 2 #SB_DFFNR
+set_location U_MMU_RA.MMU_RA_MUX.COL_RA3_I_0_3_lut_4_lut 17 9 3 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.COL_RA0_I_0_3_lut_4_lut 17 9 6 #SB_LUT4
+set_location U_ADDR_DECODER.MMU_1_J5.i2_3_lut_4_lut 15 5 4 #SB_LUT4
+set_location U_ADDR_DECODER.MMU_1_J5.i1_2_lut_3_lut_4_lut 15 7 7 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i633_4_lut 13 6 4 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.COL_RA2_I_0_3_lut_4_lut 18 9 4 #SB_LUT4
+set_location UMMU_INTERNALS.i2136_4_lut 13 8 4 #SB_LUT4
+set_location UMMU_INTERNALS.C8_FXX_I_0_2_lut 9 8 2 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i1_2_lut_4_lut 12 5 0 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.D_Q3_16 11 8 4 #SB_DFF
+set_location U_MMU_HOLD_TIME.D_PHI_0_9 10 8 2 #SB_DFF
+set_location U_ADDR_DECODER.i838_3_lut 12 7 1 #SB_LUT4
+set_location U_ADDR_DECODER.CXXX_I_0_80_2_lut_3_lut 9 8 1 #SB_LUT4
+set_location UMMU_CASEN.i1_2_lut 8 7 1 #SB_LUT4
+set_location i1192_2_lut 16 15 2 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i629_4_lut 12 6 5 #SB_LUT4
+set_location U_MMU_MD7.i1_2_lut 16 9 7 #SB_LUT4
+set_location i2096_2_lut 14 5 4 #SB_LUT4
+set_location U_MMU_ROMEN.i1_2_lut_3_lut 9 8 3 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.COL_RA5_I_0_3_lut_4_lut 15 8 6 #SB_LUT4
+set_location U_MMU_MPON.i2_3_lut_4_lut 14 4 1 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i636_4_lut 13 7 2 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i626_4_lut 17 6 7 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i2086_2_lut_3_lut_4_lut 17 5 1 #SB_LUT4
+set_location U_MMU_ROMEN.i2202_4_lut 8 8 0 #SB_LUT4
+set_location U_MMU_HOLD_TIME.SHIFT_REGISTER_i0 10 9 3 #SB_DFF
+set_location U_ADDR_DECODER.MC0XX_N_I_3_2_lut_3_lut 10 6 4 #SB_LUT4
+set_location UMMU_INTERNALS.i2100_4_lut 14 8 0 #SB_LUT4
+set_location U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH.i2104_2_lut_3_lut 12 4 4 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.WRPROT_28 10 5 1 #SB_DFFNR
+set_location U_MMU_SELMB.SELMB_N_I_0_4_lut 10 7 0 #SB_LUT4
+set_location U_MMU_ROMEN.i1_4_lut 9 8 0 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.COL_RA4_I_0_4_lut 14 9 7 #SB_LUT4
+set_location U_MMU_MD7.i1_2_lut_3_lut_4_lut_adj_51 11 4 3 #SB_LUT4
+set_location U_ADDR_DECODER.i1_2_lut_adj_54 13 8 3 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.D_RAS_N_I_0_2_lut 14 9 6 #SB_LUT4
+set_location U_MMU_RA.MMU_RA_MUX.COL_RA1_I_0_3_lut_4_lut 18 8 1 #SB_LUT4
+set_location U_ADDR_DECODER.DXXX_N_N_13_I_0_2_lut 9 8 4 #SB_LUT4
+set_location RA_ENABLE_N_I_0_1_lut 16 16 3 #SB_LUT4
+set_location U_MMU_MPON.i7_4_lut 16 7 3 #SB_LUT4
+set_location U_MMU_MPON.DELTA_01XX_N_25 16 8 5 #SB_DFF
+set_location U_MMU_SELMB.i2130_3_lut 10 3 0 #SB_LUT4
+set_location U_MMU_MPON.i2140_4_lut 14 4 6 #SB_LUT4
+set_location U_ADDR_DECODER.i2_4_lut 11 8 1 #SB_LUT4
+set_location U_ADDR_DECODER.i2172_3_lut 9 9 7 #SB_LUT4
+set_location U_MMU_MD7.i1_2_lut_3_lut_4_lut 15 6 3 #SB_LUT4
+set_location U_ADDR_DECODER.i2_3_lut_4_lut 14 6 1 #SB_LUT4
+set_location U_ADDR_DECODER.MA12_I_45_2_lut_3_lut 12 8 7 #SB_LUT4
+set_location UMMU_INTERNALS.i2142_4_lut 13 8 5 #SB_LUT4
+set_location UMMU_INTERNALS.i1_4_lut 10 8 5 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.i298_1_lut_4_lut_4_lut 10 5 1 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.BANK2_30 11 6 6 #SB_DFFNS
+set_location U_MMU_SOFT_SWITCHES_C08X.A0_I_0_34_2_lut 11 7 0 #SB_LUT4
+set_location U_MMU_MPON.M5_2_23 16 8 4 #SB_DFF
+set_location U_MMU_RA.MMU_RA_MUX.U_DRAM_HOLD_TIME.PRAS_N_SHIFT_REGISTER_i2 13 12 6 #SB_DFF
+set_location U_MMU_MPON.i1_2_lut 14 8 3 #SB_LUT4
+set_location U_MMU_SOFT_SWITCHES_C08X.BANK1_25 11 7 3 #SB_DFFNR
+set_location U_MMU_EN80.i1_3_lut 9 10 2 #SB_LUT4
+set_location U_ADDR_DECODER.i5_4_lut 15 8 1 #SB_LUT4
+set_io ORA[3] 28
+set_io CXXXOUT 43
+set_io A[9] 9
+set_io ROMEN1_N 39
+set_io A[0] 19
+set_io Q3 21
+set_io ORA[1] 26
+set_io A[7] 11
+set_io A[14] 48
+set_io R_W_N_245 41
+set_io ROMEN2_N 38
+set_io ORA[6] 34
+set_io A[6] 12
+set_io A[15] 47
+set_io ORA[7] 35
+set_io A[5] 13
+set_io A[12] 3
+set_io ORA[4] 31
+set_io INH_N 45
+set_io EN80_N 36
+set_io A[4] 14
+set_io A[13] 2
+set_io ORA[5] 32
+set_io DMA_N 46
+set_io A[3] 15
+set_io A[10] 6
+set_io ORA[2] 27
+set_io MD7 40
+set_io CASEN_N 42
+set_io A[2] 17
+set_io A[11] 4
+set_io KBD_N 37
+set_io A[1] 18
+set_io R_W_N 44
+set_io PRAS_N 23
+set_io PHI_0 20
+set_io ORA[0] 25
+set_io A[8] 10
