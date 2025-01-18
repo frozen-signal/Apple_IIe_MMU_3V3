@@ -6,13 +6,13 @@
 	(descr "SOT764-1_2022-6")
 	(tags "Integrated Circuit")
 	(property "Reference" "U"
-		(at 0 -3.825 0)
+		(at 0 -2.725 0)
 		(layer "F.SilkS")
 		(uuid "828fb7ce-d0c0-472b-aa3a-02040a8d67b6")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 0.8 0.8)
+				(thickness 0.08)
 			)
 		)
 	)
