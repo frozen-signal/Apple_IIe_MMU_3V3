@@ -706,7 +706,7 @@
 				)
 			)
 		)
-		(symbol "000_Symbols:ICE5LP1K-SG48ITR"
+		(symbol "000_Symbols:ICE40UP5K-SG48I"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -719,7 +719,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "ICE5LP1K-SG48ITR"
+			(property "Value" "ICE40UP5K-SG48I"
 				(at 41.91 22.86 0)
 				(effects
 					(font
@@ -738,7 +738,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.arrow.com/en/products/ice5lp1k-sg48itr/lattice-semiconductor"
+			(property "Datasheet" "https://www.latticesemi.com/view_document?document_id=51968"
 				(at 41.91 -177.14 0)
 				(effects
 					(font
@@ -748,42 +748,12 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "FPGA iCE40 Ultra Family 1100 Cells 40nm Technology 1.2V 48-Pin QFN EP T/R"
-				(at 0 0 0)
+			(property "Description" "FPGA iCE40 Ultra Plus"
+				(at 22.352 4.318 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
-				)
-			)
-			(property "Height" "1"
-				(at 41.91 -377.14 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "842-ICE5LP1K-SG48ITR"
-				(at 41.91 -477.14 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lattice/ICE5LP1K-SG48ITR?qs=ZwKJWZfDtNg6punXjA%252B0Og%3D%3D"
-				(at 41.91 -577.14 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
 					(hide yes)
 				)
 			)
@@ -797,7 +767,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "ICE5LP1K-SG48ITR"
+			(property "Manufacturer_Part_Number" "ICE40UP5K-SG48I"
 				(at 41.91 -777.14 0)
 				(effects
 					(font
@@ -807,7 +777,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ICE5LP1K-SG48ITR_1_1"
+			(symbol "ICE40UP5K-SG48I_1_1"
 				(rectangle
 					(start 5.08 20.32)
 					(end 40.64 -55.88)
@@ -16361,7 +16331,7 @@
 		)
 	)
 	(symbol
-		(lib_id "000_Symbols:ICE5LP1K-SG48ITR")
+		(lib_id "000_Symbols:ICE40UP5K-SG48I")
 		(at 71.12 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16395,7 +16365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.arrow.com/en/products/ice5lp1k-sg48itr/lattice-semiconductor"
+		(property "Datasheet" "https://www.latticesemi.com/view_document?document_id=51968"
 			(at 113.03 283.82 0)
 			(effects
 				(font
@@ -16405,8 +16375,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FPGA iCE40 Ultra Family 1100 Cells 40nm Technology 1.2V 48-Pin QFN EP T/R"
-			(at 71.12 106.68 0)
+		(property "Description" "FPGA iCE40 Ultra Plus"
+			(at 93.472 102.362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16454,7 +16424,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ICE5LP1K-SG48ITR"
+		(property "Manufacturer_Part_Number" "ICE40UP5K-SG48I"
 			(at 113.03 883.82 0)
 			(effects
 				(font
