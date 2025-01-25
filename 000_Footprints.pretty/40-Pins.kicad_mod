@@ -95,6 +95,18 @@
 		(layer "F.SilkS")
 		(uuid "820265de-49cd-4363-81d7-47bdb9eb2a22")
 	)
+	(fp_poly
+		(pts
+			(xy -6.15 7.8) (xy -6.132322 8.065165) (xy -5.884835 7.817678)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "8d79b6ba-5faa-48ca-b0b2-1ac3d1cfe4ea")
+	)
 	(fp_rect
 		(start -8.38 5.6)
 		(end -6.17 56.14)
@@ -135,6 +147,7 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(zone_connect 2)
 		(uuid "cf649f25-a54a-4bf0-9254-ab442a49d704")
 	)
 	(pad "2" thru_hole oval

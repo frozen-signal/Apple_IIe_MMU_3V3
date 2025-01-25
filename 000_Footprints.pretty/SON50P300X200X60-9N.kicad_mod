@@ -62,16 +62,17 @@
 		)
 	)
 	(attr smd)
-	(fp_circle
-		(center -2.3 -0.8)
-		(end -2.25 -0.8)
+	(fp_poly
+		(pts
+			(xy -2.25 -0.8) (xy -2.45 -0.975) (xy -2.45 -0.625)
+		)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill solid)
 		(layer "F.SilkS")
-		(uuid "80c94084-b5d1-4d0c-8e95-e5d04a33bd06")
+		(uuid "460bbe74-cec7-4873-9d4e-076c64995c1f")
 	)
 	(fp_line
 		(start -2.25 -1.25)

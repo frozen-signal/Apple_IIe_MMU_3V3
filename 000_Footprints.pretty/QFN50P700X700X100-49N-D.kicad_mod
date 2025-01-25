@@ -164,16 +164,17 @@
 		(layer "F.Paste")
 		(uuid "eac78191-6345-4dd2-ac3d-ab8f3b6e324a")
 	)
-	(fp_circle
-		(center -3.875 -3.5)
-		(end -3.875 -3.375)
+	(fp_poly
+		(pts
+			(xy -3.96969 -3.970354) (xy -3.987368 -4.235519) (xy -4.234855 -3.988032)
+		)
 		(stroke
-			(width 0.25)
+			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill solid)
 		(layer "F.SilkS")
-		(uuid "8bfdb47f-ad2f-4dc8-b931-8a5bd0032ee9")
+		(uuid "13329802-cc17-4569-9180-e86ce2946165")
 	)
 	(fp_line
 		(start -4.125 -4.125)

@@ -4428,6 +4428,18 @@
 		(uuid "f843d52f-fb0c-4379-9570-901caa0cb2e1")
 	)
 	(no_connect
+		(at 39.37 247.65)
+		(uuid "41d8fcc6-df00-40ec-a74e-47eaf1248a61")
+	)
+	(no_connect
+		(at 39.37 245.11)
+		(uuid "8d2553e8-fb40-410f-933a-11ba74c1d3e8")
+	)
+	(no_connect
+		(at 39.37 250.19)
+		(uuid "99f74962-b58d-4d29-bfb4-51bfbbb4b7b0")
+	)
+	(no_connect
 		(at 134.62 250.19)
 		(uuid "f8fe9b87-29cc-474f-a043-0dc335d7ef66")
 	)
@@ -7520,6 +7532,16 @@
 			(type default)
 		)
 		(uuid "feff32df-76fb-4e79-af2d-0b1587299eef")
+	)
+	(text "NOTE: The ICE5LP1K-SG48ITR is pin compatible and can be used instead."
+		(exclude_from_sim no)
+		(at 94.488 62.992 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4b26eebf-131e-40ed-a5de-4ffd34672eb5")
 	)
 	(label "FLASH_~{CS}"
 		(at 53.34 217.17 180)
@@ -16347,7 +16369,7 @@
 				)
 			)
 		)
-		(property "Value" "ICE5LP1K-SG48ITR"
+		(property "Value" "ICE40UP5K-SG48I"
 			(at 93.726 121.412 90)
 			(effects
 				(font
