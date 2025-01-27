@@ -2854,6 +2854,159 @@
 				)
 			)
 		)
+		(symbol "000_Symbols:ProgrammingPins"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 4.318 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "000_Footprints:ProgrammingPads"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ProgrammingPins_0_0"
+				(pin unspecified line
+					(at 0 0 0)
+					(length 2.54)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 0)
+					(length 2.54)
+					(name "~{PRGM}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -10.16 0)
+					(length 2.54)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ProgrammingPins_1_1"
+				(rectangle
+					(start 2.54 2.54)
+					(end 12.7 -12.7)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+		)
 		(symbol "000_Symbols:TLV70212DBVR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4432,8 +4585,8 @@
 		(uuid "41d8fcc6-df00-40ec-a74e-47eaf1248a61")
 	)
 	(no_connect
-		(at 39.37 245.11)
-		(uuid "8d2553e8-fb40-410f-933a-11ba74c1d3e8")
+		(at 39.37 252.73)
+		(uuid "57719015-baa8-4935-a2ab-4bd576bcf145")
 	)
 	(no_connect
 		(at 39.37 250.19)
@@ -4502,6 +4655,16 @@
 			(type default)
 		)
 		(uuid "02edee9f-1312-4f90-b6da-cd8f4432756c")
+	)
+	(wire
+		(pts
+			(xy 25.4 209.55) (xy 40.64 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "035760ff-7b96-4149-bbe9-1653d746e597")
 	)
 	(wire
 		(pts
@@ -4662,6 +4825,16 @@
 			(type default)
 		)
 		(uuid "0cad2694-e055-4f93-807a-8cd92f19f7c0")
+	)
+	(wire
+		(pts
+			(xy 25.4 212.09) (xy 40.64 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0db33758-3c26-444c-a523-8a03ce96c98a")
 	)
 	(wire
 		(pts
@@ -5095,7 +5268,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 214.63) (xy 54.61 214.63)
+			(xy 26.67 195.58) (xy 53.34 195.58)
 		)
 		(stroke
 			(width 0)
@@ -5232,16 +5405,6 @@
 			(type default)
 		)
 		(uuid "36e10ad2-3b0e-4878-9be0-c35862973624")
-	)
-	(wire
-		(pts
-			(xy 27.94 252.73) (xy 39.37 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36edaaed-245b-41e3-91f5-5e4269e7f932")
 	)
 	(wire
 		(pts
@@ -5505,7 +5668,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 219.71) (xy 54.61 219.71)
+			(xy 26.67 200.66) (xy 53.34 200.66)
 		)
 		(stroke
 			(width 0)
@@ -5575,7 +5738,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 217.17) (xy 54.61 217.17)
+			(xy 26.67 198.12) (xy 53.34 198.12)
 		)
 		(stroke
 			(width 0)
@@ -6052,6 +6215,16 @@
 			(type default)
 		)
 		(uuid "7b7832a1-1d26-438a-a29c-8d6872df510f")
+	)
+	(wire
+		(pts
+			(xy 25.4 219.71) (xy 40.64 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bd4e141-d650-4ebb-a96f-25dfb9dcb72b")
 	)
 	(wire
 		(pts
@@ -6545,6 +6718,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 245.11) (xy 39.37 245.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a91f6ead-ac14-43b5-9b87-7cbef23a96f4")
+	)
+	(wire
+		(pts
 			(xy 99.06 76.2) (xy 99.06 81.28)
 		)
 		(stroke
@@ -7025,6 +7208,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 214.63) (xy 40.64 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf45448e-1cd7-4ac6-b880-26085e2a0eb1")
+	)
+	(wire
+		(pts
 			(xy 68.58 45.72) (xy 92.71 45.72)
 		)
 		(stroke
@@ -7145,7 +7338,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 212.09) (xy 54.61 212.09)
+			(xy 26.67 193.04) (xy 53.34 193.04)
 		)
 		(stroke
 			(width 0)
@@ -7222,6 +7415,16 @@
 			(type default)
 		)
 		(uuid "df14d220-2c44-4588-9dbd-331122e0cf62")
+	)
+	(wire
+		(pts
+			(xy 25.4 217.17) (xy 40.64 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df2d2275-632d-4b91-9df1-47090d9c5a67")
 	)
 	(wire
 		(pts
@@ -7544,7 +7747,7 @@
 		(uuid "4b26eebf-131e-40ed-a5de-4ffd34672eb5")
 	)
 	(label "FLASH_~{CS}"
-		(at 53.34 217.17 180)
+		(at 52.07 198.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7554,8 +7757,19 @@
 		)
 		(uuid "001c2d67-97f9-4f9a-801e-45aec4ea68be")
 	)
+	(label "FLASH_SDI"
+		(at 26.67 219.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1601783d-254c-482b-8e70-92047e000d9b")
+	)
 	(label "FLASH_CLK"
-		(at 53.34 214.63 180)
+		(at 52.07 195.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7566,7 +7780,7 @@
 		(uuid "2122cf64-c126-48fc-94f1-d4037b8b3607")
 	)
 	(label "FPGA_SCK"
-		(at 29.21 214.63 0)
+		(at 27.94 195.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7588,7 +7802,7 @@
 		(uuid "4d5f6ec6-6888-4c92-b861-a210c70cef68")
 	)
 	(label "FPGA_SI"
-		(at 29.21 219.71 0)
+		(at 27.94 200.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7610,7 +7824,7 @@
 		(uuid "6a09fbf7-618d-4b24-9074-4007e514f341")
 	)
 	(label "FLASH_SDI"
-		(at 53.34 212.09 180)
+		(at 52.07 193.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7632,7 +7846,7 @@
 		(uuid "84f728c2-2612-47d3-8789-04ca41c58982")
 	)
 	(label "FPGA_SO"
-		(at 29.21 212.09 0)
+		(at 27.94 193.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7675,6 +7889,17 @@
 		)
 		(uuid "9fffd1b2-7851-41a8-a2e5-1e0b53316979")
 	)
+	(label "FLASH_~{CS}"
+		(at 26.67 212.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b09a8ac2-f8da-49b8-86d6-2dcc5dfd6de5")
+	)
 	(label "FLASH_SDO"
 		(at 143.51 242.57 180)
 		(fields_autoplaced yes)
@@ -7686,8 +7911,19 @@
 		)
 		(uuid "b0c787a1-d8f6-4c55-80f0-6a0079215270")
 	)
+	(label "CRESETB"
+		(at 26.67 217.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b17072fe-2773-4d04-ae74-fae624307a4d")
+	)
 	(label "FLASH_SDO"
-		(at 53.34 219.71 180)
+		(at 52.07 200.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7707,6 +7943,17 @@
 			(justify left bottom)
 		)
 		(uuid "b892896d-9459-4e01-9dff-62bc490a05c2")
+	)
+	(label "FLASH_CLK"
+		(at 26.67 214.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bcfe170e-607c-4905-8b95-fa0db5448c75")
 	)
 	(label "CRESETB"
 		(at 25.4 232.41 0)
@@ -7753,7 +8000,7 @@
 		(uuid "ebceb341-076d-48d1-a15e-7b2a952a429c")
 	)
 	(label "FPGA_SS"
-		(at 29.21 217.17 0)
+		(at 27.94 198.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7773,6 +8020,17 @@
 			(justify left bottom)
 		)
 		(uuid "f3fb7740-ebf5-4af3-8d1a-92ba9936c2a9")
+	)
+	(label "FLASH_SDO"
+		(at 26.67 209.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9b10100-889f-4b3d-b2af-753fed71dbaa")
 	)
 	(label "FLASH_~{CS}"
 		(at 25.4 237.49 0)
@@ -10789,6 +11047,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 27.94 245.11 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e8d9f1b-50e4-4d52-860d-02d522f3df73")
+		(property "Reference" "#PWR041"
+			(at 21.59 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 23.622 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 27.94 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b89b8d66-4610-44eb-acd0-a40672ddde6b")
+		)
+		(instances
+			(project "MMU_3V3"
+				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 223.52 119.38 0)
 		(unit 1)
@@ -11239,72 +11563,6 @@
 			(project "MMU_3V3"
 				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
 					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 27.94 252.73 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1c8ab582-56fe-4549-8beb-7b005c3b2f78")
-		(property "Reference" "#PWR041"
-			(at 21.59 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 23.622 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a210cc7a-ad70-43c0-aaa3-d48bca7dd92e")
-		)
-		(instances
-			(project "MMU_3V3"
-				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
-					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -15775,6 +16033,85 @@
 			(project "MMU_3V3"
 				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_Symbols:ProgrammingPins")
+		(at 40.64 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e13544f5-9919-474e-baaa-1531d081a905")
+		(property "Reference" "U10"
+			(at 54.61 213.9949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 54.61 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_Footprints:ProgrammingPads"
+			(at 40.64 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa5739f2-eb56-4789-93bd-3c4a1bcabd3d")
+		)
+		(pin "4"
+			(uuid "48ead3a0-a982-4eb1-ad4a-ceb2bdd05380")
+		)
+		(pin "3"
+			(uuid "742c94be-fc70-4470-9afa-7a69a1986be9")
+		)
+		(pin "2"
+			(uuid "be8fe6a9-29a2-4e1e-857d-482dd71e1df6")
+		)
+		(pin "5"
+			(uuid "cb0e1f93-f821-460e-96cd-20a537bd76f9")
+		)
+		(instances
+			(project "MMU_3V3"
+				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
+					(reference "U10")
 					(unit 1)
 				)
 			)
