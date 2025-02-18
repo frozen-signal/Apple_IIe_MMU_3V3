@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- File: MMU.vhdl
--- Description: The top entity for the MMU with specifics for the Lattice iCE5LP SG48 FPGA. It uses SB_IO_OD to change open-drain pins to GPIOs.
+-- Description: The top entity for the MMU with specifics for the Lattice iCE5LP SG48 or the iCE40LP SG48 FPGA. It uses SB_IO_OD to change open-drain pins to GPIOs.
 -- Author: frozen-signal
 -- Project: Apple_IIe_MMU_3V3
 -- Project location: https://github.com/frozen-signal/Apple_IIe_MMU_3V3/

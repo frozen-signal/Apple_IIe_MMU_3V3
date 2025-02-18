@@ -6,8 +6,8 @@
 	(paper "USLedger")
 	(title_block
 		(title "Apple IIe MMU Replacement")
-		(date "2025-01-20")
-		(rev "0.95")
+		(date "2025-02-18")
+		(rev "0.96")
 		(company "FROZEN SIGNAL / RALLE PALAVEEV")
 	)
 	(lib_symbols
