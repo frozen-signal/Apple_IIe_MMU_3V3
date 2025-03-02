@@ -1029,7 +1029,7 @@
 			(pin passive line
 				(at 0 -43.18 0)
 				(length 5.08)
-				(name "PT8D"
+				(name "PT8D/SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1281,7 +1281,7 @@
 			(pin passive line
 				(at 0 -55.88 0)
 				(length 5.08)
-				(name "PT8C/CLK"
+				(name "PT8C/SCL/CLK"
 					(effects
 						(font
 							(size 1.27 1.27)

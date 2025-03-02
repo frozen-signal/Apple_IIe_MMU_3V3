@@ -58,7 +58,13 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|148359400|100603307|825e316f-af4f-4af7-a327-dc7feef8a571|af28d6ff-9831-499c-81ab-b7e701823ac9",
+        "clearance|151023466|105742246|0d8e5efd-0504-4563-9221-130bd4812d00|7d79683f-056c-4369-bc20-702127c313cb",
+        "clearance|151907914|104858928|71673bb0-d1fc-45bc-8c88-5b06a0651d14|9b438a05-1373-4fb7-bdc9-e0dac96317e8",
+        "clearance|154205446|103288819|f4237e2f-d956-43a4-9dc4-032915aad410|a57c1003-04a4-4566-83ed-e3186d684b83",
+        "courtyards_overlap|156719401|102952902|48c4bf83-5953-4255-a137-65436f58bf9e|53319d2b-d8ae-452f-871e-53eb26c674c3"
+      ],
       "meta": {
         "version": 2
       },
@@ -102,8 +108,8 @@
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
-        "text_thickness": "warning",
+        "text_height": "ignore",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",

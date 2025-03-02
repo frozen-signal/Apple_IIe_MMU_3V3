@@ -1038,7 +1038,7 @@
 				(pin passive line
 					(at 0 -43.18 0)
 					(length 5.08)
-					(name "PT8D"
+					(name "PT8D/SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1290,7 +1290,7 @@
 				(pin passive line
 					(at 0 -55.88 0)
 					(length 5.08)
-					(name "PT8C/CLK"
+					(name "PT8C/SCL/CLK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5552,10 +5552,6 @@
 		(uuid "fb564b52-5ebd-4b45-b93c-b4e05e2a549a")
 	)
 	(no_connect
-		(at 157.48 217.17)
-		(uuid "1a5e21ab-7f06-47ab-bb9f-4fc5e02671ca")
-	)
-	(no_connect
 		(at 157.48 83.82)
 		(uuid "39388da9-7a98-4f07-baa4-3fd2b74f9e26")
 	)
@@ -5566,10 +5562,6 @@
 	(no_connect
 		(at 157.48 222.25)
 		(uuid "82cd719e-f763-4d14-b3b1-4f773e249396")
-	)
-	(no_connect
-		(at 157.48 96.52)
-		(uuid "8561099f-519f-410d-b401-cd977fdfb66e")
 	)
 	(no_connect
 		(at 157.48 219.71)
@@ -5958,6 +5950,16 @@
 			(type default)
 		)
 		(uuid "1a77f32f-2ccd-41d8-b03e-c31b5b6f3ebd")
+	)
+	(wire
+		(pts
+			(xy 124.46 92.71) (xy 124.46 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a8c9883-d68f-490b-a227-219e596afec5")
 	)
 	(wire
 		(pts
@@ -6931,6 +6933,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 96.52) (xy 130.81 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a2cdeb0-b2b2-4187-8354-f8365171abe1")
+	)
+	(wire
+		(pts
 			(xy 153.67 191.77) (xy 157.48 191.77)
 		)
 		(stroke
@@ -7511,6 +7523,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 96.52) (xy 157.48 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f0c5ca-ad04-448e-8dea-3d227f0726be")
+	)
+	(wire
+		(pts
 			(xy 340.36 52.07) (xy 340.36 57.15)
 		)
 		(stroke
@@ -7861,6 +7883,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 212.09) (xy 125.73 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a26059d4-278d-43d8-8636-e133467eb1f7")
+	)
+	(wire
+		(pts
 			(xy 153.67 91.44) (xy 157.48 91.44)
 		)
 		(stroke
@@ -7888,6 +7920,16 @@
 			(type default)
 		)
 		(uuid "a42946fc-002a-491b-a0a1-38bf06eb99c6")
+	)
+	(wire
+		(pts
+			(xy 138.43 217.17) (xy 157.48 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4701832-1cfc-4773-90d2-3e2f7a1da21a")
 	)
 	(wire
 		(pts
@@ -9178,6 +9220,16 @@
 			(type default)
 		)
 		(uuid "f73563ff-08d5-4acf-ad50-d8c4b4feb560")
+	)
+	(wire
+		(pts
+			(xy 125.73 217.17) (xy 130.81 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7d232d7-f26a-4eca-9e85-2545403e4c8f")
 	)
 	(wire
 		(pts
@@ -13594,6 +13646,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 134.62 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22149734-722e-4699-a5d1-9fd765d0badb")
+		(property "Reference" "R10"
+			(at 134.62 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7K"
+			(at 134.62 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 134.874 95.504 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 134.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "291600ad-4250-4348-a34f-07f787637632")
+		)
+		(pin "1"
+			(uuid "a4d3cde1-13b5-4f9f-aaa9-e92572f50efb")
+		)
+		(instances
+			(project "MMU_3V3"
+				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 231.14 40.64 0)
 		(unit 1)
@@ -14321,6 +14441,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 124.46 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4244e0d5-01be-4f85-a17e-f9a012d27e11")
+		(property "Reference" "#PWR050"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 124.46 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 124.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9c391cf-93aa-4871-a462-bd50d4e77af6")
+		)
+		(instances
+			(project "MMU_3V3"
+				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 288.29 74.93 0)
 		(unit 1)
@@ -14928,6 +15113,71 @@
 			(project "MMU_3V3"
 				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 125.73 212.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64f83a31-037f-425c-abba-c842b790d012")
+		(property "Reference" "#PWR049"
+			(at 125.73 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 125.73 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 125.73 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c4e3e07-daa8-48d4-9230-6554807af8e2")
+		)
+		(instances
+			(project "MMU_3V3"
+				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -16124,6 +16374,74 @@
 			(project "MMU_3V3"
 				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 134.62 217.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c3e9007-3dd0-4236-98a6-da7c16d2f923")
+		(property "Reference" "R9"
+			(at 134.62 210.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7K"
+			(at 134.62 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 134.874 216.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 134.62 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "37b5ff7d-4235-4250-827a-6ce9cc507719")
+		)
+		(pin "1"
+			(uuid "5fe34a34-234a-4759-af74-fe4eda70aee4")
+		)
+		(instances
+			(project "MMU_3V3"
+				(path "/b9cad193-50e5-4a67-9349-75ffc3565360"
+					(reference "R9")
 					(unit 1)
 				)
 			)
