@@ -10949,7 +10949,7 @@
 			)
 		)
 	)
-	(global_label "MD7_~{OE}"
+	(global_label "MD7_OE"
 		(shape input)
 		(at 153.67 116.84 180)
 		(fields_autoplaced yes)
@@ -11653,7 +11653,7 @@
 			)
 		)
 	)
-	(global_label "MD7_~{OE}"
+	(global_label "MD7_OE"
 		(shape input)
 		(at 346.71 219.71 0)
 		(fields_autoplaced yes)
@@ -12039,7 +12039,7 @@
 		)
 		(uuid "94211a1d-1f19-4555-b188-1176b516c31c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.3068 111.76 0)
+			(at 143.5486 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
