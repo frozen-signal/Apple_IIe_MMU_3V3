@@ -74,6 +74,10 @@
         [
           "clearance|151907914|104858928|71673bb0-d1fc-45bc-8c88-5b06a0651d14|9b438a05-1373-4fb7-bdc9-e0dac96317e8",
           ""
+        ],
+        [
+          "courtyards_overlap|156724400|102964971|48c4bf83-5953-4255-a137-65436f58bf9e|53319d2b-d8ae-452f-871e-53eb26c674c3",
+          ""
         ]
       ],
       "meta": {
@@ -125,6 +129,7 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "ignore",
+        "text_on_edge_cuts": "error",
         "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -161,9 +166,9 @@
       },
       "teardrop_options": [
         {
-          "td_onpthpad": true,
+          "td_onpthpad": false,
           "td_onroundshapesonly": false,
-          "td_onsmdpad": true,
+          "td_onsmdpad": false,
           "td_ontrackend": false,
           "td_onvia": true
         }
