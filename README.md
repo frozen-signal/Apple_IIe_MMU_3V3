@@ -8,6 +8,6 @@ The prototype of this adapter seems to work, but it has not yet been thoroughly 
 
 ## The MMU Adapter
 <a align="center">
-    <img src="/resources/MMU_Raytraced.png" style="width: 480px"/>
+    <img src="/resources/MMU_Raytraced_v0_97.png" style="width: 480px"/>
 </a>
 <p><i>A rendering of the MMU, front and back</i></p>
