@@ -4,7 +4,7 @@ This repository contains design files for the Apple IIe's MMU custom IC. A proto
 ## Project status
 The prototype of this adapter seems to work, but it has not yet been thoroughly tested.
 <br/>
-![MMU](https://img.shields.io/badge/3.3_V_Apple_IIe_MMU-Careful_Optimism-yellow)<br/>
+![MMU](https://img.shields.io/badge/3.3_V_Apple_IIe_MMU-Cautious_Optimism-yellow)<br/>
 
 ## The MMU Adapter
 <a align="center">
