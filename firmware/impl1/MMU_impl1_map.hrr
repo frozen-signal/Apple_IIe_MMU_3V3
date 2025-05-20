@@ -1,0 +1,174 @@
+---------------------------------------------------
+Report for cell MMU
+   Instance path: MMU
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      56.00        100.0
+                                  LUT4	     105.00        100.0
+                                 IOBUF	         40        100.0
+                                PFUREG	         43        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                    SOFT_SWITCHES_C05X	          1         3.4
+                    SOFT_SWITCHES_C00X	          1         4.2
+                              MMU_MPON	          1        16.1
+                             MMU_ROMEN	          1         0.9
+                             MMU_SELMB	          1         4.8
+                MMU_SOFT_SWITCHES_C08X	          1        10.9
+                             MMU_RW245	          1         0.9
+                                MMU_RA	          1        18.2
+                         MMU_HOLD_TIME	          1         3.3
+                               MMU_MD7	          1         8.9
+                         MMU_INTERNALS	          1         2.7
+                             MMU_CASEN	          1         0.9
+                           MMU_CXXXOUT	          1         0.9
+                      MMU_ADDR_DECODER	          1        20.8
+                      DELAY_OSCILLATOR	          1         0.0
+---------------------------------------------------
+Report for cell MMU_ADDR_DECODER
+   Instance path: MMU/U_ADDR_DECODER
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.67        20.8
+                                  LUT4	      27.00        25.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                 LS138	          1         3.3
+---------------------------------------------------
+Report for cell LS138
+   Instance path: MMU/U_ADDR_DECODER/MMU_1_J5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.83         3.3
+                                  LUT4	       6.00         5.7
+---------------------------------------------------
+Report for cell MMU_MPON
+   Instance path: MMU/U_MMU_MPON
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.00        16.1
+                                  LUT4	      20.00        19.0
+                                PFUREG	          3         7.0
+---------------------------------------------------
+Report for cell MMU_CXXXOUT
+   Instance path: MMU/U_MMU_CXXXOUT
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.9
+                                  LUT4	       1.00         1.0
+---------------------------------------------------
+Report for cell MMU_SOFT_SWITCHES_C08X
+   Instance path: MMU/U_MMU_SOFT_SWITCHES_C08X
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       6.08        10.9
+                                  LUT4	      11.00        10.5
+                                PFUREG	          7        16.3
+---------------------------------------------------
+Report for cell MMU_CASEN
+   Instance path: MMU/UMMU_CASEN
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.9
+                                  LUT4	       1.00         1.0
+---------------------------------------------------
+Report for cell DELAY_OSCILLATOR
+   Instance path: MMU/U_DELAY_OSCILLATOR
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell MMU_ROMEN
+   Instance path: MMU/U_MMU_ROMEN
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.9
+                                  LUT4	       1.00         1.0
+---------------------------------------------------
+Report for cell MMU_SELMB
+   Instance path: MMU/U_MMU_SELMB
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.67         4.8
+                                  LUT4	       7.00         6.7
+---------------------------------------------------
+Report for cell MMU_RA
+   Instance path: MMU/U_MMU_RA
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.17        18.2
+                                  LUT4	      12.00        11.4
+                                PFUREG	         16        37.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                RA_MUX	          1        18.2
+---------------------------------------------------
+Report for cell RA_MUX
+   Instance path: MMU/U_MMU_RA/MMU_RA_MUX
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.17        18.2
+                                  LUT4	      12.00        11.4
+                                PFUREG	         16        37.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        DRAM_HOLD_TIME	          1         6.0
+---------------------------------------------------
+Report for cell DRAM_HOLD_TIME
+   Instance path: MMU/U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.33         6.0
+                                PFUREG	         13        30.2
+---------------------------------------------------
+Report for cell SOFT_SWITCHES_C00X
+   Instance path: MMU/U_SOFT_SWITCHES_C00X
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.33         4.2
+                                PFUREG	          6        14.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            LATCH_9334	          1         4.2
+---------------------------------------------------
+Report for cell LATCH_9334
+   Instance path: MMU/U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.33         4.2
+                                PFUREG	          6        14.0
+---------------------------------------------------
+Report for cell SOFT_SWITCHES_C05X
+   Instance path: MMU/U_SOFT_SWITCHES_C05X
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.92         3.4
+                                  LUT4	       4.00         3.8
+                                PFUREG	          2         4.7
+---------------------------------------------------
+Report for cell MMU_MD7
+   Instance path: MMU/U_MMU_MD7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00         8.9
+                                  LUT4	      13.00        12.4
+---------------------------------------------------
+Report for cell MMU_HOLD_TIME
+   Instance path: MMU/U_MMU_HOLD_TIME
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.83         3.3
+                                PFUREG	          7        16.3
+---------------------------------------------------
+Report for cell MMU_INTERNALS
+   Instance path: MMU/UMMU_INTERNALS
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.50         2.7
+                                PFUREG	          2         4.7
+---------------------------------------------------
+Report for cell MMU_RW245
+   Instance path: MMU/U_MMU_RW245
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.9
+                                  LUT4	       2.00         1.9

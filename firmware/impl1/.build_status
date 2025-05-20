@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1747777407"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1747777402">
+            <Task name="Map" build_result="2" update_result="0" update_time="1747777402"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1747777402"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1747777406">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1747777406"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1747777406"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1747777401">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1747777401"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1747777401"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1747776997"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1747776997"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/MMU_impl1_map.vdb" last_build_time="1747777402" last_build_size="56917"/>
+        <Report name="MMU_impl1.bgn" last_build_time="1747777407" last_build_size="3980"/>
+        <Report name="MMU_impl1.jed" last_build_time="1747777407" last_build_size="76515"/>
+        <Report name="MMU_impl1.lsedata" last_build_time="1747777401" last_build_size="212442"/>
+        <Report name="MMU_impl1.ncd" last_build_time="1747777406" last_build_size="134058"/>
+        <Report name="MMU_impl1.ngd" last_build_time="1747777401" last_build_size="118002"/>
+        <Report name="MMU_impl1.tw1" last_build_time="1747777402" last_build_size="11631"/>
+        <Report name="MMU_impl1.twr" last_build_time="1747777406" last_build_size="44393"/>
+        <Report name="MMU_impl1_map.ncd" last_build_time="1747777402" last_build_size="94879"/>
+    </Strategy>
+</BuildStatus>
