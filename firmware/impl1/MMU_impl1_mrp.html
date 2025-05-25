@@ -1,433 +1,0 @@
-<HTML>
-<HEAD><TITLE>Project Summary</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="Mrp"></A>
-             Lattice Mapping Report File for Design Module 'MMU'
-
-
-
-<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
-
-Command line:   map -a MachXO2 -p LCMXO2-256HC -t CSBGA132 -s 4 -oc Commercial
-     MMU_impl1.ngd -o MMU_impl1_map.ncd -pr MMU_impl1.prf -mp MMU_impl1.mrp -lpf
-     C:/dev/Apple_IIe_MMU_3V3/firmware/impl1/MMU_impl1.lpf -lpf
-     C:/dev/Apple_IIe_MMU_3V3/firmware/MMU.lpf -c 0 -gui 
-Target Vendor:  LATTICE
-Target Device:  LCMXO2-256HCCSBGA132
-Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.1.454
-Mapped on:  05/20/25  17:43:22
-
-
-<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     43 out of   424 (10%)
-      PFU registers:           43 out of   256 (17%)
-      PIO registers:            0 out of   168 (0%)
-   Number of SLICEs:        56 out of   128 (44%)
-      SLICEs as Logic/ROM:     56 out of   128 (44%)
-      SLICEs as RAM:            0 out of    96 (0%)
-      SLICEs as Carry:          0 out of   128 (0%)
-   Number of LUT4s:        105 out of   256 (41%)
-      Number used as logic LUTs:        105
-      Number used as distributed RAM:     0
-      Number used as ripple logic:        0
-      Number used as shift registers:     0
-   Number of PIO sites used: 40 + 4(JTAG) out of 56 (79%)
-   Number of block RAMs:  0 out of 0
-   Number of GSRs:        1 out of 1 (100%)
-   EFB used :        No
-   JTAG used :       No
-   Readback used :   No
-   Oscillator used : Yes
-   Startup used :    No
-   POR :             On
-   Bandgap :         On
-   Number of Power Controller:  0 out of 1 (0%)
-   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
-   Number of DCCA:  0 out of 8 (0%)
-   Number of DCMA:  0 out of 2 (0%)
-   Notes:-
-      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
-     distributed RAMs) + 2*(Number of ripple logic)
-      2. Number of logic LUT4s does not include count of distributed RAM and
-     ripple logic.
-   Number of clocks:  14
-     Net PHI_0_c: 2 loads, 2 rising, 0 falling (Driver: PIO PHI_0 )
-     Net L5_6_N_173: 1 loads, 1 rising, 0 falling (Driver:
-     U_ADDR_DECODER/i642_2_lut_4_lut )
-     Net U_MMU_SOFT_SWITCHES_C08X/DEV0_N_N_87: 6 loads, 6 rising, 0 falling
-     (Driver: i1296_3_lut )
-     Net U_SOFT_SWITCHES_C05X/PG2_N_129: 1 loads, 1 rising, 0 falling (Driver:
-     U_MMU_SOFT_SWITCHES_C08X/i1_2_lut_3_lut_4_lut_4_lut )
-     Net Q4_N_107: 1 loads, 1 rising, 0 falling (Driver:
-     U_MMU_SOFT_SWITCHES_C08X/i1299_2_lut_2_lut_3_lut_4_lut_4_lut )
-     Net Q5_N_110: 1 loads, 1 rising, 0 falling (Driver:
-
-     U_MMU_SOFT_SWITCHES_C08X/i1_2_lut_3_lut_4_lut_4_lut_adj_54 )
-     Net U_SOFT_SWITCHES_C05X/HIRES_N_134: 1 loads, 1 rising, 0 falling (Driver:
-     U_MMU_SOFT_SWITCHES_C08X/i1_2_lut_3_lut_4_lut_4_lut_adj_55 )
-     Net DELAY_CLK: 11 loads, 11 rising, 0 falling (Driver:
-     U_DELAY_OSCILLATOR/U_OSCH )
-     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101: 1 loads, 1 rising, 0
-     falling (Driver: i1_2_lut_4_lut )
-     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104: 1 loads, 1 rising, 0
-     falling (Driver: i1_2_lut_4_lut_adj_63 )
-     Net U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 rising, 0 falling
-     (Driver: U_MMU_RA/MMU_RA_MUX/i1284_2_lut_rep_34 )
-     Net U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246: 1 loads, 1 rising, 0
-     falling (Driver:
-     U_MMU_RA/MMU_RA_MUX/RA_ENABLE_N_N_234_I_0_2_lut_3_lut_3_lut )
-     Net Q0_N_91: 1 loads, 1 rising, 0 falling (Driver:
-     U_SOFT_SWITCHES_C05X/i1302_2_lut_2_lut_3_lut_4_lut )
-     Net Q1_N_98: 1 loads, 1 rising, 0 falling (Driver:
-     U_SOFT_SWITCHES_C05X/i1_2_lut_3_lut_4_lut )
-   Number of Clock Enables:  0
-   Number of LSRs:  7
-     Net PHI_0_c: 1 loads, 1 LSLICEs
-     Net L5_6_N_173: 1 loads, 1 LSLICEs
-     Net R_W_N_c: 1 loads, 1 LSLICEs
-     Net A_c_0: 4 loads, 4 LSLICEs
-     Net INTC8EN_N_174: 1 loads, 1 LSLICEs
-     Net U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 LSLICEs
-     Net U_MMU_RA/MMU_RA_MUX/n1647: 1 loads, 1 LSLICEs
-   Number of nets driven by tri-state buffers:  0
-   Top 10 highest fanout non-clock nets:
-     Net A_c_1: 23 loads
-     Net A_c_0: 21 loads
-     Net A_c_2: 20 loads
-     Net A_c_3: 20 loads
-     Net PRAS_N_c: 13 loads
-     Net R_W_N_c: 13 loads
-     Net A_c_13: 12 loads
-     Net A_c_12: 10 loads
-     Net A_c_14: 10 loads
-     Net A_c_15: 10 loads
-
-
-
-
-   Number of warnings:  2
-   Number of errors:    0
-     
-
-
-
-
-<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
-
-WARNING - map: Register U_MMU_RA/MMU_RA_MUX/RA_ENABLE_N_I_0_set has a clock
-     signal tied to GND.
-WARNING - map: Register UMMU_INTERNALS/INTC8EN_I_0_set has a clock signal tied
-     to GND.
-
-
-
-
-
-<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
-
-+---------------------+-----------+-----------+------------+
-| IO Name             | Direction | Levelmode | IO         |
-|                     |           |  IO_TYPE  | Register   |
-+---------------------+-----------+-----------+------------+
-| ROMEN1_N            | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| KBD_N               | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| EN80_N              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ORA[0]              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ORA[1]              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ORA[2]              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ORA[3]              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ORA[4]              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ORA[5]              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ORA[7]              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| DMA_N               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| INH_N               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| R_W_N               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| PRAS_N              | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| Q3                  | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| PHI_0               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[0]                | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[1]                | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[2]                | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[3]                | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ORA[6]              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[4]                | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[5]                | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[6]                | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[7]                | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[8]                | INPUT     | LVTTL33   |            |
-
-+---------------------+-----------+-----------+------------+
-| A[9]                | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[10]               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[11]               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[12]               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[13]               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[14]               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| A[15]               | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| MD7_OE              | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ORA_OE_N            | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| CXXXOUT             | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| CASEN_N             | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| R_W_N_245           | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| MD7                 | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-| ROMEN2_N            | OUTPUT    | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
-
-
-
-<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
-
-Block i1370 undriven or does not drive anything - clipped.
-Signal n1643 was merged into signal R_W_N_c
-Signal A_0__N_220 was merged into signal A_c_0
-Signal GND_net undriven or does not drive anything - clipped.
-Signal n1704 undriven or does not drive anything - clipped.
-Signal VCC_net undriven or does not drive anything - clipped.
-Block U_MMU_RW245/R_W_N_I_0_1_lut_rep_29 was optimized away.
-Block U_MMU_MD7/A_0__I_0_1_lut was optimized away.
-Block i1 was optimized away.
-Block m0_lut was optimized away.
-
-     
-
-OSC Summary
------------
-
-OSC 1:                                     Pin/Node Value
-  OSC Instance Name:                                U_DELAY_OSCILLATOR/U_OSCH
-  OSC Type:                                         OSCH
-  STDBY Input:                                      NONE
-  OSC Output:                              NODE     DELAY_CLK
-  OSC Nominal Frequency (MHz):                      133.00
-
-
-
-
-<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
----------------
-
-Instance Name: U_DELAY_OSCILLATOR/U_OSCH
-         Type: OSCH
-
-
-
-<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
----------
-
-GSR Component:
-   The Global Set Reset (GSR) resource has been used to implement a global reset
-        of the design. The reset signal used for GSR control is 'MPON_N'.
-        
-
-     GSR Property:
-   The design components with GSR property set to ENABLED will respond to global
-        set reset while the components with GSR property set to DISABLED will
-        not.
-        
-
-     Components with disabled GSR Property
--------------------------------------
-
-     These components have the GSR property set to DISABLED. The components will
-     not respond to the reset signal 'MPON_N' via the GSR component.
-
-     Type and number of components of the type: 
-   Register = 28 
-
-     Type and instance name of component: 
-   Register : U_MMU_MPON/M5_7_24
-   Register : U_MMU_MPON/DELTA_01XX_N_25
-   Register : U_MMU_MPON/M5_2_23
-   Register : U_MMU_RA/MMU_RA_MUX/i288
-   Register : U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0
-   Register : U_MMU_RA/MMU_RA_MUX/RA_ENABLE_N_I_0_set
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i4
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i3
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i2
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i1
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i4
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i1
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i0
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i0
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_14
-   Register : U_MMU_HOLD_TIME/D_PHI_0_9
-   Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i0
-   Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i5
-   Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i4
-   Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i3
-   Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i2
-   Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i1
-   Register : UMMU_INTERNALS/INTC8EN_I_0_set
-   Register : UMMU_INTERNALS/i284
-
-
-     Components with synchronous local reset also reset by asynchronous GSR
-----------------------------------------------------------------------
-
-     These components have the GSR property set to ENABLED and the local reset
-     is synchronous. The components will respond to the synchronous local reset
-     and to the unrelated asynchronous reset signal 'MPON_N' via the GSR
-     component.
-
-     Type and number of components of the type: 
-   Register = 5 
-
-     Type and instance name of component: 
-   Register : U_MMU_SOFT_SWITCHES_C08X/OUT_FST_ACC_27
-   Register : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_I_0
-   Register : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q4_I_0
-   Register : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q1_I_0
-   Register : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q5_I_0
-
-
-
-<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
--------------------------
-
-   Total CPU Time: 0 secs  
-   Total REAL Time: 0 secs  
-   Peak Memory Usage: 32 MB
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-     Copyright (c) 1995 AT&T Corp.   All rights reserved.
-     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-     Copyright (c) 2001 Agere Systems   All rights reserved.
-     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
-     reserved.
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>
