@@ -1,0 +1,320 @@
+synthesis:  version Diamond (64-bit) 3.12.1.454
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Sun May 25 11:27:36 2025
+
+
+Command Line:  synthesis -f MMU_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-256HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-256HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = MMU.
+Target frequency = 2.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p C:/dev/Apple_IIe_MMU_3V3/firmware/impl1 (searchpath added)
+-p C:/dev/Apple_IIe_MMU_3V3/firmware (searchpath added)
+VHDL library = work
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/CUSTOM/MMU.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/COMMON/COMMON_INTERNALS.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/COMMON/RA_MUX.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C00X.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C05X.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/CUSTOM/DELAY_OSCILLATOR/VENDOR/LATTICE/MACHXO2/DELAY_OSCILLATOR.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/CUSTOM/DRAM_HOLD_TIME/DELAY_CLK/DRAM_HOLD_TIME.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/CUSTOM/MMU_HOLD_TIME/DELAY_CLK/MMU_HOLD_TIME.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/DEV_DECODER.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_ADDR_DECODER.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_CASEN.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_CXXXOUT.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_EN80.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_INTERNALS.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_KBD.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_MD7.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_MPON.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_RA.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_ROMEN.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_RW245.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_SELMB.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/MMU/MMU_SOFT_SWITCHES_C08X.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/TTL/LATCH_9334.vhdl
+VHDL design file = C:/dev/Apple_IIe_MMU_3V3/firmware/sources/TTL/LS138.vhdl
+NGD file = MMU_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "C:/dev/Apple_IIe_MMU_3V3/firmware/impl1". VHDL-1504
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/custom/mmu.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/custom/mmu.vhdl(17): analyzing entity mmu. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/custom/mmu.vhdl(42): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/common/common_internals.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/common/common_internals.vhdl(17): analyzing entity common_internals. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/common/common_internals.vhdl(32): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/common/ra_mux.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/common/ra_mux.vhdl(16): analyzing entity ra_mux. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/common/ra_mux.vhdl(34): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/common/soft_switches_c00x.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/common/soft_switches_c00x.vhdl(18): analyzing entity soft_switches_c00x. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/common/soft_switches_c00x.vhdl(39): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/common/soft_switches_c05x.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/common/soft_switches_c05x.vhdl(16): analyzing entity soft_switches_c05x. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/common/soft_switches_c05x.vhdl(34): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/custom/delay_oscillator/vendor/lattice/machxo2/delay_oscillator.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/custom/delay_oscillator/vendor/lattice/machxo2/delay_oscillator.vhdl(20): analyzing entity delay_oscillator. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/custom/delay_oscillator/vendor/lattice/machxo2/delay_oscillator.vhdl(26): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/custom/dram_hold_time/delay_clk/dram_hold_time.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/custom/dram_hold_time/delay_clk/dram_hold_time.vhdl(20): analyzing entity dram_hold_time. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/custom/dram_hold_time/delay_clk/dram_hold_time.vhdl(31): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/custom/mmu_hold_time/delay_clk/mmu_hold_time.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/custom/mmu_hold_time/delay_clk/mmu_hold_time.vhdl(20): analyzing entity mmu_hold_time. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/custom/mmu_hold_time/delay_clk/mmu_hold_time.vhdl(29): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/dev_decoder.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/dev_decoder.vhdl(16): analyzing entity dev_decoder. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/dev_decoder.vhdl(30): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_addr_decoder.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_addr_decoder.vhdl(16): analyzing entity mmu_addr_decoder. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_addr_decoder.vhdl(53): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_casen.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_casen.vhdl(18): analyzing entity mmu_casen. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_casen.vhdl(36): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_cxxxout.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_cxxxout.vhdl(17): analyzing entity mmu_cxxxout. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_cxxxout.vhdl(28): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_en80.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_en80.vhdl(17): analyzing entity mmu_en80. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_en80.vhdl(29): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_internals.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_internals.vhdl(17): analyzing entity mmu_internals. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_internals.vhdl(38): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_kbd.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_kbd.vhdl(17): analyzing entity mmu_kbd. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_kbd.vhdl(27): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_md7.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_md7.vhdl(16): analyzing entity mmu_md7. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_md7.vhdl(37): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_mpon.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_mpon.vhdl(17): analyzing entity mmu_mpon. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_mpon.vhdl(28): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_ra.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_ra.vhdl(17): analyzing entity mmu_ra. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_ra.vhdl(32): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_romen.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_romen.vhdl(17): analyzing entity mmu_romen. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_romen.vhdl(35): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_rw245.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_rw245.vhdl(17): analyzing entity mmu_rw245. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_rw245.vhdl(30): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_selmb.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_selmb.vhdl(17): analyzing entity mmu_selmb. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_selmb.vhdl(35): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_soft_switches_c08x.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_soft_switches_c08x.vhdl(17): analyzing entity mmu_soft_switches_c08x. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/mmu/mmu_soft_switches_c08x.vhdl(33): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/ttl/latch_9334.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/ttl/latch_9334.vhdl(17): analyzing entity latch_9334. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/ttl/latch_9334.vhdl(30): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_mmu_3v3/firmware/sources/ttl/ls138.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/ttl/ls138.vhdl(18): analyzing entity ls138. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/sources/ttl/ls138.vhdl(27): analyzing architecture rtl. VHDL-1010
+unit MMU is not yet analyzed. VHDL-1485
+unit MMU is not yet analyzed. VHDL-1485
+c:/dev/apple_iie_mmu_3v3/firmware/custom/mmu.vhdl(17): executing MMU(RTL)
+
+WARNING - synthesis: c:/dev/apple_iie_mmu_3v3/firmware/custom/mmu.vhdl(40): replacing existing netlist MMU(RTL). VHDL-1205
+Top module name (VHDL): MMU
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c256.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.41.
+Top-level module name = MMU.
+
+
+
+GSR instance connected to net MPON_N.
+WARNING - synthesis: mRegister \UMMU_INTERNALS/INTC8EN_I_0_reset is stuck at Zero
+WARNING - synthesis: mRegister \U_MMU_RA/MMU_RA_MUX/RA_ENABLE_N_I_0_reset is stuck at Zero
+Applying 2.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in MMU_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file MMU_impl1.ngd.
+
+################### Begin Area Report (MMU)######################
+Number of register bits => 43 of 424 (10 % )
+FD1S1A => 4
+FD1S1B => 2
+FD1S1D => 2
+FD1S1I => 5
+FD1S3AX => 26
+FD1S3AY => 3
+FD1S3IX => 1
+GSR => 1
+IB => 22
+L6MUX21 => 1
+LUT4 => 107
+OB => 9
+OBZ => 9
+OSCH => 1
+PFUMX => 4
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 14
+  Net : U_DELAY_OSCILLATOR/DELAY_CLK, loads : 20
+  Net : PHI_0_c, loads : 14
+  Net : DEV0_N_N_87, loads : 7
+  Net : U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1, loads : 3
+  Net : U_MMU_SOFT_SWITCHES_C08X/PG2_N_129, loads : 1
+  Net : U_ADDR_DECODER/L5_6_N_173, loads : 2
+  Net : U_MMU_SOFT_SWITCHES_C08X/HIRES_N_134, loads : 1
+  Net : Q3_N_104, loads : 1
+  Net : U_MMU_SOFT_SWITCHES_C08X/Q4_N_107, loads : 1
+  Net : U_SOFT_SWITCHES_C05X/Q1_N_98, loads : 1
+  Net : U_SOFT_SWITCHES_C05X/Q0_N_91, loads : 1
+  Net : U_MMU_SOFT_SWITCHES_C08X/Q5_N_110, loads : 1
+  Net : U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246, loads : 1
+  Net : Q2_N_101, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : A_c_1, loads : 23
+  Net : A_c_3, loads : 20
+  Net : A_c_2, loads : 20
+  Net : A_c_0, loads : 18
+  Net : PRAS_N_c, loads : 13
+  Net : R_W_N_c, loads : 13
+  Net : A_c_13, loads : 12
+  Net : A_c_15, loads : 10
+  Net : A_c_14, loads : 10
+  Net : A_c_12, loads : 10
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk6 [get_nets HIRES_N_134]             |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk5 [get_nets DEV0_N_N_87]             |    2.000 MHz|  309.023 MHz|     2  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk4 [get_nets Q2_N_101]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk3 [get_nets PG2_N_129]               |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk2 [get_nets Q3_N_104]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk1 [get_nets PHI_0_c]                 |    2.000 MHz|  125.141 MHz|     6  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk0 [get_nets DELAY_CLK]               |    2.000 MHz|  281.452 MHz|     2  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 71.051  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.484  secs
+--------------------------------------------------------------
