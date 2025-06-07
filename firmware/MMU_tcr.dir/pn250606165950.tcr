@@ -1,0 +1,12 @@
+#Start recording tcl command: 6/4/2025 20:00:36
+#Project Location: C:/dev/Apple_IIe_MMU_3V3/firmware; Project name: MMU
+prj_project open "C:/dev/Apple_IIe_MMU_3V3/firmware/MMU.ldf"
+pgr_project close
+prj_run Export -impl impl1 -forceAll
+pgr_project open "C:/dev/Apple_IIe_MMU_3V3/firmware/impl1/impl1.xcf"
+pgr_program run
+pgr_project close
+pgr_project open "C:/dev/Apple_IIe_MMU_3V3/firmware/impl1/impl1.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 6/6/2025 16:59:50

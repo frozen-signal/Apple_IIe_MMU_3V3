@@ -5733,16 +5733,16 @@
 		(uuid "f2d2cc67-3b92-4125-a526-7456955a6e1c")
 	)
 	(junction
-		(at 293.37 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3bbcc47-efd1-4988-9088-b82a00bb0838")
-	)
-	(junction
 		(at 199.39 210.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f747f473-26c9-469d-bbd0-fa4ce3ffb048")
+	)
+	(junction
+		(at 307.34 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7615f2d-7396-4011-8d08-56e7ba70c305")
 	)
 	(junction
 		(at 222.25 116.84)
@@ -6652,16 +6652,6 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 111.76) (xy 293.37 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "301df5bc-7ad8-4626-8b08-daa5e1211f3a")
-	)
-	(wire
-		(pts
 			(xy 157.48 66.04) (xy 109.22 66.04)
 		)
 		(stroke
@@ -6799,6 +6789,16 @@
 			(type default)
 		)
 		(uuid "377f1da6-651c-458b-b485-bb0ba6926137")
+	)
+	(wire
+		(pts
+			(xy 307.34 100.33) (xy 293.37 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "387547db-b5dd-4902-b710-b01a0a415c97")
 	)
 	(wire
 		(pts
@@ -7282,7 +7282,7 @@
 	)
 	(wire
 		(pts
-			(xy 293.37 110.49) (xy 293.37 111.76)
+			(xy 293.37 110.49) (xy 293.37 114.3)
 		)
 		(stroke
 			(width 0)
@@ -8062,6 +8062,16 @@
 	)
 	(wire
 		(pts
+			(xy 307.34 100.33) (xy 307.34 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9089c157-1117-4b53-b618-6dad4e6cd80e")
+	)
+	(wire
+		(pts
 			(xy 30.48 234.95) (xy 43.18 234.95)
 		)
 		(stroke
@@ -8169,16 +8179,6 @@
 			(type default)
 		)
 		(uuid "970b06fe-f8d0-4111-985b-1c45dc3a7960")
-	)
-	(wire
-		(pts
-			(xy 307.34 119.38) (xy 307.34 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97a6d82a-9919-4876-b3aa-d6fa8893c524")
 	)
 	(wire
 		(pts
@@ -9042,16 +9042,6 @@
 	)
 	(wire
 		(pts
-			(xy 293.37 111.76) (xy 293.37 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca2ffc9e-049c-418f-9158-aeef51d82711")
-	)
-	(wire
-		(pts
 			(xy 38.1 99.06) (xy 38.1 101.6)
 		)
 		(stroke
@@ -9832,7 +9822,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 100.33) (xy 293.37 100.33)
+			(xy 309.88 100.33) (xy 307.34 100.33)
 		)
 		(stroke
 			(width 0)
