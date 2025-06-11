@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Fri Jun 06 17:00:27 2025
+Wed Jun 11 16:59:52 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -18,7 +18,132 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 500.000000 -name clk6 [get_nets \U_MMU_SOFT_SWITCHES_C08X/DEV0_N]
+Constraint: create_clock -period 500.000000 -name clk6 [get_nets \U_SOFT_SWITCHES_C05X/PG2_N_129]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 500.000000 -name clk5 [get_nets \U_SOFT_SWITCHES_C05X/HIRES_N_134]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 500.000000 -name clk4 [get_nets Q2_N_101]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 500.000000 -name clk3 [get_nets PHI_0_c]
+            6 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 490.968ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \U_MMU_MPON/DELTA_01XX_N_25  (from PHI_0_c +)
+   Destination:    FD1S1D     CD             \UMMU_INTERNALS/i278  (to PHI_0_c +)
+
+   Delay:                   8.872ns  (32.8% logic, 67.2% route), 6 logic levels.
+
+ Constraint Details:
+
+      8.872ns data_path \U_MMU_MPON/DELTA_01XX_N_25 to \UMMU_INTERNALS/i278 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 490.968ns
+
+ Path Details: \U_MMU_MPON/DELTA_01XX_N_25 to \UMMU_INTERNALS/i278
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_MMU_MPON/DELTA_01XX_N_25 (from PHI_0_c)
+Route         1   e 0.941                                  DELTA_01XX_N
+LUT4        ---     0.493              D to Z              \U_ADDR_DECODER/i9_4_lut
+Route         1   e 0.941                                  \U_ADDR_DECODER/n27
+LUT4        ---     0.493              A to Z              \U_ADDR_DECODER/i14_4_lut
+Route         1   e 0.941                                  \U_ADDR_DECODER/n32
+LUT4        ---     0.493              B to Z              \U_ADDR_DECODER/i16_4_lut
+Route         1   e 0.941                                  \U_ADDR_DECODER/n34
+LUT4        ---     0.493              B to Z              \U_ADDR_DECODER/i17_4_lut
+Route         3   e 1.258                                  MPON_N
+LUT4        ---     0.493              C to Z              \UMMU_INTERNALS/i1248_4_lut_4_lut
+Route         1   e 0.941                                  \UMMU_INTERNALS/INTC8EN_N_174
+                  --------
+                    8.872  (32.8% logic, 67.2% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 492.145ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \U_MMU_MPON/M5_2_23  (from PHI_0_c +)
+   Destination:    FD1S1D     CD             \UMMU_INTERNALS/i278  (to PHI_0_c +)
+
+   Delay:                   7.695ns  (31.4% logic, 68.6% route), 5 logic levels.
+
+ Constraint Details:
+
+      7.695ns data_path \U_MMU_MPON/M5_2_23 to \UMMU_INTERNALS/i278 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 492.145ns
+
+ Path Details: \U_MMU_MPON/M5_2_23 to \UMMU_INTERNALS/i278
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_MMU_MPON/M5_2_23 (from PHI_0_c)
+Route         2   e 1.198                                  M5_2
+LUT4        ---     0.493              B to Z              \U_ADDR_DECODER/i7_2_lut
+Route         1   e 0.941                                  \U_ADDR_DECODER/n25
+LUT4        ---     0.493              A to Z              \U_ADDR_DECODER/i16_4_lut
+Route         1   e 0.941                                  \U_ADDR_DECODER/n34
+LUT4        ---     0.493              B to Z              \U_ADDR_DECODER/i17_4_lut
+Route         3   e 1.258                                  MPON_N
+LUT4        ---     0.493              C to Z              \UMMU_INTERNALS/i1248_4_lut_4_lut
+Route         1   e 0.941                                  \UMMU_INTERNALS/INTC8EN_N_174
+                  --------
+                    7.695  (31.4% logic, 68.6% route), 5 logic levels.
+
+
+Passed:  The following path meets requirements by 492.145ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \U_MMU_MPON/M5_7_24  (from PHI_0_c +)
+   Destination:    FD1S1D     CD             \UMMU_INTERNALS/i278  (to PHI_0_c +)
+
+   Delay:                   7.695ns  (31.4% logic, 68.6% route), 5 logic levels.
+
+ Constraint Details:
+
+      7.695ns data_path \U_MMU_MPON/M5_7_24 to \UMMU_INTERNALS/i278 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 492.145ns
+
+ Path Details: \U_MMU_MPON/M5_7_24 to \UMMU_INTERNALS/i278
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_MMU_MPON/M5_7_24 (from PHI_0_c)
+Route         2   e 1.198                                  M5_7
+LUT4        ---     0.493              D to Z              \U_ADDR_DECODER/i14_4_lut
+Route         1   e 0.941                                  \U_ADDR_DECODER/n32
+LUT4        ---     0.493              B to Z              \U_ADDR_DECODER/i16_4_lut
+Route         1   e 0.941                                  \U_ADDR_DECODER/n34
+LUT4        ---     0.493              B to Z              \U_ADDR_DECODER/i17_4_lut
+Route         3   e 1.258                                  MPON_N
+LUT4        ---     0.493              C to Z              \UMMU_INTERNALS/i1248_4_lut_4_lut
+Route         1   e 0.941                                  \UMMU_INTERNALS/INTC8EN_N_174
+                  --------
+                    7.695  (31.4% logic, 68.6% route), 5 logic levels.
+
+Report: 9.032 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 500.000000 -name clk2 [get_nets \U_MMU_SOFT_SWITCHES_C08X/DEV0_N]
             4 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -69,8 +194,8 @@ Passed:  The following path meets requirements by 496.764ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \U_MMU_SOFT_SWITCHES_C08X/OUT_FST_ACC_27 (from \U_MMU_SOFT_SWITCHES_C08X/DEV0_N)
 Route         2   e 1.198                                  \U_MMU_SOFT_SWITCHES_C08X/OUT_FST_ACC
-LUT4        ---     0.493              D to Z              \U_MMU_SOFT_SWITCHES_C08X/i1_4_lut_rep_37
-Route         1   e 0.941                                  \U_MMU_SOFT_SWITCHES_C08X/n1684
+LUT4        ---     0.493              D to Z              \U_MMU_SOFT_SWITCHES_C08X/i1_4_lut_rep_30
+Route         1   e 0.941                                  \U_MMU_SOFT_SWITCHES_C08X/n1597
                   --------
                     3.076  (30.5% logic, 69.5% route), 2 logic levels.
 
@@ -105,216 +230,93 @@ Report: 3.236 ns is the maximum delay for this constraint.
 
 
 ================================================================================
-Constraint: create_clock -period 500.000000 -name clk5 [get_nets Q2_N_101]
+Constraint: create_clock -period 500.000000 -name clk1 [get_nets Q3_N_104]
             0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
-
-
-================================================================================
-Constraint: create_clock -period 500.000000 -name clk4 [get_nets Q3_N_104]
-            0 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Constraint: create_clock -period 500.000000 -name clk3 [get_nets HIRES_N_134]
-            0 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Constraint: create_clock -period 500.000000 -name clk2 [get_nets PG2_N_129]
-            0 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Constraint: create_clock -period 500.000000 -name clk1 [get_nets PHI_0_c]
-            6 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Passed:  The following path meets requirements by 490.711ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \U_MMU_MPON/M5_7_24  (from PHI_0_c +)
-   Destination:    FD1S1D     CD             \UMMU_INTERNALS/i283  (to PHI_0_c +)
-
-   Delay:                   9.129ns  (31.9% logic, 68.1% route), 6 logic levels.
-
- Constraint Details:
-
-      9.129ns data_path \U_MMU_MPON/M5_7_24 to \UMMU_INTERNALS/i283 meets
-    500.000ns delay constraint less
-      0.160ns L_S requirement (totaling 499.840ns) by 490.711ns
-
- Path Details: \U_MMU_MPON/M5_7_24 to \UMMU_INTERNALS/i283
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_MMU_MPON/M5_7_24 (from PHI_0_c)
-Route         2   e 1.198                                  M5_7
-LUT4        ---     0.493              B to Z              \U_MMU_MD7/i1_2_lut
-Route         1   e 0.941                                  \U_MMU_MD7/n10
-LUT4        ---     0.493              B to Z              \U_MMU_MD7/i5_4_lut
-Route         1   e 0.941                                  \U_MMU_MD7/n14
-LUT4        ---     0.493              D to Z              \U_MMU_MD7/i1_4_lut
-Route         3   e 1.258                                  MPON_N
-LUT4        ---     0.493              B to Z              \UMMU_INTERNALS/i1308_4_lut
-Route         1   e 0.941                                  \UMMU_INTERNALS/n1552
-LUT4        ---     0.493              C to Z              \UMMU_INTERNALS/i1310_2_lut_3_lut
-Route         1   e 0.941                                  \UMMU_INTERNALS/INTC8EN_N_174
-                  --------
-                    9.129  (31.9% logic, 68.1% route), 6 logic levels.
-
-
-Passed:  The following path meets requirements by 490.711ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \U_MMU_MPON/M5_2_23  (from PHI_0_c +)
-   Destination:    FD1S1D     CD             \UMMU_INTERNALS/i283  (to PHI_0_c +)
-
-   Delay:                   9.129ns  (31.9% logic, 68.1% route), 6 logic levels.
-
- Constraint Details:
-
-      9.129ns data_path \U_MMU_MPON/M5_2_23 to \UMMU_INTERNALS/i283 meets
-    500.000ns delay constraint less
-      0.160ns L_S requirement (totaling 499.840ns) by 490.711ns
-
- Path Details: \U_MMU_MPON/M5_2_23 to \UMMU_INTERNALS/i283
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_MMU_MPON/M5_2_23 (from PHI_0_c)
-Route         2   e 1.198                                  M5_2
-LUT4        ---     0.493              A to Z              \U_MMU_MD7/i1_2_lut
-Route         1   e 0.941                                  \U_MMU_MD7/n10
-LUT4        ---     0.493              B to Z              \U_MMU_MD7/i5_4_lut
-Route         1   e 0.941                                  \U_MMU_MD7/n14
-LUT4        ---     0.493              D to Z              \U_MMU_MD7/i1_4_lut
-Route         3   e 1.258                                  MPON_N
-LUT4        ---     0.493              B to Z              \UMMU_INTERNALS/i1308_4_lut
-Route         1   e 0.941                                  \UMMU_INTERNALS/n1552
-LUT4        ---     0.493              C to Z              \UMMU_INTERNALS/i1310_2_lut_3_lut
-Route         1   e 0.941                                  \UMMU_INTERNALS/INTC8EN_N_174
-                  --------
-                    9.129  (31.9% logic, 68.1% route), 6 logic levels.
-
-
-Passed:  The following path meets requirements by 492.402ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \U_MMU_MPON/DELTA_01XX_N_25  (from PHI_0_c +)
-   Destination:    FD1S1D     CD             \UMMU_INTERNALS/i283  (to PHI_0_c +)
-
-   Delay:                   7.438ns  (32.5% logic, 67.5% route), 5 logic levels.
-
- Constraint Details:
-
-      7.438ns data_path \U_MMU_MPON/DELTA_01XX_N_25 to \UMMU_INTERNALS/i283 meets
-    500.000ns delay constraint less
-      0.160ns L_S requirement (totaling 499.840ns) by 492.402ns
-
- Path Details: \U_MMU_MPON/DELTA_01XX_N_25 to \UMMU_INTERNALS/i283
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_MMU_MPON/DELTA_01XX_N_25 (from PHI_0_c)
-Route         1   e 0.941                                  DELTA_01XX_N
-LUT4        ---     0.493              D to Z              \U_MMU_MD7/i5_4_lut
-Route         1   e 0.941                                  \U_MMU_MD7/n14
-LUT4        ---     0.493              D to Z              \U_MMU_MD7/i1_4_lut
-Route         3   e 1.258                                  MPON_N
-LUT4        ---     0.493              B to Z              \UMMU_INTERNALS/i1308_4_lut
-Route         1   e 0.941                                  \UMMU_INTERNALS/n1552
-LUT4        ---     0.493              C to Z              \UMMU_INTERNALS/i1310_2_lut_3_lut
-Route         1   e 0.941                                  \UMMU_INTERNALS/INTC8EN_N_174
-                  --------
-                    7.438  (32.5% logic, 67.5% route), 5 logic levels.
-
-Report: 9.289 ns is the maximum delay for this constraint.
-
 
 
 ================================================================================
 Constraint: create_clock -period 500.000000 -name clk0 [get_nets DELAY_CLK]
-            12 items scored, 0 timing errors detected.
+            16 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
+Passed:  The following path meets requirements by 496.447ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16  (from DELAY_CLK +)
+   Destination:    FD1S1I     D              \U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0  (to DELAY_CLK +)
+
+   Delay:                   3.393ns  (27.6% logic, 72.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.393ns data_path \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16 to \U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 496.447ns
+
+ Path Details: \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16 to \U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16 (from DELAY_CLK)
+Route         2   e 1.198                                  \U_MMU_RA/MMU_RA_MUX/D_Q3
+LUT4        ---     0.493              B to Z              \U_MMU_RA/MMU_RA_MUX/i1268_2_lut_rep_23
+Route         3   e 1.258                                  \U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1
+                  --------
+                    3.393  (27.6% logic, 72.4% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 496.764ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S1I     CK             \U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0  (from DELAY_CLK +)
+   Destination:    FD1S1D     CD             \U_MMU_RA/MMU_RA_MUX/i282  (to DELAY_CLK +)
+
+   Delay:                   3.076ns  (30.5% logic, 69.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.076ns data_path \U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0 to \U_MMU_RA/MMU_RA_MUX/i282 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 496.764ns
+
+ Path Details: \U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0 to \U_MMU_RA/MMU_RA_MUX/i282
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0 (from DELAY_CLK)
+Route         2   e 1.198                                  \U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_HIGH
+LUT4        ---     0.493              B to Z              \U_MMU_RA/MMU_RA_MUX/PRAS_N_I_0_2_lut_rep_22
+Route         1   e 0.941                                  \U_MMU_RA/MMU_RA_MUX/n1589
+                  --------
+                    3.076  (30.5% logic, 69.5% route), 2 logic levels.
+
+
 Passed:  The following path meets requirements by 498.455ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5  (from DELAY_CLK +)
-   Destination:    FD1S3AX    D              \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_9  (to DELAY_CLK +)
+   Source:         FD1S3AX    CK             \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2  (from DELAY_CLK +)
+   Destination:    FD1S3AX    D              \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3  (to DELAY_CLK +)
 
    Delay:                   1.385ns  (32.1% logic, 67.9% route), 1 logic levels.
 
  Constraint Details:
 
-      1.385ns data_path \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5 to \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_9 meets
+      1.385ns data_path \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2 to \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3 meets
     500.000ns delay constraint less
       0.160ns L_S requirement (totaling 499.840ns) by 498.455ns
 
- Path Details: \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5 to \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_9
+ Path Details: \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2 to \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5 (from DELAY_CLK)
-Route         1   e 0.941                                  \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER[5]
+L_CO        ---     0.444             CK to Q              \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2 (from DELAY_CLK)
+Route         1   e 0.941                                  \U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER[2]
                   --------
                     1.385  (32.1% logic, 67.9% route), 1 logic levels.
 
-
-Passed:  The following path meets requirements by 498.455ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \U_MMU_HOLD_TIME/SHIFT_REGISTER_i1  (from DELAY_CLK +)
-   Destination:    FD1S3AX    D              \U_MMU_HOLD_TIME/SHIFT_REGISTER_i2  (to DELAY_CLK +)
-
-   Delay:                   1.385ns  (32.1% logic, 67.9% route), 1 logic levels.
-
- Constraint Details:
-
-      1.385ns data_path \U_MMU_HOLD_TIME/SHIFT_REGISTER_i1 to \U_MMU_HOLD_TIME/SHIFT_REGISTER_i2 meets
-    500.000ns delay constraint less
-      0.160ns L_S requirement (totaling 499.840ns) by 498.455ns
-
- Path Details: \U_MMU_HOLD_TIME/SHIFT_REGISTER_i1 to \U_MMU_HOLD_TIME/SHIFT_REGISTER_i2
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_MMU_HOLD_TIME/SHIFT_REGISTER_i1 (from DELAY_CLK)
-Route         1   e 0.941                                  \U_MMU_HOLD_TIME/SHIFT_REGISTER[1]
-                  --------
-                    1.385  (32.1% logic, 67.9% route), 1 logic levels.
-
-
-Passed:  The following path meets requirements by 498.455ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \U_MMU_HOLD_TIME/SHIFT_REGISTER_i0  (from DELAY_CLK +)
-   Destination:    FD1S3AX    D              \U_MMU_HOLD_TIME/SHIFT_REGISTER_i1  (to DELAY_CLK +)
-
-   Delay:                   1.385ns  (32.1% logic, 67.9% route), 1 logic levels.
-
- Constraint Details:
-
-      1.385ns data_path \U_MMU_HOLD_TIME/SHIFT_REGISTER_i0 to \U_MMU_HOLD_TIME/SHIFT_REGISTER_i1 meets
-    500.000ns delay constraint less
-      0.160ns L_S requirement (totaling 499.840ns) by 498.455ns
-
- Path Details: \U_MMU_HOLD_TIME/SHIFT_REGISTER_i0 to \U_MMU_HOLD_TIME/SHIFT_REGISTER_i1
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_MMU_HOLD_TIME/SHIFT_REGISTER_i0 (from DELAY_CLK)
-Route         1   e 0.941                                  \U_MMU_HOLD_TIME/SHIFT_REGISTER[0]
-                  --------
-                    1.385  (32.1% logic, 67.9% route), 1 logic levels.
-
-Report: 1.545 ns is the maximum delay for this constraint.
+Report: 3.553 ns is the maximum delay for this constraint.
 
 
 Timing Report Summary
@@ -325,25 +327,27 @@ Constraint                              |   Constraint|       Actual|Levels
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
 clk6 [get_nets                          |             |             |
+\U_SOFT_SWITCHES_C05X/PG2_N_129]        |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk5 [get_nets                          |             |             |
+\U_SOFT_SWITCHES_C05X/HIRES_N_134]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk4 [get_nets Q2_N_101]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk3 [get_nets PHI_0_c]                 |   500.000 ns|     9.032 ns|     6  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk2 [get_nets                          |             |             |
 \U_MMU_SOFT_SWITCHES_C08X/DEV0_N]       |   500.000 ns|     3.236 ns|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk5 [get_nets Q2_N_101]                |            -|            -|     0  
+clk1 [get_nets Q3_N_104]                |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk4 [get_nets Q3_N_104]                |            -|            -|     0  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk3 [get_nets HIRES_N_134]             |            -|            -|     0  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk2 [get_nets PG2_N_129]               |            -|            -|     0  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk1 [get_nets PHI_0_c]                 |   500.000 ns|     9.289 ns|     6  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk0 [get_nets DELAY_CLK]               |   500.000 ns|     1.545 ns|     1  
+clk0 [get_nets DELAY_CLK]               |   500.000 ns|     3.553 ns|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -357,8 +361,8 @@ Timing summary:
 
 Timing errors: 0  Score: 0
 
-Constraints cover  22 paths, 30 nets, and 72 connections (14.9% coverage)
+Constraints cover  26 paths, 39 nets, and 83 connections (17.7% coverage)
 
 
-Peak memory: 74006528 bytes, TRCE: 450560 bytes, DLYMAN: 4096 bytes
+Peak memory: 72802304 bytes, TRCE: 425984 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

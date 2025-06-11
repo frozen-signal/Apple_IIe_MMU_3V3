@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
-Fri Jun 06 17:00:33 2025
+Wed Jun 11 16:59:56 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -39,7 +39,7 @@ BLOCK RESETPATHS
 
 ================================================================================
 Preference: FREQUENCY NET "DELAY_CLK" 133.000000 MHz ;
-            12 items scored, 0 timing errors detected.
+            14 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -48,265 +48,136 @@ Passed:  The following path meets requirements by 5.019ns
 
  Logical Details:  Cell type  Pin name       Component name
 
-   Destination:    SLICE      CLK            SLICE_50
+   Destination:    SLICE      CLK            SLICE_53
 
    Delay:               2.500ns -- based on Minimum Pulse Width
 
 
-Passed: The following path meets requirements by 5.193ns
+Passed: The following path meets requirements by 5.735ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i0  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i1  (to DELAY_CLK +)
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i3  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i4  (to DELAY_CLK +)
 
-   Delay:               1.978ns  (22.9% logic, 77.1% route), 1 logic levels.
+   Delay:               1.436ns  (31.5% logic, 68.5% route), 1 logic levels.
 
  Constraint Details:
 
-      1.978ns physical path delay SLICE_54 to SLICE_53 meets
+      1.436ns physical path delay SLICE_55 to SLICE_57 meets
       7.519ns delay constraint less
       0.000ns skew and
-      0.348ns M_SET requirement (totaling 7.171ns) by 5.193ns
+      0.348ns M_SET requirement (totaling 7.171ns) by 5.735ns
 
  Physical Path Details:
 
-      Data path SLICE_54 to SLICE_53:
+      Data path SLICE_55 to SLICE_57:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R4C5A.CLK to       R4C5A.Q1 SLICE_54 (from DELAY_CLK)
-ROUTE         1     1.526       R4C5A.Q1 to       R4C6D.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_0 (to DELAY_CLK)
+REG_DEL     ---     0.452      R4C6C.CLK to       R4C6C.Q1 SLICE_55 (from DELAY_CLK)
+ROUTE         1     0.984       R4C6C.Q1 to       R4C4D.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_3 (to DELAY_CLK)
                   --------
-                    1.978   (22.9% logic, 77.1% route), 1 logic levels.
+                    1.436   (31.5% logic, 68.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_54:
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_55:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C5A.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R4C6C.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_57:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C6D.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R4C4D.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 5.317ns
+Passed: The following path meets requirements by 5.735ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i1  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i2  (to DELAY_CLK +)
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i1  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i2  (to DELAY_CLK +)
 
-   Delay:               1.854ns  (24.4% logic, 75.6% route), 1 logic levels.
+   Delay:               1.436ns  (31.5% logic, 68.5% route), 1 logic levels.
 
  Constraint Details:
 
-      1.854ns physical path delay SLICE_53 to SLICE_53 meets
+      1.436ns physical path delay SLICE_56 to SLICE_55 meets
       7.519ns delay constraint less
       0.000ns skew and
-      0.348ns M_SET requirement (totaling 7.171ns) by 5.317ns
+      0.348ns M_SET requirement (totaling 7.171ns) by 5.735ns
 
  Physical Path Details:
 
-      Data path SLICE_53 to SLICE_53:
+      Data path SLICE_56 to SLICE_55:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R4C6D.CLK to       R4C6D.Q0 SLICE_53 (from DELAY_CLK)
-ROUTE         1     1.402       R4C6D.Q0 to       R4C6D.M1 U_MMU_HOLD_TIME/SHIFT_REGISTER_1 (to DELAY_CLK)
+REG_DEL     ---     0.452      R3C6D.CLK to       R3C6D.Q1 SLICE_56 (from DELAY_CLK)
+ROUTE         1     0.984       R3C6D.Q1 to       R4C6C.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_1 (to DELAY_CLK)
                   --------
-                    1.854   (24.4% logic, 75.6% route), 1 logic levels.
+                    1.436   (31.5% logic, 68.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_56:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C6D.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R3C6D.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_55:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C6D.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R4C6C.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 5.317ns
+Passed: The following path meets requirements by 5.735ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i0  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i1  (to DELAY_CLK +)
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i4  (to DELAY_CLK +)
 
-   Delay:               1.854ns  (24.4% logic, 75.6% route), 1 logic levels.
+   Delay:               1.436ns  (31.5% logic, 68.5% route), 1 logic levels.
 
  Constraint Details:
 
-      1.854ns physical path delay SLICE_60 to SLICE_71 meets
+      1.436ns physical path delay SLICE_60 to SLICE_69 meets
       7.519ns delay constraint less
       0.000ns skew and
-      0.348ns M_SET requirement (totaling 7.171ns) by 5.317ns
+      0.348ns M_SET requirement (totaling 7.171ns) by 5.735ns
 
  Physical Path Details:
 
-      Data path SLICE_60 to SLICE_71:
+      Data path SLICE_60 to SLICE_69:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R3C5B.CLK to       R3C5B.Q1 SLICE_60 (from DELAY_CLK)
-ROUTE         1     1.402       R3C5B.Q1 to       R5C5D.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_0 (to DELAY_CLK)
+REG_DEL     ---     0.452      R2C5A.CLK to       R2C5A.Q1 SLICE_60 (from DELAY_CLK)
+ROUTE         1     0.984       R2C5A.Q1 to       R3C5B.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_3 (to DELAY_CLK)
                   --------
-                    1.854   (24.4% logic, 75.6% route), 1 logic levels.
+                    1.436   (31.5% logic, 68.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
       Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_60:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R3C5B.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R2C5A.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_71:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_69:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R5C5D.CLK DELAY_CLK
-                  --------
-                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 5.422ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3  (to DELAY_CLK +)
-
-   Delay:               1.749ns  (25.8% logic, 74.2% route), 1 logic levels.
-
- Constraint Details:
-
-      1.749ns physical path delay SLICE_71 to SLICE_61 meets
-      7.519ns delay constraint less
-      0.000ns skew and
-      0.348ns M_SET requirement (totaling 7.171ns) by 5.422ns
-
- Physical Path Details:
-
-      Data path SLICE_71 to SLICE_61:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R5C5D.CLK to       R5C5D.Q1 SLICE_71 (from DELAY_CLK)
-ROUTE         1     1.297       R5C5D.Q1 to       R2C5D.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_2 (to DELAY_CLK)
-                  --------
-                    1.749   (25.8% logic, 74.2% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_71:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R5C5D.CLK DELAY_CLK
-                  --------
-                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_61:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R2C5D.CLK DELAY_CLK
-                  --------
-                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 5.735ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i4  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i5  (to DELAY_CLK +)
-
-   Delay:               1.436ns  (31.5% logic, 68.5% route), 1 logic levels.
-
- Constraint Details:
-
-      1.436ns physical path delay SLICE_52 to SLICE_50 meets
-      7.519ns delay constraint less
-      0.000ns skew and
-      0.348ns M_SET requirement (totaling 7.171ns) by 5.735ns
-
- Physical Path Details:
-
-      Data path SLICE_52 to SLICE_50:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R4C6C.CLK to       R4C6C.Q1 SLICE_52 (from DELAY_CLK)
-ROUTE         1     0.984       R4C6C.Q1 to       R4C5C.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_4 (to DELAY_CLK)
-                  --------
-                    1.436   (31.5% logic, 68.5% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_52:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C6C.CLK DELAY_CLK
-                  --------
-                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_50:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C5C.CLK DELAY_CLK
-                  --------
-                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 5.735ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i4  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5  (to DELAY_CLK +)
-
-   Delay:               1.436ns  (31.5% logic, 68.5% route), 1 logic levels.
-
- Constraint Details:
-
-      1.436ns physical path delay SLICE_61 to SLICE_62 meets
-      7.519ns delay constraint less
-      0.000ns skew and
-      0.348ns M_SET requirement (totaling 7.171ns) by 5.735ns
-
- Physical Path Details:
-
-      Data path SLICE_61 to SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R2C5D.CLK to       R2C5D.Q1 SLICE_61 (from DELAY_CLK)
-ROUTE         1     0.984       R2C5D.Q1 to       R2C6C.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_4 (to DELAY_CLK)
-                  --------
-                    1.436   (31.5% logic, 68.5% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_61:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R2C5D.CLK DELAY_CLK
-                  --------
-                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R2C6C.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R3C5B.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -316,83 +187,40 @@ Passed: The following path meets requirements by 5.819ns
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_9  (to DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_14  (to DELAY_CLK +)
 
    Delay:               1.352ns  (33.4% logic, 66.6% route), 1 logic levels.
 
  Constraint Details:
 
-      1.352ns physical path delay SLICE_62 to SLICE_60 meets
+      1.352ns physical path delay SLICE_69 to SLICE_59 meets
       7.519ns delay constraint less
       0.000ns skew and
       0.348ns M_SET requirement (totaling 7.171ns) by 5.819ns
 
  Physical Path Details:
 
-      Data path SLICE_62 to SLICE_60:
+      Data path SLICE_69 to SLICE_59:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R2C6C.CLK to       R2C6C.Q0 SLICE_62 (from DELAY_CLK)
-ROUTE         1     0.900       R2C6C.Q0 to       R3C5B.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_5 (to DELAY_CLK)
+REG_DEL     ---     0.452      R3C5B.CLK to       R3C5B.Q1 SLICE_69 (from DELAY_CLK)
+ROUTE         1     0.900       R3C5B.Q1 to       R4C4A.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_5 (to DELAY_CLK)
                   --------
                     1.352   (33.4% logic, 66.6% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_62:
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_69:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R2C6C.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R3C5B.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_60:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_59:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R3C5B.CLK DELAY_CLK
-                  --------
-                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 6.151ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i5  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/D_PHI_0_9  (to DELAY_CLK +)
-
-   Delay:               1.020ns  (44.3% logic, 55.7% route), 1 logic levels.
-
- Constraint Details:
-
-      1.020ns physical path delay SLICE_50 to SLICE_54 meets
-      7.519ns delay constraint less
-      0.000ns skew and
-      0.348ns M_SET requirement (totaling 7.171ns) by 6.151ns
-
- Physical Path Details:
-
-      Data path SLICE_50 to SLICE_54:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R4C5C.CLK to       R4C5C.Q0 SLICE_50 (from DELAY_CLK)
-ROUTE         1     0.568       R4C5C.Q0 to       R4C5A.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_5 (to DELAY_CLK)
-                  --------
-                    1.020   (44.3% logic, 55.7% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_50:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C5C.CLK DELAY_CLK
-                  --------
-                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_54:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C5A.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R4C4A.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -401,41 +229,41 @@ Passed: The following path meets requirements by 6.151ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i3  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i4  (to DELAY_CLK +)
+   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i1  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i2  (to DELAY_CLK +)
 
    Delay:               1.020ns  (44.3% logic, 55.7% route), 1 logic levels.
 
  Constraint Details:
 
-      1.020ns physical path delay SLICE_52 to SLICE_52 meets
+      1.020ns physical path delay SLICE_53 to SLICE_53 meets
       7.519ns delay constraint less
       0.000ns skew and
       0.348ns M_SET requirement (totaling 7.171ns) by 6.151ns
 
  Physical Path Details:
 
-      Data path SLICE_52 to SLICE_52:
+      Data path SLICE_53 to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R4C6C.CLK to       R4C6C.Q0 SLICE_52 (from DELAY_CLK)
-ROUTE         1     0.568       R4C6C.Q0 to       R4C6C.M1 U_MMU_HOLD_TIME/SHIFT_REGISTER_3 (to DELAY_CLK)
+REG_DEL     ---     0.452      R3C4A.CLK to       R3C4A.Q0 SLICE_53 (from DELAY_CLK)
+ROUTE         1     0.568       R3C4A.Q0 to       R3C4A.M1 U_MMU_HOLD_TIME/SHIFT_REGISTER_1 (to DELAY_CLK)
                   --------
                     1.020   (44.3% logic, 55.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_52:
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C6C.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R3C4A.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_52:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C6C.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R3C4A.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -445,24 +273,24 @@ Passed: The following path meets requirements by 6.151ns
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i2  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i3  (to DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_HOLD_TIME/D_PHI_0_9  (to DELAY_CLK +)
 
    Delay:               1.020ns  (44.3% logic, 55.7% route), 1 logic levels.
 
  Constraint Details:
 
-      1.020ns physical path delay SLICE_53 to SLICE_52 meets
+      1.020ns physical path delay SLICE_53 to SLICE_54 meets
       7.519ns delay constraint less
       0.000ns skew and
       0.348ns M_SET requirement (totaling 7.171ns) by 6.151ns
 
  Physical Path Details:
 
-      Data path SLICE_53 to SLICE_52:
+      Data path SLICE_53 to SLICE_54:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452      R4C6D.CLK to       R4C6D.Q1 SLICE_53 (from DELAY_CLK)
-ROUTE         1     0.568       R4C6D.Q1 to       R4C6C.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_2 (to DELAY_CLK)
+REG_DEL     ---     0.452      R3C4A.CLK to       R3C4A.Q1 SLICE_53 (from DELAY_CLK)
+ROUTE         1     0.568       R3C4A.Q1 to       R3C4D.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_2 (to DELAY_CLK)
                   --------
                     1.020   (44.3% logic, 55.7% route), 1 logic levels.
 
@@ -471,14 +299,186 @@ ROUTE         1     0.568       R4C6D.Q1 to       R4C6C.M0 U_MMU_HOLD_TIME/SHIFT
       Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C6D.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R3C4A.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_52:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_54:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     2.713        OSC.OSC to      R4C6C.CLK DELAY_CLK
+ROUTE         9     2.713        OSC.OSC to      R3C4D.CLK DELAY_CLK
+                  --------
+                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 6.151ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i0  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i1  (to DELAY_CLK +)
+
+   Delay:               1.020ns  (44.3% logic, 55.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.020ns physical path delay SLICE_54 to SLICE_53 meets
+      7.519ns delay constraint less
+      0.000ns skew and
+      0.348ns M_SET requirement (totaling 7.171ns) by 6.151ns
+
+ Physical Path Details:
+
+      Data path SLICE_54 to SLICE_53:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C4D.CLK to       R3C4D.Q1 SLICE_54 (from DELAY_CLK)
+ROUTE         1     0.568       R3C4D.Q1 to       R3C4A.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_0 (to DELAY_CLK)
+                  --------
+                    1.020   (44.3% logic, 55.7% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_54:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     2.713        OSC.OSC to      R3C4D.CLK DELAY_CLK
+                  --------
+                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     2.713        OSC.OSC to      R3C4A.CLK DELAY_CLK
+                  --------
+                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 6.151ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i2  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i3  (to DELAY_CLK +)
+
+   Delay:               1.020ns  (44.3% logic, 55.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.020ns physical path delay SLICE_55 to SLICE_55 meets
+      7.519ns delay constraint less
+      0.000ns skew and
+      0.348ns M_SET requirement (totaling 7.171ns) by 6.151ns
+
+ Physical Path Details:
+
+      Data path SLICE_55 to SLICE_55:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R4C6C.CLK to       R4C6C.Q0 SLICE_55 (from DELAY_CLK)
+ROUTE         1     0.568       R4C6C.Q0 to       R4C6C.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_2 (to DELAY_CLK)
+                  --------
+                    1.020   (44.3% logic, 55.7% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_55:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     2.713        OSC.OSC to      R4C6C.CLK DELAY_CLK
+                  --------
+                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_55:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     2.713        OSC.OSC to      R4C6C.CLK DELAY_CLK
+                  --------
+                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 6.151ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i0  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i1  (to DELAY_CLK +)
+
+   Delay:               1.020ns  (44.3% logic, 55.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.020ns physical path delay SLICE_56 to SLICE_56 meets
+      7.519ns delay constraint less
+      0.000ns skew and
+      0.348ns M_SET requirement (totaling 7.171ns) by 6.151ns
+
+ Physical Path Details:
+
+      Data path SLICE_56 to SLICE_56:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R3C6D.CLK to       R3C6D.Q0 SLICE_56 (from DELAY_CLK)
+ROUTE         1     0.568       R3C6D.Q0 to       R3C6D.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_0 (to DELAY_CLK)
+                  --------
+                    1.020   (44.3% logic, 55.7% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_56:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     2.713        OSC.OSC to      R3C6D.CLK DELAY_CLK
+                  --------
+                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_56:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     2.713        OSC.OSC to      R3C6D.CLK DELAY_CLK
+                  --------
+                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 6.151ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i4  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16  (to DELAY_CLK +)
+
+   Delay:               1.020ns  (44.3% logic, 55.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.020ns physical path delay SLICE_57 to SLICE_59 meets
+      7.519ns delay constraint less
+      0.000ns skew and
+      0.348ns M_SET requirement (totaling 7.171ns) by 6.151ns
+
+ Physical Path Details:
+
+      Data path SLICE_57 to SLICE_59:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452      R4C4D.CLK to       R4C4D.Q0 SLICE_57 (from DELAY_CLK)
+ROUTE         1     0.568       R4C4D.Q0 to       R4C4A.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_4 (to DELAY_CLK)
+                  --------
+                    1.020   (44.3% logic, 55.7% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_57:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     2.713        OSC.OSC to      R4C4D.CLK DELAY_CLK
+                  --------
+                    2.713   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_59:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     2.713        OSC.OSC to      R4C4A.CLK DELAY_CLK
                   --------
                     2.713   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -504,46 +504,46 @@ Clock Domains Analysis
 
 Found 14 clocks:
 
-Clock Domain: U_SOFT_SWITCHES_C05X/PG2_N_129   Source: SLICE_70.F0   Loads: 1
+Clock Domain: U_SOFT_SWITCHES_C05X/PG2_N_129   Source: SLICE_69.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: U_SOFT_SWITCHES_C05X/HIRES_N_134   Source: SLICE_49.F0   Loads: 1
+Clock Domain: U_SOFT_SWITCHES_C05X/HIRES_N_134   Source: SLICE_69.F0   Loads: 1
    No transfer within this clock domain is found
 
 Clock Domain: U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104   Source: SLICE_61.F0   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101   Source: SLICE_44.F0   Loads: 1
+Clock Domain: U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101   Source: SLICE_60.F0   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_N_91   Source: SLICE_45.F1   Loads: 1
+Clock Domain: U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246   Source: U_MMU_RA/MMU_RA_MUX/SLICE_65.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246   Source: U_MMU_RA/MMU_RA_MUX/SLICE_68.F1   Loads: 1
+Clock Domain: U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1   Source: U_MMU_RA/MMU_RA_MUX/SLICE_27.F0   Loads: 3
    No transfer within this clock domain is found
 
-Clock Domain: U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1   Source: SLICE_22.F0   Loads: 3
+Clock Domain: UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1   Source: SLICE_72.F1   Loads: 3
    No transfer within this clock domain is found
 
-Clock Domain: UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1   Source: UMMU_INTERNALS/SLICE_69.F0   Loads: 2
+Clock Domain: Q5_N_110   Source: SLICE_61.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: Q5_N_110   Source: SLICE_62.F0   Loads: 1
+Clock Domain: Q4_N_107   Source: SLICE_60.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: Q4_N_107   Source: SLICE_62.F1   Loads: 1
+Clock Domain: Q1_N_98   Source: SLICE_9.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: Q1_N_98   Source: SLICE_61.F1   Loads: 1
+Clock Domain: Q0_N_91   Source: SLICE_51.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: PHI_0_c   Source: PHI_0.PAD   Loads: 14
+Clock Domain: PHI_0_c   Source: PHI_0.PAD   Loads: 12
    No transfer within this clock domain is found
 
-Clock Domain: DEV0_N   Source: SLICE_71.F0   Loads: 6
+Clock Domain: DEV0_N   Source: SLICE_50.F1   Loads: 6
    No transfer within this clock domain is found
 
-Clock Domain: DELAY_CLK   Source: U_DELAY_OSCILLATOR/U_OSCH.OSC   Loads: 8
+Clock Domain: DELAY_CLK   Source: U_DELAY_OSCILLATOR/U_OSCH.OSC   Loads: 9
    Covered under: FREQUENCY NET "DELAY_CLK" 133.000000 MHz ;
 
 
@@ -553,11 +553,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 12 paths, 1 nets, and 37 connections (7.96% coverage)
+Constraints cover 14 paths, 1 nets, and 44 connections (9.76% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
-Fri Jun 06 17:00:33 2025
+Wed Jun 11 16:59:56 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -583,7 +583,7 @@ BLOCK RESETPATHS
 
 ================================================================================
 Preference: FREQUENCY NET "DELAY_CLK" 133.000000 MHz ;
-            12 items scored, 0 timing errors detected.
+            14 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -591,84 +591,41 @@ Passed: The following path meets requirements by 0.304ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i5  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/D_PHI_0_9  (to DELAY_CLK +)
+   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i1  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i2  (to DELAY_CLK +)
 
    Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
 
  Constraint Details:
 
-      0.285ns physical path delay SLICE_50 to SLICE_54 meets
+      0.285ns physical path delay SLICE_53 to SLICE_53 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.304ns
 
  Physical Path Details:
 
-      Data path SLICE_50 to SLICE_54:
+      Data path SLICE_53 to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R4C5C.CLK to       R4C5C.Q0 SLICE_50 (from DELAY_CLK)
-ROUTE         1     0.152       R4C5C.Q0 to       R4C5A.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_5 (to DELAY_CLK)
+REG_DEL     ---     0.133      R3C4A.CLK to       R3C4A.Q0 SLICE_53 (from DELAY_CLK)
+ROUTE         1     0.152       R3C4A.Q0 to       R3C4A.M1 U_MMU_HOLD_TIME/SHIFT_REGISTER_1 (to DELAY_CLK)
                   --------
                     0.285   (46.7% logic, 53.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_50:
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C5C.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R3C4A.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_54:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C5A.CLK DELAY_CLK
-                  --------
-                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.304ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i3  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i4  (to DELAY_CLK +)
-
-   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
-
- Constraint Details:
-
-      0.285ns physical path delay SLICE_52 to SLICE_52 meets
-     -0.019ns M_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
-
- Physical Path Details:
-
-      Data path SLICE_52 to SLICE_52:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R4C6C.CLK to       R4C6C.Q0 SLICE_52 (from DELAY_CLK)
-ROUTE         1     0.152       R4C6C.Q0 to       R4C6C.M1 U_MMU_HOLD_TIME/SHIFT_REGISTER_3 (to DELAY_CLK)
-                  --------
-                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_52:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C6C.CLK DELAY_CLK
-                  --------
-                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_52:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C6C.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R3C4A.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -678,24 +635,24 @@ Passed: The following path meets requirements by 0.304ns
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i2  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i3  (to DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_HOLD_TIME/D_PHI_0_9  (to DELAY_CLK +)
 
    Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
 
  Constraint Details:
 
-      0.285ns physical path delay SLICE_53 to SLICE_52 meets
+      0.285ns physical path delay SLICE_53 to SLICE_54 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.304ns
 
  Physical Path Details:
 
-      Data path SLICE_53 to SLICE_52:
+      Data path SLICE_53 to SLICE_54:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R4C6D.CLK to       R4C6D.Q1 SLICE_53 (from DELAY_CLK)
-ROUTE         1     0.152       R4C6D.Q1 to       R4C6C.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_2 (to DELAY_CLK)
+REG_DEL     ---     0.133      R3C4A.CLK to       R3C4A.Q1 SLICE_53 (from DELAY_CLK)
+ROUTE         1     0.152       R3C4A.Q1 to       R3C4D.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_2 (to DELAY_CLK)
                   --------
                     0.285   (46.7% logic, 53.3% route), 1 logic levels.
 
@@ -704,14 +661,14 @@ ROUTE         1     0.152       R4C6D.Q1 to       R4C6C.M0 U_MMU_HOLD_TIME/SHIFT
       Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C6D.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R3C4A.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_52:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_54:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C6C.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R3C4D.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -720,41 +677,213 @@ Passed: The following path meets requirements by 0.304ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i4  (to DELAY_CLK +)
+   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i0  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i1  (to DELAY_CLK +)
 
    Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
 
  Constraint Details:
 
-      0.285ns physical path delay SLICE_61 to SLICE_61 meets
+      0.285ns physical path delay SLICE_54 to SLICE_53 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.304ns
 
  Physical Path Details:
 
-      Data path SLICE_61 to SLICE_61:
+      Data path SLICE_54 to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R2C5D.CLK to       R2C5D.Q0 SLICE_61 (from DELAY_CLK)
-ROUTE         1     0.152       R2C5D.Q0 to       R2C5D.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_3 (to DELAY_CLK)
+REG_DEL     ---     0.133      R3C4D.CLK to       R3C4D.Q1 SLICE_54 (from DELAY_CLK)
+ROUTE         1     0.152       R3C4D.Q1 to       R3C4A.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_0 (to DELAY_CLK)
                   --------
                     0.285   (46.7% logic, 53.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_61:
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_54:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R2C5D.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R3C4D.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_61:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R2C5D.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R3C4A.CLK DELAY_CLK
+                  --------
+                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.304ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i2  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i3  (to DELAY_CLK +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay SLICE_55 to SLICE_55 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      Data path SLICE_55 to SLICE_55:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R4C6C.CLK to       R4C6C.Q0 SLICE_55 (from DELAY_CLK)
+ROUTE         1     0.152       R4C6C.Q0 to       R4C6C.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_2 (to DELAY_CLK)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_55:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     0.881        OSC.OSC to      R4C6C.CLK DELAY_CLK
+                  --------
+                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_55:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     0.881        OSC.OSC to      R4C6C.CLK DELAY_CLK
+                  --------
+                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.304ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i0  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i1  (to DELAY_CLK +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay SLICE_56 to SLICE_56 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      Data path SLICE_56 to SLICE_56:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R3C6D.CLK to       R3C6D.Q0 SLICE_56 (from DELAY_CLK)
+ROUTE         1     0.152       R3C6D.Q0 to       R3C6D.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_0 (to DELAY_CLK)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_56:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     0.881        OSC.OSC to      R3C6D.CLK DELAY_CLK
+                  --------
+                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_56:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     0.881        OSC.OSC to      R3C6D.CLK DELAY_CLK
+                  --------
+                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.304ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i4  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16  (to DELAY_CLK +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay SLICE_57 to SLICE_59 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      Data path SLICE_57 to SLICE_59:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R4C4D.CLK to       R4C4D.Q0 SLICE_57 (from DELAY_CLK)
+ROUTE         1     0.152       R4C4D.Q0 to       R4C4A.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_4 (to DELAY_CLK)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_57:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     0.881        OSC.OSC to      R4C4D.CLK DELAY_CLK
+                  --------
+                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_59:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     0.881        OSC.OSC to      R4C4A.CLK DELAY_CLK
+                  --------
+                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.304ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3  (to DELAY_CLK +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay SLICE_60 to SLICE_60 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      Data path SLICE_60 to SLICE_60:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133      R2C5A.CLK to       R2C5A.Q0 SLICE_60 (from DELAY_CLK)
+ROUTE         1     0.152       R2C5A.Q0 to       R2C5A.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_2 (to DELAY_CLK)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_60:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     0.881        OSC.OSC to      R2C5A.CLK DELAY_CLK
+                  --------
+                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_60:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     0.881        OSC.OSC to      R2C5A.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -770,249 +899,120 @@ Passed: The following path meets requirements by 0.304ns
 
  Constraint Details:
 
-      0.285ns physical path delay SLICE_71 to SLICE_71 meets
+      0.285ns physical path delay SLICE_61 to SLICE_60 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.304ns
 
  Physical Path Details:
 
-      Data path SLICE_71 to SLICE_71:
+      Data path SLICE_61 to SLICE_60:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R5C5D.CLK to       R5C5D.Q0 SLICE_71 (from DELAY_CLK)
-ROUTE         1     0.152       R5C5D.Q0 to       R5C5D.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_1 (to DELAY_CLK)
+REG_DEL     ---     0.133      R2C5B.CLK to       R2C5B.Q1 SLICE_61 (from DELAY_CLK)
+ROUTE         1     0.152       R2C5B.Q1 to       R2C5A.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_1 (to DELAY_CLK)
                   --------
                     0.285   (46.7% logic, 53.3% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_71:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R5C5D.CLK DELAY_CLK
-                  --------
-                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_71:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R5C5D.CLK DELAY_CLK
-                  --------
-                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.389ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_9  (to DELAY_CLK +)
-
-   Delay:               0.370ns  (35.9% logic, 64.1% route), 1 logic levels.
-
- Constraint Details:
-
-      0.370ns physical path delay SLICE_62 to SLICE_60 meets
-     -0.019ns M_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.019ns) by 0.389ns
-
- Physical Path Details:
-
-      Data path SLICE_62 to SLICE_60:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R2C6C.CLK to       R2C6C.Q0 SLICE_62 (from DELAY_CLK)
-ROUTE         1     0.237       R2C6C.Q0 to       R3C5B.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_5 (to DELAY_CLK)
-                  --------
-                    0.370   (35.9% logic, 64.1% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R2C6C.CLK DELAY_CLK
-                  --------
-                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_60:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R3C5B.CLK DELAY_CLK
-                  --------
-                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.418ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i4  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i5  (to DELAY_CLK +)
-
-   Delay:               0.399ns  (33.3% logic, 66.7% route), 1 logic levels.
-
- Constraint Details:
-
-      0.399ns physical path delay SLICE_52 to SLICE_50 meets
-     -0.019ns M_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.019ns) by 0.418ns
-
- Physical Path Details:
-
-      Data path SLICE_52 to SLICE_50:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R4C6C.CLK to       R4C6C.Q1 SLICE_52 (from DELAY_CLK)
-ROUTE         1     0.266       R4C6C.Q1 to       R4C5C.M0 U_MMU_HOLD_TIME/SHIFT_REGISTER_4 (to DELAY_CLK)
-                  --------
-                    0.399   (33.3% logic, 66.7% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_52:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C6C.CLK DELAY_CLK
-                  --------
-                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_50:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C5C.CLK DELAY_CLK
-                  --------
-                    0.881   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.418ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i4  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5  (to DELAY_CLK +)
-
-   Delay:               0.399ns  (33.3% logic, 66.7% route), 1 logic levels.
-
- Constraint Details:
-
-      0.399ns physical path delay SLICE_61 to SLICE_62 meets
-     -0.019ns M_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.019ns) by 0.418ns
-
- Physical Path Details:
-
-      Data path SLICE_61 to SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R2C5D.CLK to       R2C5D.Q1 SLICE_61 (from DELAY_CLK)
-ROUTE         1     0.266       R2C5D.Q1 to       R2C6C.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_4 (to DELAY_CLK)
-                  --------
-                    0.399   (33.3% logic, 66.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
       Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_61:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R2C5D.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R2C5B.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_62:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_60:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R2C6C.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R2C5A.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.501ns
+Passed: The following path meets requirements by 0.304ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3  (to DELAY_CLK +)
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i0  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i1  (to DELAY_CLK +)
 
-   Delay:               0.482ns  (27.6% logic, 72.4% route), 1 logic levels.
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
 
  Constraint Details:
 
-      0.482ns physical path delay SLICE_71 to SLICE_61 meets
+      0.285ns physical path delay SLICE_61 to SLICE_61 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.019ns) by 0.501ns
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
 
  Physical Path Details:
 
-      Data path SLICE_71 to SLICE_61:
+      Data path SLICE_61 to SLICE_61:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R5C5D.CLK to       R5C5D.Q1 SLICE_71 (from DELAY_CLK)
-ROUTE         1     0.349       R5C5D.Q1 to       R2C5D.M0 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_2 (to DELAY_CLK)
+REG_DEL     ---     0.133      R2C5B.CLK to       R2C5B.Q0 SLICE_61 (from DELAY_CLK)
+ROUTE         1     0.152       R2C5B.Q0 to       R2C5B.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_0 (to DELAY_CLK)
                   --------
-                    0.482   (27.6% logic, 72.4% route), 1 logic levels.
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_71:
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_61:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R5C5D.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R2C5B.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_61:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R2C5D.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R2C5B.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.524ns
+Passed: The following path meets requirements by 0.304ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              U_MMU_HOLD_TIME/SHIFT_REGISTER_i1  (from DELAY_CLK +)
-   Destination:    FF         Data in        U_MMU_HOLD_TIME/SHIFT_REGISTER_i2  (to DELAY_CLK +)
+   Source:         FF         Q              U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i4  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5  (to DELAY_CLK +)
 
-   Delay:               0.505ns  (26.3% logic, 73.7% route), 1 logic levels.
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
 
  Constraint Details:
 
-      0.505ns physical path delay SLICE_53 to SLICE_53 meets
+      0.285ns physical path delay SLICE_69 to SLICE_69 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.019ns) by 0.524ns
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
 
  Physical Path Details:
 
-      Data path SLICE_53 to SLICE_53:
+      Data path SLICE_69 to SLICE_69:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133      R4C6D.CLK to       R4C6D.Q0 SLICE_53 (from DELAY_CLK)
-ROUTE         1     0.372       R4C6D.Q0 to       R4C6D.M1 U_MMU_HOLD_TIME/SHIFT_REGISTER_1 (to DELAY_CLK)
+REG_DEL     ---     0.133      R3C5B.CLK to       R3C5B.Q0 SLICE_69 (from DELAY_CLK)
+ROUTE         1     0.152       R3C5B.Q0 to       R3C5B.M1 U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_4 (to DELAY_CLK)
                   --------
-                    0.505   (26.3% logic, 73.7% route), 1 logic levels.
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
+      Source Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_69:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C6D.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R3C5B.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_53:
+      Destination Clock Path U_DELAY_OSCILLATOR/U_OSCH to SLICE_69:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE         8     0.881        OSC.OSC to      R4C6D.CLK DELAY_CLK
+ROUTE         9     0.881        OSC.OSC to      R3C5B.CLK DELAY_CLK
                   --------
                     0.881   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1036,46 +1036,46 @@ Clock Domains Analysis
 
 Found 14 clocks:
 
-Clock Domain: U_SOFT_SWITCHES_C05X/PG2_N_129   Source: SLICE_70.F0   Loads: 1
+Clock Domain: U_SOFT_SWITCHES_C05X/PG2_N_129   Source: SLICE_69.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: U_SOFT_SWITCHES_C05X/HIRES_N_134   Source: SLICE_49.F0   Loads: 1
+Clock Domain: U_SOFT_SWITCHES_C05X/HIRES_N_134   Source: SLICE_69.F0   Loads: 1
    No transfer within this clock domain is found
 
 Clock Domain: U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104   Source: SLICE_61.F0   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101   Source: SLICE_44.F0   Loads: 1
+Clock Domain: U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101   Source: SLICE_60.F0   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_N_91   Source: SLICE_45.F1   Loads: 1
+Clock Domain: U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246   Source: U_MMU_RA/MMU_RA_MUX/SLICE_65.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246   Source: U_MMU_RA/MMU_RA_MUX/SLICE_68.F1   Loads: 1
+Clock Domain: U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1   Source: U_MMU_RA/MMU_RA_MUX/SLICE_27.F0   Loads: 3
    No transfer within this clock domain is found
 
-Clock Domain: U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1   Source: SLICE_22.F0   Loads: 3
+Clock Domain: UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1   Source: SLICE_72.F1   Loads: 3
    No transfer within this clock domain is found
 
-Clock Domain: UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1   Source: UMMU_INTERNALS/SLICE_69.F0   Loads: 2
+Clock Domain: Q5_N_110   Source: SLICE_61.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: Q5_N_110   Source: SLICE_62.F0   Loads: 1
+Clock Domain: Q4_N_107   Source: SLICE_60.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: Q4_N_107   Source: SLICE_62.F1   Loads: 1
+Clock Domain: Q1_N_98   Source: SLICE_9.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: Q1_N_98   Source: SLICE_61.F1   Loads: 1
+Clock Domain: Q0_N_91   Source: SLICE_51.F1   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: PHI_0_c   Source: PHI_0.PAD   Loads: 14
+Clock Domain: PHI_0_c   Source: PHI_0.PAD   Loads: 12
    No transfer within this clock domain is found
 
-Clock Domain: DEV0_N   Source: SLICE_71.F0   Loads: 6
+Clock Domain: DEV0_N   Source: SLICE_50.F1   Loads: 6
    No transfer within this clock domain is found
 
-Clock Domain: DELAY_CLK   Source: U_DELAY_OSCILLATOR/U_OSCH.OSC   Loads: 8
+Clock Domain: DELAY_CLK   Source: U_DELAY_OSCILLATOR/U_OSCH.OSC   Loads: 9
    Covered under: FREQUENCY NET "DELAY_CLK" 133.000000 MHz ;
 
 
@@ -1085,7 +1085,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 12 paths, 1 nets, and 37 connections (7.96% coverage)
+Constraints cover 14 paths, 1 nets, and 44 connections (9.76% coverage)
 
 
 

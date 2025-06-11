@@ -14,20 +14,20 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCCSBGA132
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.1.454
-Mapped on:  06/06/25  17:00:28
+Mapped on:  06/11/25  16:59:52
 
 Design Summary
 --------------
 
-   Number of registers:     37 out of   424 (9%)
-      PFU registers:           37 out of   256 (14%)
+   Number of registers:     40 out of   424 (9%)
+      PFU registers:           40 out of   256 (16%)
       PIO registers:            0 out of   168 (0%)
-   Number of SLICEs:        58 out of   128 (45%)
-      SLICEs as Logic/ROM:     58 out of   128 (45%)
+   Number of SLICEs:        57 out of   128 (45%)
+      SLICEs as Logic/ROM:     57 out of   128 (45%)
       SLICEs as RAM:            0 out of    96 (0%)
       SLICEs as Carry:          0 out of   128 (0%)
-   Number of LUT4s:        108 out of   256 (42%)
-      Number used as logic LUTs:        108
+   Number of LUT4s:        105 out of   256 (41%)
+      Number used as logic LUTs:        105
       Number used as distributed RAM:     0
       Number used as ripple logic:        0
       Number used as shift registers:     0
@@ -51,63 +51,63 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  14
-     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101: 1 loads, 1 rising, 0
-     falling (Driver: U_ADDR_DECODER/MMU_1_J5/i1_2_lut_4_lut )
      Net PHI_0_c: 2 loads, 2 rising, 0 falling (Driver: PIO PHI_0 )
-     Net U_SOFT_SWITCHES_C05X/HIRES_N_134: 1 loads, 1 rising, 0 falling (Driver:
-     i1_2_lut_4_lut )
-     Net U_SOFT_SWITCHES_C05X/PG2_N_129: 1 loads, 1 rising, 0 falling (Driver:
-     i1_2_lut_4_lut_adj_60 )
+     Net DELAY_CLK: 9 loads, 9 rising, 0 falling (Driver:
+     U_DELAY_OSCILLATOR/U_OSCH )
      Net DEV0_N: 6 loads, 6 rising, 0 falling (Driver:
-     U_MMU_SOFT_SWITCHES_C08X/i1304_4_lut )
+     U_MMU_SOFT_SWITCHES_C08X/i1245_3_lut )
+     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101: 1 loads, 1 rising, 0
+     falling (Driver: U_MMU_SOFT_SWITCHES_C08X/i2_2_lut_3_lut_4_lut_4_lut )
+     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104: 1 loads, 1 rising, 0
+     falling (Driver: U_MMU_SOFT_SWITCHES_C08X/i1_2_lut_3_lut_4_lut_4_lut_adj_56
 
                                     Page 1
 
 
 
 
-Design:  MMU                                           Date:  06/06/25  17:00:28
+Design:  MMU                                           Date:  06/11/25  16:59:52
 
 Design Summary (cont)
 ---------------------
-     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104: 1 loads, 1 rising, 0
-     falling (Driver: U_MMU_SOFT_SWITCHES_C08X/i1_2_lut_3_lut_4_lut_4_lut )
+     )
      Net U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 rising, 0 falling
-     (Driver: U_MMU_RA/MMU_RA_MUX/i1321_2_lut_rep_34 )
+     (Driver: U_MMU_RA/MMU_RA_MUX/i1268_2_lut_rep_23 )
      Net U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246: 1 loads, 1 rising, 0
      falling (Driver:
      U_MMU_RA/MMU_RA_MUX/RA_ENABLE_N_N_234_I_0_2_lut_3_lut_3_lut )
-     Net DELAY_CLK: 8 loads, 8 rising, 0 falling (Driver:
-     U_DELAY_OSCILLATOR/U_OSCH )
-     Net Q5_N_110: 1 loads, 1 rising, 0 falling (Driver:
-     U_SOFT_SWITCHES_C05X/i1_2_lut_3_lut_4_lut )
-     Net Q4_N_107: 1 loads, 1 rising, 0 falling (Driver:
-     U_SOFT_SWITCHES_C05X/i2_3_lut_4_lut )
+     Net U_SOFT_SWITCHES_C05X/HIRES_N_134: 1 loads, 1 rising, 0 falling (Driver:
+     U_SOFT_SWITCHES_C05X/i1_2_lut )
+     Net U_SOFT_SWITCHES_C05X/PG2_N_129: 1 loads, 1 rising, 0 falling (Driver:
+     U_SOFT_SWITCHES_C05X/i1_2_lut_adj_54 )
      Net Q1_N_98: 1 loads, 1 rising, 0 falling (Driver:
-     U_SOFT_SWITCHES_C05X/i1_2_lut_3_lut_4_lut_adj_54 )
-     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_N_91: 1 loads, 1 rising, 0
-     falling (Driver:
-     U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/i1316_2_lut_4_lut_4_lut )
+     U_SOFT_SWITCHES_C05X/i1_2_lut_3_lut_4_lut )
+     Net Q5_N_110: 1 loads, 1 rising, 0 falling (Driver:
+     U_SOFT_SWITCHES_C05X/i1_2_lut_3_lut_4_lut_adj_53 )
+     Net Q4_N_107: 1 loads, 1 rising, 0 falling (Driver:
+     U_SOFT_SWITCHES_C05X/i1262_2_lut_2_lut_3_lut_4_lut )
+     Net Q0_N_91: 1 loads, 1 rising, 0 falling (Driver:
+     U_SOFT_SWITCHES_C05X/i1257_2_lut_2_lut_3_lut_4_lut )
      Net UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1: 1 loads, 1 rising, 0 falling
-     (Driver: UMMU_INTERNALS/i684_2_lut_rep_14 )
+     (Driver: UMMU_INTERNALS/i683_2_lut_rep_12 )
    Number of Clock Enables:  0
    Number of LSRs:  7
-     Net R_W_N_c: 1 loads, 1 LSLICEs
      Net PHI_0_c: 1 loads, 1 LSLICEs
+     Net R_W_N_c: 1 loads, 1 LSLICEs
      Net A_c_0: 4 loads, 4 LSLICEs
      Net U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 LSLICEs
-     Net U_MMU_RA/MMU_RA_MUX/n1680: 1 loads, 1 LSLICEs
+     Net U_MMU_RA/MMU_RA_MUX/n1589: 1 loads, 1 LSLICEs
      Net UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1: 1 loads, 1 LSLICEs
      Net UMMU_INTERNALS/INTC8EN_N_174: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net A_c_1: 22 loads
-     Net A_c_0: 21 loads
+     Net A_c_1: 23 loads
+     Net A_c_0: 20 loads
      Net A_c_3: 20 loads
      Net A_c_2: 19 loads
      Net PRAS_N_c: 13 loads
-     Net R_W_N_c: 13 loads
      Net A_c_13: 11 loads
+     Net R_W_N_c: 11 loads
      Net A_c_14: 10 loads
      Net A_c_15: 10 loads
      Net ORA_OE_N_c: 9 loads
@@ -132,7 +132,7 @@ WARNING - map: Register UMMU_INTERNALS/INTC8EN_I_0_set has a clock signal tied
 
 
 
-Design:  MMU                                           Date:  06/06/25  17:00:28
+Design:  MMU                                           Date:  06/11/25  16:59:52
 
 
 IO (PIO) Attributes
@@ -198,7 +198,7 @@ IO (PIO) Attributes
 
 
 
-Design:  MMU                                           Date:  06/06/25  17:00:28
+Design:  MMU                                           Date:  06/11/25  16:59:52
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -236,13 +236,13 @@ IO (PIO) Attributes (cont)
 Removed logic
 -------------
 
-Block i1405 undriven or does not drive anything - clipped.
-Signal n1685 was merged into signal R_W_N_c
+Block i1328 undriven or does not drive anything - clipped.
+Signal n1598 was merged into signal R_W_N_c
 Signal A_0__N_220 was merged into signal A_c_0
 Signal GND_net undriven or does not drive anything - clipped.
-Signal n1749 undriven or does not drive anything - clipped.
+Signal n1673 undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Block U_MMU_RW245/R_W_N_I_0_1_lut_rep_38 was optimized away.
+Block U_MMU_RW245/R_W_N_I_0_1_lut_rep_31 was optimized away.
 Block U_MMU_MD7/A_0__I_0_1_lut was optimized away.
 Block i1 was optimized away.
 Block m0_lut was optimized away.
@@ -264,7 +264,7 @@ OSC 1:                                     Pin/Node Value
 
 
 
-Design:  MMU                                           Date:  06/06/25  17:00:28
+Design:  MMU                                           Date:  06/11/25  16:59:52
 
 
 ASIC Components
@@ -294,46 +294,49 @@ GSR Component:
      not respond to the reset signal 'MPON_N' via the GSR component.
 
      Type and number of components of the type: 
-   Register = 22 
+   Register = 25 
 
      Type and instance name of component: 
-   Register : U_MMU_RA/MMU_RA_MUX/i287
-   Register : U_MMU_RA/MMU_RA_MUX/RA_ENABLE_N_I_0_set
-   Register : U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i4
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i1
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i0
-   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_9
    Register : U_MMU_MPON/M5_7_24
    Register : U_MMU_MPON/DELTA_01XX_N_25
    Register : U_MMU_MPON/M5_2_23
-   Register : UMMU_INTERNALS/INTC8EN_I_0_set
-   Register : UMMU_INTERNALS/i283
-   Register : U_MMU_HOLD_TIME/D_PHI_0_9
+   Register : U_MMU_RA/MMU_RA_MUX/i282
+   Register : U_MMU_RA/MMU_RA_MUX/RA_ENABLE_N_I_0_set
+   Register : U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_I_0
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i1
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i4
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i3
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i2
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i1
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i5
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i4
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i3
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i0
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i0
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16
+   Register : U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_14
    Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i0
-   Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i5
-   Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i4
-   Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i3
+   Register : U_MMU_HOLD_TIME/D_PHI_0_9
    Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i2
    Register : U_MMU_HOLD_TIME/SHIFT_REGISTER_i1
+   Register : UMMU_INTERNALS/INTC8EN_I_0_set
+   Register : UMMU_INTERNALS/i278
 
      Components with synchronous local reset also reset by asynchronous GSR
-----------------------------------------------------------------------
-
-     These components have the GSR property set to ENABLED and the local reset
 
                                     Page 5
 
 
 
 
-Design:  MMU                                           Date:  06/06/25  17:00:28
+Design:  MMU                                           Date:  06/11/25  16:59:52
 
 GSR Usage (cont)
 ----------------
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
      is synchronous. The components will respond to the synchronous local reset
      and to the unrelated asynchronous reset signal 'MPON_N' via the GSR
      component.
@@ -343,8 +346,8 @@ GSR Usage (cont)
 
      Type and instance name of component: 
    Register : U_MMU_SOFT_SWITCHES_C08X/OUT_FST_ACC_27
-   Register : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_I_0
    Register : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q4_I_0
+   Register : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_I_0
    Register : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q1_I_0
    Register : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q5_I_0
 
@@ -353,11 +356,8 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 32 MB
+   Peak Memory Usage: 33 MB
         
-
-
-
 
 
 

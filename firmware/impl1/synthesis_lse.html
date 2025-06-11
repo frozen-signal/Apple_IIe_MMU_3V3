@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Jun 06 17:00:26 2025
+Wed Jun 11 16:59:52 2025
 
 
 Command Line:  synthesis -f MMU_impl1_lattice.synproj -gui -msgset C:/dev/Apple_IIe_MMU_3V3/firmware/promote.xml 
@@ -233,22 +233,22 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file MMU_impl1.ngd.
 
 ################### Begin Area Report (MMU)######################
-Number of register bits => 37 of 424 (8 % )
+Number of register bits => 40 of 424 (9 % )
 FD1S1A => 4
 FD1S1B => 2
 FD1S1D => 2
 FD1S1I => 5
-FD1S3AX => 20
+FD1S3AX => 23
 FD1S3AY => 3
 FD1S3IX => 1
 GSR => 1
 IB => 22
 L6MUX21 => 1
-LUT4 => 110
+LUT4 => 107
 OB => 9
 OBZ => 9
 OSCH => 1
-PFUMX => 3
+PFUMX => 2
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -258,32 +258,32 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 14
-  Net : U_DELAY_OSCILLATOR/DELAY_CLK, loads : 14
-  Net : PHI_0_c, loads : 15
+  Net : U_DELAY_OSCILLATOR/DELAY_CLK, loads : 17
+  Net : PHI_0_c, loads : 13
   Net : U_MMU_SOFT_SWITCHES_C08X/DEV0_N, loads : 7
+  Net : UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1, loads : 3
   Net : U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1, loads : 3
-  Net : U_ADDR_DECODER/MMU_1_J5/Q2_N_101, loads : 1
   Net : U_MMU_SOFT_SWITCHES_C08X/Q3_N_104, loads : 1
-  Net : UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1, loads : 2
+  Net : U_MMU_SOFT_SWITCHES_C08X/Q2_N_101, loads : 1
   Net : U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246, loads : 1
   Net : U_SOFT_SWITCHES_C05X/Q4_N_107, loads : 1
+  Net : U_SOFT_SWITCHES_C05X/Q0_N_91, loads : 1
+  Net : U_SOFT_SWITCHES_C05X/HIRES_N_134, loads : 1
   Net : U_SOFT_SWITCHES_C05X/Q1_N_98, loads : 1
-  Net : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_N_91, loads : 1
+  Net : U_SOFT_SWITCHES_C05X/PG2_N_129, loads : 1
   Net : U_SOFT_SWITCHES_C05X/Q5_N_110, loads : 1
-  Net : HIRES_N_134, loads : 1
-  Net : PG2_N_129, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : A_c_1, loads : 22
+  Net : A_c_1, loads : 23
   Net : A_c_3, loads : 20
   Net : A_c_2, loads : 19
-  Net : A_c_0, loads : 18
+  Net : A_c_0, loads : 17
   Net : PRAS_N_c, loads : 13
-  Net : R_W_N_c, loads : 13
   Net : A_c_13, loads : 11
+  Net : R_W_N_c, loads : 11
   Net : A_c_15, loads : 10
   Net : A_c_14, loads : 10
   Net : A_c_12, loads : 8
@@ -297,25 +297,27 @@ Constraint                              |   Constraint|       Actual|Levels
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
 clk6 [get_nets                          |             |             |
+\U_SOFT_SWITCHES_C05X/PG2_N_129]        |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk5 [get_nets                          |             |             |
+\U_SOFT_SWITCHES_C05X/HIRES_N_134]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk4 [get_nets Q2_N_101]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk3 [get_nets PHI_0_c]                 |    2.000 MHz|  110.717 MHz|     6  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk2 [get_nets                          |             |             |
 \U_MMU_SOFT_SWITCHES_C08X/DEV0_N]       |    2.000 MHz|  309.023 MHz|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk5 [get_nets Q2_N_101]                |            -|            -|     0  
+clk1 [get_nets Q3_N_104]                |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk4 [get_nets Q3_N_104]                |            -|            -|     0  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk3 [get_nets HIRES_N_134]             |            -|            -|     0  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk2 [get_nets PG2_N_129]               |            -|            -|     0  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk1 [get_nets PHI_0_c]                 |    2.000 MHz|  107.654 MHz|     6  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk0 [get_nets DELAY_CLK]               |    2.000 MHz|  647.249 MHz|     1  
+clk0 [get_nets DELAY_CLK]               |    2.000 MHz|  281.452 MHz|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -323,10 +325,10 @@ clk0 [get_nets DELAY_CLK]               |    2.000 MHz|  647.249 MHz|     1
 All constraints were met.
 
 
-Peak Memory Usage: 72.168  MB
+Peak Memory Usage: 71.020  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.453  secs
+Elapsed CPU time for LSE flow : 0.500  secs
 --------------------------------------------------------------
 
 

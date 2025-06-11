@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Jun 06 17:00:26 2025
+Wed Jun 11 16:59:52 2025
 
 
 Command Line:  synthesis -f MMU_impl1_lattice.synproj -gui -msgset C:/dev/Apple_IIe_MMU_3V3/firmware/promote.xml 
@@ -231,28 +231,28 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    196 blocks expanded
+    195 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file MMU_impl1.ngd.
 
 ################### Begin Area Report (MMU)######################
-Number of register bits => 37 of 424 (8 % )
+Number of register bits => 40 of 424 (9 % )
 FD1S1A => 4
 FD1S1B => 2
 FD1S1D => 2
 FD1S1I => 5
-FD1S3AX => 20
+FD1S3AX => 23
 FD1S3AY => 3
 FD1S3IX => 1
 GSR => 1
 IB => 22
 L6MUX21 => 1
-LUT4 => 110
+LUT4 => 107
 OB => 9
 OBZ => 9
 OSCH => 1
-PFUMX => 3
+PFUMX => 2
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -262,32 +262,32 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 14
-  Net : U_DELAY_OSCILLATOR/DELAY_CLK, loads : 14
-  Net : PHI_0_c, loads : 15
+  Net : U_DELAY_OSCILLATOR/DELAY_CLK, loads : 17
+  Net : PHI_0_c, loads : 13
   Net : U_MMU_SOFT_SWITCHES_C08X/DEV0_N, loads : 7
+  Net : UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1, loads : 3
   Net : U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1, loads : 3
-  Net : U_ADDR_DECODER/MMU_1_J5/Q2_N_101, loads : 1
   Net : U_MMU_SOFT_SWITCHES_C08X/Q3_N_104, loads : 1
-  Net : UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1, loads : 2
+  Net : U_MMU_SOFT_SWITCHES_C08X/Q2_N_101, loads : 1
   Net : U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246, loads : 1
   Net : U_SOFT_SWITCHES_C05X/Q4_N_107, loads : 1
+  Net : U_SOFT_SWITCHES_C05X/Q0_N_91, loads : 1
+  Net : U_SOFT_SWITCHES_C05X/HIRES_N_134, loads : 1
   Net : U_SOFT_SWITCHES_C05X/Q1_N_98, loads : 1
-  Net : U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_N_91, loads : 1
+  Net : U_SOFT_SWITCHES_C05X/PG2_N_129, loads : 1
   Net : U_SOFT_SWITCHES_C05X/Q5_N_110, loads : 1
-  Net : HIRES_N_134, loads : 1
-  Net : PG2_N_129, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : A_c_1, loads : 22
+  Net : A_c_1, loads : 23
   Net : A_c_3, loads : 20
   Net : A_c_2, loads : 19
-  Net : A_c_0, loads : 18
+  Net : A_c_0, loads : 17
   Net : PRAS_N_c, loads : 13
-  Net : R_W_N_c, loads : 13
   Net : A_c_13, loads : 11
+  Net : R_W_N_c, loads : 11
   Net : A_c_15, loads : 10
   Net : A_c_14, loads : 10
   Net : A_c_12, loads : 8
@@ -301,25 +301,27 @@ Constraint                              |   Constraint|       Actual|Levels
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
 clk6 [get_nets                          |             |             |
+\U_SOFT_SWITCHES_C05X/PG2_N_129]        |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk5 [get_nets                          |             |             |
+\U_SOFT_SWITCHES_C05X/HIRES_N_134]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk4 [get_nets Q2_N_101]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk3 [get_nets PHI_0_c]                 |    2.000 MHz|  110.717 MHz|     6  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk2 [get_nets                          |             |             |
 \U_MMU_SOFT_SWITCHES_C08X/DEV0_N]       |    2.000 MHz|  309.023 MHz|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk5 [get_nets Q2_N_101]                |            -|            -|     0  
+clk1 [get_nets Q3_N_104]                |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk4 [get_nets Q3_N_104]                |            -|            -|     0  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk3 [get_nets HIRES_N_134]             |            -|            -|     0  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk2 [get_nets PG2_N_129]               |            -|            -|     0  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk1 [get_nets PHI_0_c]                 |    2.000 MHz|  107.654 MHz|     6  
-                                        |             |             |
-create_clock -period 500.000000 -name   |             |             |
-clk0 [get_nets DELAY_CLK]               |    2.000 MHz|  647.249 MHz|     1  
+clk0 [get_nets DELAY_CLK]               |    2.000 MHz|  281.452 MHz|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -327,10 +329,10 @@ clk0 [get_nets DELAY_CLK]               |    2.000 MHz|  647.249 MHz|     1
 All constraints were met.
 
 
-Peak Memory Usage: 72.168  MB
+Peak Memory Usage: 71.020  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.453  secs
+Elapsed CPU time for LSE flow : 0.500  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-256HC -t CSBGA132 -s 4 -oc Commercial   "MMU_impl1.ngd" -o "MMU_impl1_map.ncd" -pr "MMU_impl1.prf" -mp "MMU_impl1.mrp" -lpf "C:/dev/Apple_IIe_MMU_3V3/firmware/impl1/MMU_impl1.lpf" -lpf "C:/dev/Apple_IIe_MMU_3V3/firmware/MMU.lpf"  -c 0           
@@ -369,15 +371,15 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:     37 out of   424 (9%)
-      PFU registers:           37 out of   256 (14%)
+   Number of registers:     40 out of   424 (9%)
+      PFU registers:           40 out of   256 (16%)
       PIO registers:            0 out of   168 (0%)
-   Number of SLICEs:        58 out of   128 (45%)
-      SLICEs as Logic/ROM:     58 out of   128 (45%)
+   Number of SLICEs:        57 out of   128 (45%)
+      SLICEs as Logic/ROM:     57 out of   128 (45%)
       SLICEs as RAM:            0 out of    96 (0%)
       SLICEs as Carry:          0 out of   128 (0%)
-   Number of LUT4s:        108 out of   256 (42%)
-      Number used as logic LUTs:        108
+   Number of LUT4s:        105 out of   256 (41%)
+      Number used as logic LUTs:        105
       Number used as distributed RAM:     0
       Number used as ripple logic:        0
       Number used as shift registers:     0
@@ -399,38 +401,38 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  14
-     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101: 1 loads, 1 rising, 0 falling (Driver: U_ADDR_DECODER/MMU_1_J5/i1_2_lut_4_lut )
      Net PHI_0_c: 2 loads, 2 rising, 0 falling (Driver: PIO PHI_0 )
-     Net U_SOFT_SWITCHES_C05X/HIRES_N_134: 1 loads, 1 rising, 0 falling (Driver: i1_2_lut_4_lut )
-     Net U_SOFT_SWITCHES_C05X/PG2_N_129: 1 loads, 1 rising, 0 falling (Driver: i1_2_lut_4_lut_adj_60 )
-     Net DEV0_N: 6 loads, 6 rising, 0 falling (Driver: U_MMU_SOFT_SWITCHES_C08X/i1304_4_lut )
-     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104: 1 loads, 1 rising, 0 falling (Driver: U_MMU_SOFT_SWITCHES_C08X/i1_2_lut_3_lut_4_lut_4_lut )
-     Net U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 rising, 0 falling (Driver: U_MMU_RA/MMU_RA_MUX/i1321_2_lut_rep_34 )
+     Net DELAY_CLK: 9 loads, 9 rising, 0 falling (Driver: U_DELAY_OSCILLATOR/U_OSCH )
+     Net DEV0_N: 6 loads, 6 rising, 0 falling (Driver: U_MMU_SOFT_SWITCHES_C08X/i1245_3_lut )
+     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101: 1 loads, 1 rising, 0 falling (Driver: U_MMU_SOFT_SWITCHES_C08X/i2_2_lut_3_lut_4_lut_4_lut )
+     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104: 1 loads, 1 rising, 0 falling (Driver: U_MMU_SOFT_SWITCHES_C08X/i1_2_lut_3_lut_4_lut_4_lut_adj_56 )
+     Net U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 rising, 0 falling (Driver: U_MMU_RA/MMU_RA_MUX/i1268_2_lut_rep_23 )
      Net U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N_246: 1 loads, 1 rising, 0 falling (Driver: U_MMU_RA/MMU_RA_MUX/RA_ENABLE_N_N_234_I_0_2_lut_3_lut_3_lut )
-     Net DELAY_CLK: 8 loads, 8 rising, 0 falling (Driver: U_DELAY_OSCILLATOR/U_OSCH )
-     Net Q5_N_110: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C05X/i1_2_lut_3_lut_4_lut )
-     Net Q4_N_107: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C05X/i2_3_lut_4_lut )
-     Net Q1_N_98: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C05X/i1_2_lut_3_lut_4_lut_adj_54 )
-     Net U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_N_91: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/i1316_2_lut_4_lut_4_lut )
-     Net UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1: 1 loads, 1 rising, 0 falling (Driver: UMMU_INTERNALS/i684_2_lut_rep_14 )
+     Net U_SOFT_SWITCHES_C05X/HIRES_N_134: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C05X/i1_2_lut )
+     Net U_SOFT_SWITCHES_C05X/PG2_N_129: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C05X/i1_2_lut_adj_54 )
+     Net Q1_N_98: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C05X/i1_2_lut_3_lut_4_lut )
+     Net Q5_N_110: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C05X/i1_2_lut_3_lut_4_lut_adj_53 )
+     Net Q4_N_107: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C05X/i1262_2_lut_2_lut_3_lut_4_lut )
+     Net Q0_N_91: 1 loads, 1 rising, 0 falling (Driver: U_SOFT_SWITCHES_C05X/i1257_2_lut_2_lut_3_lut_4_lut )
+     Net UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1: 1 loads, 1 rising, 0 falling (Driver: UMMU_INTERNALS/i683_2_lut_rep_12 )
    Number of Clock Enables:  0
    Number of LSRs:  7
-     Net R_W_N_c: 1 loads, 1 LSLICEs
      Net PHI_0_c: 1 loads, 1 LSLICEs
+     Net R_W_N_c: 1 loads, 1 LSLICEs
      Net A_c_0: 4 loads, 4 LSLICEs
      Net U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 LSLICEs
-     Net U_MMU_RA/MMU_RA_MUX/n1680: 1 loads, 1 LSLICEs
+     Net U_MMU_RA/MMU_RA_MUX/n1589: 1 loads, 1 LSLICEs
      Net UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1: 1 loads, 1 LSLICEs
      Net UMMU_INTERNALS/INTC8EN_N_174: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net A_c_1: 22 loads
-     Net A_c_0: 21 loads
+     Net A_c_1: 23 loads
+     Net A_c_0: 20 loads
      Net A_c_3: 20 loads
      Net A_c_2: 19 loads
      Net PRAS_N_c: 13 loads
-     Net R_W_N_c: 13 loads
      Net A_c_13: 11 loads
+     Net R_W_N_c: 11 loads
      Net A_c_14: 10 loads
      Net A_c_15: 10 loads
      Net ORA_OE_N_c: 9 loads
@@ -443,7 +445,7 @@ Design Summary:
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 32 MB
+Peak Memory Usage: 33 MB
 
 Dumping design to file MMU_impl1_map.ncd.
 
@@ -474,7 +476,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
-Fri Jun 06 17:00:28 2025
+Wed Jun 11 16:59:53 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -504,11 +506,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 12 paths, 1 nets, and 37 connections (7.96% coverage)
+Constraints cover 14 paths, 1 nets, and 42 connections (9.31% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
-Fri Jun 06 17:00:29 2025
+Wed Jun 11 16:59:53 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -538,7 +540,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 12 paths, 1 nets, and 37 connections (7.96% coverage)
+Constraints cover 14 paths, 1 nets, and 42 connections (9.31% coverage)
 
 
 
@@ -564,7 +566,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "MMU_impl1_map.ncd"
-Fri Jun 06 17:00:29 2025
+Wed Jun 11 16:59:53 2025
 
 PAR: Place And Route Diamond (64-bit) 3.12.1.454.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/dev/Apple_IIe_MMU_3V3/firmware/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 MMU_impl1_map.ncd MMU_impl1.dir/5_1.ncd MMU_impl1.prf
@@ -591,15 +593,15 @@ Device utilization summary:
    PIO (prelim)   40+4(JTAG)/56      79% used
                   40+4(JTAG)/56      79% bonded
 
-   SLICE             58/128          45% used
+   SLICE             57/128          44% used
 
    GSR                1/1           100% used
    OSC                1/1           100% used
 
 
 1 potential circuit loop found in timing analysis.
-Number of Signals: 166
-Number of Connections: 465
+Number of Signals: 167
+Number of Connections: 451
 
 Pin Constraint Summary:
    40 out of 40 pins locked (100% locked).
@@ -608,8 +610,8 @@ No signal is selected as primary clock.
 
 
 The following 2 signals are selected to use the secondary clock routing resources:
-    DELAY_CLK (driver: U_DELAY_OSCILLATOR/U_OSCH, clk load #: 8, sr load #: 0, ce load #: 0)
-    DEV0_N (driver: SLICE_71, clk load #: 6, sr load #: 0, ce load #: 0)
+    DELAY_CLK (driver: U_DELAY_OSCILLATOR/U_OSCH, clk load #: 9, sr load #: 0, ce load #: 0)
+    DEV0_N (driver: SLICE_50, clk load #: 6, sr load #: 0, ce load #: 0)
 
 Signal MPON_N is selected as Global Set/Reset.
 Starting Placer Phase 0.
@@ -618,12 +620,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 
 Starting Placer Phase 1.
 ....................
-Placer score = 23182.
+Placer score = 22817.
 Finished Placer Phase 1.  REAL time: 2 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  23175
+Placer score =  22757
 Finished Placer Phase 2.  REAL time: 2 secs 
 
 
@@ -635,8 +637,8 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Global Clocks:
-  SECONDARY "DELAY_CLK" from OSC on comp "U_DELAY_OSCILLATOR/U_OSCH" on site "OSC", clk load = 8, ce load = 0, sr load = 0
-  SECONDARY "DEV0_N" from F0 on comp "SLICE_71" on site "R5C5D", clk load = 6, ce load = 0, sr load = 0
+  SECONDARY "DELAY_CLK" from OSC on comp "U_DELAY_OSCILLATOR/U_OSCH" on site "OSC", clk load = 9, ce load = 0, sr load = 0
+  SECONDARY "DEV0_N" from F1 on comp "SLICE_50" on site "R2C6D", clk load = 6, ce load = 0, sr load = 0
 
   PRIMARY  : 0 out of 8 (0%)
   SECONDARY: 2 out of 8 (25%)
@@ -665,14 +667,14 @@ Total placer CPU time: 2 secs
 Dumping design to file MMU_impl1.dir/5_1.ncd.
 
 1 potential circuit loop found in timing analysis.
-0 connections routed; 465 unrouted.
+0 connections routed; 451 unrouted.
 Starting router resource preassignment
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101 loads=1 clock_loads=1&#xA;   Signal=PHI_0_c loads=14 clock_loads=2&#xA;   Signal=U_SOFT_SWITCHES_C05X/HIRES_N_134 loads=1 clock_loads=1&#xA;   Signal=U_SOFT_SWITCHES_C05X/PG2_N_129 loads=1 clock_loads=1&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104 loads=1 clock   ....   ck_loads=1&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_N_91 loads=1 clock_loads=1&#xA;   Signal=UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1 loads=2 clock_loads=1"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=PHI_0_c loads=12 clock_loads=2&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101 loads=1 clock_loads=1&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104 loads=1 clock_loads=1&#xA;   Signal=U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1 loads=3 clock_loads=1&#xA;   Signal=U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N   ....   ck_loads=1&#xA;   Signal=Q4_N_107 loads=1 clock_loads=1&#xA;   Signal=Q0_N_91 loads=1 clock_loads=1&#xA;   Signal=UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1 loads=3 clock_loads=1"  />
 
 Completed router resource preassignment. Real time: 3 secs 
 
-Start NBR router at 17:00:32 06/06/25
+Start NBR router at 16:59:56 06/11/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -688,82 +690,79 @@ Note: NBR uses a different method to calculate timing slacks. The
 *****************************************************************
 
 1 potential circuit loop found in timing analysis.
-Start NBR special constraint process at 17:00:32 06/06/25
+Start NBR special constraint process at 16:59:56 06/11/25
 
-Start NBR section for initial routing at 17:00:32 06/06/25
+Start NBR section for initial routing at 16:59:56 06/11/25
 Level 1, iteration 1
-0(0.00%) conflict; 364(78.28%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.422ns/0.000ns; real time: 3 secs 
+0(0.00%) conflict; 360(79.82%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.819ns/0.000ns; real time: 3 secs 
 Level 2, iteration 1
-0(0.00%) conflict; 364(78.28%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.422ns/0.000ns; real time: 3 secs 
+0(0.00%) conflict; 360(79.82%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.819ns/0.000ns; real time: 3 secs 
 Level 3, iteration 1
-0(0.00%) conflict; 364(78.28%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.422ns/0.000ns; real time: 3 secs 
+0(0.00%) conflict; 360(79.82%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.819ns/0.000ns; real time: 3 secs 
 Level 4, iteration 1
-31(0.14%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.392ns/0.000ns; real time: 3 secs 
+22(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 17:00:32 06/06/25
+Start NBR section for normal routing at 16:59:56 06/11/25
 Level 4, iteration 1
-28(0.13%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.317ns/0.000ns; real time: 3 secs 
-Level 4, iteration 2
-24(0.11%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.317ns/0.000ns; real time: 3 secs 
-Level 4, iteration 3
 18(0.08%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
+Level 4, iteration 2
+16(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
+Level 4, iteration 3
+16(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 4
-17(0.08%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+16(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 5
-14(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+16(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 6
-13(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+12(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 7
-7(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+12(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 8
-7(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+9(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 9
-4(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+9(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 10
-4(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+6(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 11
-4(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+5(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 12
-2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+3(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 13
-2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
-Level 4, iteration 14
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
-Level 4, iteration 15
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
+Level 4, iteration 14
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 17:00:32 06/06/25
+Start NBR section for setup/hold timing optimization with effort level 3 at 16:59:56 06/11/25
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
 
-Start NBR section for re-routing at 17:00:32 06/06/25
+Start NBR section for re-routing at 16:59:56 06/11/25
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.193ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack<setup>: 5.735ns/0.000ns; real time: 3 secs 
 
-Start NBR section for post-routing at 17:00:32 06/06/25
+Start NBR section for post-routing at 16:59:56 06/11/25
 1 potential circuit loop found in timing analysis.
 
 End NBR router with 0 unrouted connection
@@ -772,22 +771,22 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 5.193ns
+  Estimated worst slack<setup> : 5.735ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101 loads=1 clock_loads=1&#xA;   Signal=PHI_0_c loads=14 clock_loads=2&#xA;   Signal=U_SOFT_SWITCHES_C05X/HIRES_N_134 loads=1 clock_loads=1&#xA;   Signal=U_SOFT_SWITCHES_C05X/PG2_N_129 loads=1 clock_loads=1&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104 loads=1 clock   ....   ck_loads=1&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q0_N_91 loads=1 clock_loads=1&#xA;   Signal=UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1 loads=2 clock_loads=1"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=PHI_0_c loads=12 clock_loads=2&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q2_N_101 loads=1 clock_loads=1&#xA;   Signal=U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/Q3_N_104 loads=1 clock_loads=1&#xA;   Signal=U_MMU_RA/MMU_RA_MUX/PRAS_N_c_derived_1 loads=3 clock_loads=1&#xA;   Signal=U_MMU_RA/MMU_RA_MUX/WAITING_FOR_PRAS_N   ....   ck_loads=1&#xA;   Signal=Q4_N_107 loads=1 clock_loads=1&#xA;   Signal=Q0_N_91 loads=1 clock_loads=1&#xA;   Signal=UMMU_INTERNALS/INTC3ACC_N_N_197_derived_1 loads=3 clock_loads=1"  />
 
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
 Total CPU time 3 secs 
-Total REAL time: 4 secs 
+Total REAL time: 3 secs 
 Completely routed.
-End of route.  465 routed (100.00%); 0 unrouted.
+End of route.  451 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -798,14 +797,14 @@ Dumping design to file MMU_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 5.193
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 5.735
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.304
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
 Total CPU  time to completion: 3 secs 
-Total REAL time to completion: 4 secs 
+Total REAL time to completion: 3 secs 
 
 par done!
 
@@ -842,7 +841,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
-Fri Jun 06 17:00:33 2025
+Wed Jun 11 16:59:56 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -872,11 +871,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 12 paths, 1 nets, and 37 connections (7.96% coverage)
+Constraints cover 14 paths, 1 nets, and 44 connections (9.76% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
-Fri Jun 06 17:00:33 2025
+Wed Jun 11 16:59:56 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -906,7 +905,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 12 paths, 1 nets, and 37 connections (7.96% coverage)
+Constraints cover 14 paths, 1 nets, and 44 connections (9.76% coverage)
 
 
 
@@ -1001,5 +1000,5 @@ Bitstream Status: Final           Version 1.95.
  
 Saving bit stream in "MMU_impl1.jed".
 Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
+Total REAL Time: 0 secs 
 Peak Memory Usage: 240 MB

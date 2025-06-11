@@ -20,14 +20,15 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/dev/Apple_IIe_MMU_3V3/firmware/impl1/MMU_impl1.jed</File>
-			<FileTime>05/25/25 11:27:44</FileTime>
-			<JedecChecksum>0x0FE8</JedecChecksum>
+			<FileTime>06/11/25 16:59:58</FileTime>
+			<JedecChecksum>0xE79A</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
 				<PreloadLength>104</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>

@@ -2,8 +2,8 @@
 
 <clocks>
     <clockitem name = "PHI_0"  type = "port" />
-    <clockitem name = "DEV0_N"  type = "net" />
     <clockitem name = "DELAY_CLK"  type = "net" />
+    <clockitem name = "DEV0_N"  type = "net" />
 </clocks>
 
 <!--
@@ -68,7 +68,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 373
+        Instances in netlist: 375
     -->
 
     <instance  name = "U_ADDR_DECODER/MCFFF_N_I_11"  library = "work"  arch = "RTL"  type = "comb">
@@ -832,33 +832,21 @@
         <nitem  name = "U_MMU_HOLD_TIME/gnd"  />
         <nitem  name = "DELAY_CLK"  />
         <nitem  name = "D_PHI_0"  />
-        <nitem  name = "U_MMU_HOLD_TIME/SHIFT_REGISTER[5]"  />
+        <nitem  name = "U_MMU_HOLD_TIME/SHIFT_REGISTER[2]"  />
         </nets>
     </instance>
 
     <instance  name = "U_MMU_HOLD_TIME/SHIFT_REGISTER"  library = "work"  arch = "RTL"  type = "reg">
         <pins>
-        <pitem  name = "set[5]"  direction = "in"  />
-        <pitem  name = "set[4]"  direction = "in"  />
-        <pitem  name = "set[3]"  direction = "in"  />
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
-        <pitem  name = "reset[5]"  direction = "in"  />
-        <pitem  name = "reset[4]"  direction = "in"  />
-        <pitem  name = "reset[3]"  direction = "in"  />
         <pitem  name = "reset[2]"  direction = "in"  />
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
-        <pitem  name = "q[5]"  direction = "out"  />
-        <pitem  name = "q[4]"  direction = "out"  />
-        <pitem  name = "d[5]"  direction = "in"  />
-        <pitem  name = "q[3]"  direction = "out"  />
-        <pitem  name = "d[4]"  direction = "in"  />
         <pitem  name = "q[2]"  direction = "out"  />
-        <pitem  name = "d[3]"  direction = "in"  />
         <pitem  name = "q[1]"  direction = "out"  />
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "q[0]"  direction = "out"  />
@@ -869,9 +857,6 @@
         <nitem  name = "U_MMU_HOLD_TIME/gnd"  />
         <nitem  name = "DELAY_CLK"  />
         <nitem  name = "PHI_0"  />
-        <nitem  name = "U_MMU_HOLD_TIME/SHIFT_REGISTER[5]"  />
-        <nitem  name = "U_MMU_HOLD_TIME/SHIFT_REGISTER[4]"  />
-        <nitem  name = "U_MMU_HOLD_TIME/SHIFT_REGISTER[3]"  />
         <nitem  name = "U_MMU_HOLD_TIME/SHIFT_REGISTER[2]"  />
         <nitem  name = "U_MMU_HOLD_TIME/SHIFT_REGISTER[1]"  />
         <nitem  name = "U_MMU_HOLD_TIME/SHIFT_REGISTER[0]"  />
@@ -4805,7 +4790,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "Q3"  />
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/D_Q3"  />
         <nitem  name = "U_MMU_RA/MMU_RA_MUX/D_Q3_N_238"  />
         </nets>
     </instance>
@@ -5469,7 +5454,61 @@
         </nets>
     </instance>
 
-    <instance  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_9"  library = "work"  arch = "RTL"  type = "reg">
+    <instance  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/gnd"  />
+        <nitem  name = "DELAY_CLK"  />
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/D_Q3"  />
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER[4]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/gnd"  />
+        <nitem  name = "DELAY_CLK"  />
+        <nitem  name = "Q3"  />
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER[4]"  />
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER[3]"  />
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER[2]"  />
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER[1]"  />
+        <nitem  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_14"  library = "work"  arch = "RTL"  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -5512,7 +5551,7 @@
     <instance  name = "U_SOFT_SWITCHES_C00X"  />
     <instance  name = "U_SOFT_SWITCHES_C05X"  />
     <!--
-        REG instances in netlist: 14
+        REG instances in netlist: 16
     -->
 
     <regs>
@@ -5529,7 +5568,9 @@
         <reg  name = "U_MMU_SOFT_SWITCHES_C08X/BANK1_25"  />
         <reg  name = "U_MMU_SOFT_SWITCHES_C08X/BANK2_30"  />
         <reg  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER"  />
-        <reg  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_9"  />
+        <reg  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16"  />
+        <reg  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER"  />
+        <reg  name = "U_MMU_RA/MMU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_14"  />
     </regs>
 
     <!--
