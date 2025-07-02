@@ -20,7 +20,7 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/dev/Apple_IIe_MMU_3V3/firmware/impl1/MMU_impl1.jed</File>
-			<FileTime>06/11/25 16:59:58</FileTime>
+			<FileTime>07/02/25 15:37:32</FileTime>
 			<JedecChecksum>0xE79A</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>

@@ -12,7 +12,7 @@ Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 11 16:59:53 2025
+Wed Jul 02 15:37:27 2025
 
 C:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f MMU_impl1.p2t MMU_impl1_map.ncd
 MMU_impl1.dir MMU_impl1.prf -gui -msgset
@@ -25,17 +25,17 @@ Preference file: MMU_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            5.735        0            0.304        0            03           Completed
+5_1   *      0            5.735        0            0.304        0            04           Completed
 * : Design saved.
 
-Total (real) run time for 1-seed: 3 secs 
+Total (real) run time for 1-seed: 4 secs 
 
 par done!
 
 Note: user must run &apos;Trace&apos; for timing closure signoff.
 
 Lattice Place and Route Report for Design &quot;MMU_impl1_map.ncd&quot;
-Wed Jun 11 16:59:53 2025
+Wed Jul 02 15:37:27 2025
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -93,12 +93,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 Starting Placer Phase 1.
 ....................
 Placer score = 22817.
-Finished Placer Phase 1.  REAL time: 2 secs 
+Finished Placer Phase 1.  REAL time: 3 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  22757
-Finished Placer Phase 2.  REAL time: 2 secs 
+Finished Placer Phase 2.  REAL time: 3 secs 
 
 
 
@@ -155,7 +155,7 @@ WARNING - par: The following clock signals will be routed by using generic routi
 
 Completed router resource preassignment. Real time: 3 secs 
 
-Start NBR router at 16:59:56 06/11/25
+Start NBR router at 15:37:30 07/02/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -171,9 +171,9 @@ Note: NBR uses a different method to calculate timing slacks. The
 *****************************************************************
 
 1 potential circuit loop found in timing analysis.
-Start NBR special constraint process at 16:59:56 06/11/25
+Start NBR special constraint process at 15:37:30 07/02/25
 
-Start NBR section for initial routing at 16:59:56 06/11/25
+Start NBR section for initial routing at 15:37:30 07/02/25
 Level 1, iteration 1
 0(0.00%) conflict; 360(79.82%) untouched conns; 0 (nbr) score; 
 Estimated worst slack/total negative slack&lt;setup&gt;: 5.819ns/0.000ns; real time: 3 secs 
@@ -190,7 +190,7 @@ Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real t
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 16:59:56 06/11/25
+Start NBR section for normal routing at 15:37:30 07/02/25
 Level 4, iteration 1
 18(0.08%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
@@ -208,42 +208,42 @@ Level 4, iteration 5
 Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
 Level 4, iteration 6
 12(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 Level 4, iteration 7
 12(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 Level 4, iteration 8
 9(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 Level 4, iteration 9
 9(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 Level 4, iteration 10
 6(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 Level 4, iteration 11
 5(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 Level 4, iteration 12
 3(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 Level 4, iteration 13
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 Level 4, iteration 14
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 16:59:56 06/11/25
+Start NBR section for setup/hold timing optimization with effort level 3 at 15:37:31 07/02/25
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
 
-Start NBR section for re-routing at 16:59:56 06/11/25
+Start NBR section for re-routing at 15:37:31 07/02/25
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 3 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 5.735ns/0.000ns; real time: 4 secs 
 
-Start NBR section for post-routing at 16:59:56 06/11/25
+Start NBR section for post-routing at 15:37:31 07/02/25
 1 potential circuit loop found in timing analysis.
 
 End NBR router with 0 unrouted connection
@@ -273,7 +273,7 @@ WARNING - par: The following clock signals will be routed by using generic routi
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
 Total CPU time 3 secs 
-Total REAL time: 3 secs 
+Total REAL time: 4 secs 
 Completely routed.
 End of route.  451 routed (100.00%); 0 unrouted.
 
@@ -296,7 +296,7 @@ PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Number of errors = 0
 
 Total CPU  time to completion: 3 secs 
-Total REAL time to completion: 3 secs 
+Total REAL time to completion: 4 secs 
 
 par done!
 

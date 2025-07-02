@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 11 16:59:52 2025
+Wed Jul 02 15:37:26 2025
 
 
 Command Line:  synthesis -f MMU_impl1_lattice.synproj -gui -msgset C:/dev/Apple_IIe_MMU_3V3/firmware/promote.xml 
@@ -316,8 +316,8 @@ clk0 [get_nets DELAY_CLK]               |    2.000 MHz|  281.452 MHz|     2
 All constraints were met.
 
 
-Peak Memory Usage: 71.020  MB
+Peak Memory Usage: 70.961  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.500  secs
+Elapsed CPU time for LSE flow : 0.531  secs
 --------------------------------------------------------------
