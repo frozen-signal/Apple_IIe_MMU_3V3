@@ -3,10 +3,7 @@ This repository contains the reference design for a 3.3V version of the Apple II
 The firmware project is located here: [Firmware for the Apple IIe's MMU and IOU](https://github.com/frozen-signal/Apple_IIe_MMU_IOU)
 
 ## Project status
-The release candidate of this adapter has been tested with common components (See [Tested Hardware](#tested-hardware)).<br/>
-More testing is being done, but this adapter is functionnal.
-<br/>
-![MMU](https://img.shields.io/badge/3.3_V_Apple_IIe_MMU-Release_Candidate-green)<br/>
+![MMU](https://img.shields.io/badge/3.3_V_Apple_IIe_MMU-Stable-green)<br/>
 
 ## Tested Hardware
 
@@ -32,6 +29,6 @@ Other hardware reference designs are located here:
 
 ## The MMU Adapter
 <a align="center">
-    <img src="/resources/MMU_Raytraced_v0_97.png" style="width: 480px"/>
+    <img src="/resources/MMU_Raytraced_v1.0.png" style="width: 480px"/>
 </a>
 <p><i>A rendering of the MMU, front and back</i></p>
