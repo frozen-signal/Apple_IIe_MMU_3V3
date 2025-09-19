@@ -10,11 +10,28 @@ The RTL (VHDL source code) project is located here: [RTL for the Apple IIe's MMU
 This project was made possible thanks to the support and contributions of a few key individuals.<br/>
 Notable thanks go to:
  * **Henry S. Courbis of ReActiveMicro** not only was instrumental in the development of the VHDL code but also was the spark that initiated this project. His generous support and deep technical insight made this project possible.
- * **[Ralle Palaveev](https://github.com/rallepalaveev)** is more than a contributor — he is the co-creator of the 3.3V adapters. His impressive skills made what seemed impossible look easy: fitting everything into a 40-pin DIP-sized PCB.
+ * **[Ralle Palaveev](https://github.com/rallepalaveev)** is more than a contributor -- he is the co-creator of the 3.3V adapters. His impressive skills made what seemed impossible look easy: fitting everything into a 40-pin DIP-sized PCB.
 
 
 
 And lastly, a special thanks to **Leeland Heins [@SoftwareJanitor](https://github.com/softwarejanitor)**, who thoroughly tested this project. His steady encouragement was a much-appreciated source of motivation during the tougher stretches of development.
+
+## The MMU Adapter
+<img src="/resources/MMU_Raytraced_v1.0.png" width="240" align="left" padding-right="75px"/>
+
+**Buying the MMU Adapter**
+<br/>
+The two official stores where to buy the MMU adapter are _ReActiveMicro_ and _Ralle Palaveev's store_.<br/>
+<br/>
+<a href="https://apple2.co.uk/Products">Ralle Palaveev's store</a><br/>
+<a href="https://www.reactivemicro.com/">ReActiveMicro</a> (Available soon)<br/>
+<br/>
+
+**Building it yourself**
+<br/>
+Gerbers, production files, and instructions are located in [production](production/)
+
+<br clear="all">
 
 ## Tested Hardware
 
@@ -30,13 +47,11 @@ And lastly, a special thanks to **Leeland Heins [@SoftwareJanitor](https://githu
 ## Other Projects
 Other hardware reference designs are located here:
 ### 3.3V Adapter reference designs
-- [3.3V IOU adapter](https://github.com/frozen-signal/Apple_IIe_IOU_3V3)
+- [3.3V MMU adapter](https://github.com/frozen-signal/Apple_IIe_MMU_3V3)
+
 ### 5V Adapter reference designs
 - 5V IOU adapter (To be done)
 - 5V MMU adapter (To be done)
 
-## The MMU Adapter
-<a align="center">
-    <img src="/resources/MMU_Raytraced_v1.0.png" style="width: 480px"/>
-</a>
-<p><i>A rendering of the MMU, front and back</i></p>
+
+
